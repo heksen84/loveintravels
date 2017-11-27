@@ -1156,7 +1156,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')])], 1)], 1), _vm._v(" "), _c('v-card', [_c('v-card-text', [_c('div', {
     staticClass: "mt-4 title"
-  }, [_vm._v("Любишь отдыхать и мечтаешь найти свою вторую половинку находясь в путешествии?")]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Мечтаешь найти свою вторую половинку находясь в путешествии?")]), _vm._v(" "), _c('div', {
     staticClass: "mt-4 title"
   }, [_vm._v("Тогда этот сервис для тебя!")])]), _vm._v(" "), _c('v-btn', {
     attrs: {

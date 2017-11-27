@@ -32,7 +32,7 @@
           </v-card>		  
 		  <v-card>
 		  <v-card-text>
-		  <div class="mt-4 title">Любишь отдыхать и мечтаешь найти свою вторую половинку находясь в путешествии?</div>
+		  <div class="mt-4 title">Мечтаешь найти свою вторую половинку находясь в путешествии?</div>
 		  <div class="mt-4 title">Тогда этот сервис для тебя!</div>
 		  </v-card-text >				  
 		   <v-btn color="success" v-on:click="m_reg">Регистрация</v-btn>
