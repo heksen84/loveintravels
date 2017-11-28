@@ -4,26 +4,20 @@
       <v-layout row wrap>       	  
 		<v-flex xs12>		
 		<v-toolbar>    
-		<v-toolbar-title class="white--text"></v-toolbar-title>						
-		<!--<v-flex xs3 sm2 md2>
-        <v-text-field label="Логин"></v-text-field>
-        </v-flex>		
-		<v-flex xs3 sm2 md2>
-        <v-text-field label="Пароль" type="password"></v-text-field>
-        </v-flex>							-->
+		<v-toolbar-title class="white--text"></v-toolbar-title>								
 		<v-flex xs12 sm12 md12>
-		<v-btn color="blue darken-1" flat small v-on:click="m_auth">@{{ str_auth }}</v-btn>		
+		<v-btn color="blue darken-1" flat small v-on:click="m_auth">{{ str_auth }}</v-btn>		
 		</v-flex>			
 		<v-flex xs12 sm12 md12>		
-		<v-btn color="blue darken-1" flat small v-on:click="m_reg">@{{ str_reg }}</v-btn>								 				
+		<v-btn color="blue darken-1" flat small v-on:click="m_reg">{{ str_reg }}</v-btn>								 				
 		</v-flex>			
 		</v-toolbar>								
           <v-card  dark color="white">            
-			<v-card-media src="" class="white--text">
+			<v-card-media src="public/images/logo.jpg" class="white--text">
 			<v-flex xs12 align-end flexbox>			
 			<br>
 			<br>
-            <span class="black_shadow_text" id="title"></span><span id="reg" class="grey_shadow_text">&reg</span>
+            <span class="black_shadow_text" id="title">{{ str_title }}</span><span id="reg" class="grey_shadow_text">&reg</span>
 			<div class="grey_shadow_text text_space_3" style="font-size:22px;" id="description"></div>
 			<br>
 			<br>						
@@ -35,8 +29,8 @@
 		  <div class="mt-4 title">Мечтаешь найти свою вторую половинку находясь в путешествии?</div>
 		  <div class="mt-4 title">Тогда этот сервис для тебя!</div>
 		  </v-card-text >				  
-		   <v-btn color="success" v-on:click="m_reg">Регистрация</v-btn>
-		   <br><v-btn color="success" v-on:click="m_auth" flat></v-btn>		   		   
+		   <v-btn color="success" v-on:click="m_reg">{{ str_reg }}</v-btn>
+		   <br><v-btn color="success" v-on:click="m_auth" flat>{{ str_auth }}</v-btn>		   		   
 		   <br><br>
 		  </v-card>		  
 		  <v-card color="blue lighten-1" dark>
@@ -50,12 +44,15 @@
     </v-container>
   </v-app>  
 </template>
-
 <script>
 export default {
   data () {
     return {
-      message: 'Hello Fucking World!'
+		str_title: "Love In Travels",
+		str_desc: "Это лёгкий способ найти партнёра для совместного отдыха и путешествия.",
+		str_footer_text: "LoveInTravels (c) "+new Date().getFullYear(),
+		str_auth: "Вход",
+		str_reg: "Регистрация"		
     };
   }
 };
