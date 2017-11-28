@@ -370,15 +370,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-		data: function data() {
-				return {
-						str_title: "Love In Travels",
-						str_desc: "Это лёгкий способ найти партнёра для совместного отдыха и путешествия.",
-						str_footer_text: "LoveInTravels (c) " + new Date().getFullYear(),
-						str_auth: "Вход",
-						str_reg: "Регистрация"
-				};
+	data: function data() {
+		return {
+			str_title: "Love In Travels",
+			str_desc: "Это лёгкий способ найти партнёра для совместного отдыха и путешествия.",
+			str_footer_text: "LoveInTravels (c) " + new Date().getFullYear(),
+			str_auth: "Вход",
+			str_reg: "Регистрация"
+		};
+	},
+
+	methods: {
+		auth: function auth() {
+			alert("auth");
+		},
+		reg: function reg() {
+			alert("reg");
 		}
+	}
 });
 
 /***/ }),
@@ -1100,7 +1109,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "small": ""
     },
     on: {
-      "click": _vm.m_auth
+      "click": _vm.auth
     }
   }, [_vm._v(_vm._s(_vm.str_auth))])], 1), _vm._v(" "), _c('v-flex', {
     attrs: {
@@ -1115,7 +1124,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "small": ""
     },
     on: {
-      "click": _vm.m_reg
+      "click": _vm.reg
     }
   }, [_vm._v(_vm._s(_vm.str_reg))])], 1)], 1), _vm._v(" "), _c('v-card', {
     attrs: {
@@ -1151,7 +1160,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "description"
     }
-  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')])], 1)], 1), _vm._v(" "), _c('v-card', [_c('v-card-text', [_c('div', {
+  }, [_vm._v(_vm._s(_vm.str_desc))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')])], 1)], 1), _vm._v(" "), _c('v-card', [_c('v-card-text', [_c('div', {
     staticClass: "mt-4 title"
   }, [_vm._v("Мечтаешь найти свою вторую половинку находясь в путешествии?")]), _vm._v(" "), _c('div', {
     staticClass: "mt-4 title"
@@ -1160,7 +1169,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "color": "success"
     },
     on: {
-      "click": _vm.m_reg
+      "click": _vm.reg
     }
   }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('br'), _c('v-btn', {
     attrs: {
@@ -1168,7 +1177,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "flat": ""
     },
     on: {
-      "click": _vm.m_auth
+      "click": _vm.auth
     }
   }, [_vm._v(_vm._s(_vm.str_auth))]), _vm._v(" "), _c('br'), _c('br')], 1), _vm._v(" "), _c('v-card', {
     attrs: {
