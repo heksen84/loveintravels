@@ -57,12 +57,13 @@
   </v-layout>
 </template>
 <script>
-export default {
-  data () {
-    return {
-	   }
-	},
-	methods: {	
-	}
-};
+<script>
+  export default {
+    data () {
+      return {
+        dialog: false
+      }
+    }
+  }
+</script>
 </script>
