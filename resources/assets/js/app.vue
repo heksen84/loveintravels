@@ -37,7 +37,7 @@
 		  <v-card-text><h2>Love In Travels - люби и путешествуй!</h2></v-card-text>				  
 		  </v-card>
 		<v-footer class="pa-2">
-		<v-spacer></v-spacer>   
+		<v-spacer>{{ str_footer_text }}</v-spacer> 		
 		</v-footer>
         </v-flex>        
       </v-layout>

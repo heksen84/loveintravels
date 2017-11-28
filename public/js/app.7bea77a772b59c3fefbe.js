@@ -1186,7 +1186,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('v-card-text', [_c('h2', [_vm._v("Love In Travels - люби и путешествуй!")])])], 1), _vm._v(" "), _c('v-footer', {
     staticClass: "pa-2"
-  }, [_c('v-spacer')], 1)], 1)], 1)], 1)], 1)
+  }, [_c('v-spacer', [_vm._v(_vm._s(_vm.str_footer_text))])], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
