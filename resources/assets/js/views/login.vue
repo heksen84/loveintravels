@@ -56,8 +56,7 @@
     </v-dialog>
   </v-layout>
 </template>
-<script>
-<script>
+<script type="text/javascript">
   export default {
     data () {
       return {
@@ -65,5 +64,4 @@
       }
     }
   }
-</script>
 </script>

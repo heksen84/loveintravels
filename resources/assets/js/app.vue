@@ -44,8 +44,9 @@
     </v-container>
   </v-app>  
 </template>
-<script>
-export default {
+<script type="text/javascript">
+import login from './views/login.vue'
+export default {  
   data () {
     return {
 			str_title: "Love In Travels",
