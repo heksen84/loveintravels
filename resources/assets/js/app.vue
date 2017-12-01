@@ -6,7 +6,7 @@
 		<v-toolbar>    
 		<v-toolbar-title class="white--text"></v-toolbar-title>								
 		<v-flex xs12 sm12 md12>
-		<v-btn color="blue darken-1" flat small v-on:click="auth">{{ str_auth }}</v-btn>		
+		<v-btn color="blue darken-1" flat small @click.native="dialog = true">{{ str_auth }}</v-btn>		
 		</v-flex>			
 		<v-flex xs12 sm12 md12>		
 		<v-btn color="blue darken-1" flat small v-on:click="reg">{{ str_reg }}</v-btn>								 				
