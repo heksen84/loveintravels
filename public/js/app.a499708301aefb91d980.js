@@ -433,28 +433,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1380,18 +1358,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "row": "",
       "wrap": ""
     }
-  }, [_c('v-btn', {
-    attrs: {
-      "color": "primary",
-      "dark": ""
-    },
-    nativeOn: {
-      "click": function($event) {
-        $event.stopPropagation();
-        _vm.dialog = true
-      }
-    }
-  }, [_vm._v("Open Dialog")]), _vm._v(" "), _c('v-dialog', {
+  }, [_c('v-dialog', {
     attrs: {
       "max-width": "290"
     },
@@ -1404,7 +1371,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('v-card', [_c('v-card-title', {
     staticClass: "headline"
-  }, [_vm._v("Use Google's location service?")]), _vm._v(" "), _c('v-card-text', [_vm._v("Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.")]), _vm._v(" "), _c('v-card-actions', [_c('v-spacer'), _vm._v(" "), _c('v-btn', {
+  }, [_vm._v("Авторизация")]), _vm._v(" "), _c('v-card-text', [_vm._v("какой-то текст")]), _vm._v(" "), _c('v-card-actions', [_c('v-spacer'), _vm._v(" "), _c('v-btn', {
     attrs: {
       "color": "green darken-1",
       "flat": "flat"
@@ -1414,17 +1381,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.dialog = false
       }
     }
-  }, [_vm._v("Disagree")]), _vm._v(" "), _c('v-btn', {
-    attrs: {
-      "color": "green darken-1",
-      "flat": "flat"
-    },
-    nativeOn: {
-      "click": function($event) {
-        _vm.dialog = false
-      }
-    }
-  }, [_vm._v("Agree")])], 1)], 1)], 1), _vm._v(" "), _c('v-flex', {
+  }, [_vm._v("Войти")])], 1)], 1)], 1), _vm._v(" "), _c('v-flex', {
     attrs: {
       "xs12": ""
     }
@@ -1444,7 +1401,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "align-end": "",
       "flexbox": ""
     }
-  }, [_c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('span', {
+  }, [_c('br'), _vm._v(" "), _c('span', {
     staticClass: "black_shadow_text",
     attrs: {
       "id": "title"
@@ -1462,7 +1419,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "description"
     }
-  }, [_vm._v(_vm._s(_vm.str_desc))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')])], 1)], 1), _vm._v(" "), _c('v-card', [_c('v-card-text', [_c('div', {
+  }, [_vm._v(_vm._s(_vm.str_desc))]), _vm._v(" "), _c('br')])], 1)], 1), _vm._v(" "), _c('v-card', [_c('v-card-text', [_c('div', {
     staticClass: "mt-4 title"
   }, [_vm._v("Мечтаешь найти свою вторую половинку находясь в путешествии?")]), _vm._v(" "), _c('div', {
     staticClass: "mt-4 title"
