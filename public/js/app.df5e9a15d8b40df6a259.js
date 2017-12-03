@@ -423,11 +423,44 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
 		return {
+			dialog: false,
 			str_title: "Love In Travels",
 			str_desc: "Это лёгкий способ найти партнёра для совместного отдыха и путешествия.",
 			str_footer_text: "LoveInTravels (c) " + new Date().getFullYear(),
@@ -1347,45 +1380,55 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "row": "",
       "wrap": ""
     }
-  }, [_c('v-flex', {
-    attrs: {
-      "xs12": ""
-    }
-  }, [_c('v-toolbar', [_c('v-toolbar-title', {
-    staticClass: "white--text"
-  }), _vm._v(" "), _c('v-flex', {
-    attrs: {
-      "xs12": "",
-      "sm12": "",
-      "md12": ""
-    }
   }, [_c('v-btn', {
     attrs: {
-      "color": "blue darken-1",
-      "flat": "",
-      "small": ""
+      "color": "primary",
+      "dark": ""
     },
     nativeOn: {
       "click": function($event) {
+        $event.stopPropagation();
         _vm.dialog = true
       }
     }
-  }, [_vm._v(_vm._s(_vm.str_auth))])], 1), _vm._v(" "), _c('v-flex', {
+  }, [_vm._v("Open Dialog")]), _vm._v(" "), _c('v-dialog', {
     attrs: {
-      "xs12": "",
-      "sm12": "",
-      "md12": ""
-    }
-  }, [_c('v-btn', {
-    attrs: {
-      "color": "blue darken-1",
-      "flat": "",
-      "small": ""
+      "max-width": "290"
     },
-    on: {
-      "click": _vm.reg
+    model: {
+      value: (_vm.dialog),
+      callback: function($$v) {
+        _vm.dialog = $$v
+      },
+      expression: "dialog"
     }
-  }, [_vm._v(_vm._s(_vm.str_reg))])], 1)], 1), _vm._v(" "), _c('v-card', {
+  }, [_c('v-card', [_c('v-card-title', {
+    staticClass: "headline"
+  }, [_vm._v("Use Google's location service?")]), _vm._v(" "), _c('v-card-text', [_vm._v("Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.")]), _vm._v(" "), _c('v-card-actions', [_c('v-spacer'), _vm._v(" "), _c('v-btn', {
+    attrs: {
+      "color": "green darken-1",
+      "flat": "flat"
+    },
+    nativeOn: {
+      "click": function($event) {
+        _vm.dialog = false
+      }
+    }
+  }, [_vm._v("Disagree")]), _vm._v(" "), _c('v-btn', {
+    attrs: {
+      "color": "green darken-1",
+      "flat": "flat"
+    },
+    nativeOn: {
+      "click": function($event) {
+        _vm.dialog = false
+      }
+    }
+  }, [_vm._v("Agree")])], 1)], 1)], 1), _vm._v(" "), _c('v-flex', {
+    attrs: {
+      "xs12": ""
+    }
+  }, [_c('v-card', {
     attrs: {
       "dark": "",
       "color": "white"
@@ -1427,16 +1470,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "color": "success"
     },
-    on: {
-      "click": _vm.reg
-    }
-  }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('br'), _c('v-btn', {
-    attrs: {
-      "color": "success",
-      "flat": ""
-    },
-    on: {
-      "click": _vm.auth
+    nativeOn: {
+      "click": function($event) {
+        $event.stopPropagation();
+        _vm.dialog = true
+      }
     }
   }, [_vm._v(_vm._s(_vm.str_auth))]), _vm._v(" "), _c('br'), _c('br')], 1), _vm._v(" "), _c('v-card', {
     attrs: {
