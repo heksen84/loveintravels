@@ -11,9 +11,7 @@
 			  <v-btn color="green darken-1" flat="flat" @click.native="dialog = false">Войти</v-btn>          
 			</v-card-actions>
 		  </v-card>
-		</v-dialog>
-	  
-	  
+		</v-dialog>	  	  
 		<v-flex xs12>		
 		<!--<v-toolbar>    
 		<v-toolbar-title class="white--text"></v-toolbar-title>								
@@ -36,7 +34,7 @@
           </v-card>		  
 		  <v-card>
 		  <v-card-text>
-		  <div class="mt-4 title">Мечтаешь найти свою вторую половинку находясь в путешествии?</div>
+		  <div class="mt-4 title">Любишь знакомиться в путешествиях?</div>
 		  <div class="mt-4 title">Тогда этот сервис для тебя!</div>
 		  </v-card-text >				  
 		   <!--<v-btn color="success" v-on:click="reg">{{ str_reg }}</v-btn>-->
@@ -56,8 +54,10 @@
 </template>
 <script type="text/javascript">
 import login from './views/login.vue'
-export default {  
-  data () {
+export default { 
+	components: {			
+	}, 
+	data () {
     return {
 			dialog: false,
 			str_title: "Love In Travels",
