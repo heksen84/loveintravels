@@ -415,29 +415,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-	components: {},
+	components: { login: __WEBPACK_IMPORTED_MODULE_0__views_login_vue___default.a },
 	data: function data() {
 		return {
-			dialog: false,
+			loginData: __WEBPACK_IMPORTED_MODULE_0__views_login_vue___default.a.data,
+			loginMethods: __WEBPACK_IMPORTED_MODULE_0__views_login_vue___default.a.methods,
 			str_title: "Love In Travels",
 			str_desc: "Это лёгкий способ найти партнёра для совместного отдыха и путешествия.",
 			str_footer_text: "LoveInTravels (c) " + new Date().getFullYear(),
@@ -447,11 +432,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 
 	methods: {
-		auth: function auth() {
-			alert("auth");
-		},
-		reg: function reg() {
-			alert("reg");
+		show_auth: function show_auth() {
+			this.loginMethods.auth_hello();
 		}
 	}
 });
@@ -476,56 +458,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      dialog: false
+      dialog: true
     };
+  },
+
+  methods: {
+    auth_hello: function auth_hello() {
+      this.dialog = true;
+      alert(this.dialog);
+    }
   }
 });
 
@@ -1202,8 +1147,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('v-dialog', {
     attrs: {
-      "persistent": "",
-      "max-width": "500px"
+      "max-width": "290"
     },
     model: {
       value: (_vm.dialog),
@@ -1212,122 +1156,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "dialog"
     }
-  }, [_c('v-btn', {
-    attrs: {
-      "slot": "activator",
-      "color": "primary",
-      "dark": ""
-    },
-    slot: "activator"
-  }, [_vm._v("Open Dialog")]), _vm._v(" "), _c('v-card', [_c('v-card-title', [_c('span', {
+  }, [_c('v-card', [_c('v-card-title', {
     staticClass: "headline"
-  }, [_vm._v("User Profile")])]), _vm._v(" "), _c('v-card-text', [_c('v-container', {
+  }, [_vm._v("Авторизация")]), _vm._v(" "), _c('v-card-text', [_vm._v("какой-то текст")]), _vm._v(" "), _c('v-card-actions', [_c('v-spacer'), _vm._v(" "), _c('v-btn', {
     attrs: {
-      "grid-list-md": ""
-    }
-  }, [_c('v-layout', {
-    attrs: {
-      "wrap": ""
-    }
-  }, [_c('v-flex', {
-    attrs: {
-      "xs12": "",
-      "sm6": "",
-      "md4": ""
-    }
-  }, [_c('v-text-field', {
-    attrs: {
-      "label": "Legal first name",
-      "required": ""
-    }
-  })], 1), _vm._v(" "), _c('v-flex', {
-    attrs: {
-      "xs12": "",
-      "sm6": "",
-      "md4": ""
-    }
-  }, [_c('v-text-field', {
-    attrs: {
-      "label": "Legal middle name",
-      "hint": "example of helper text only on focus"
-    }
-  })], 1), _vm._v(" "), _c('v-flex', {
-    attrs: {
-      "xs12": "",
-      "sm6": "",
-      "md4": ""
-    }
-  }, [_c('v-text-field', {
-    attrs: {
-      "label": "Legal last name",
-      "hint": "example of persistent helper text",
-      "persistent-hint": "",
-      "required": ""
-    }
-  })], 1), _vm._v(" "), _c('v-flex', {
-    attrs: {
-      "xs12": ""
-    }
-  }, [_c('v-text-field', {
-    attrs: {
-      "label": "Email",
-      "required": ""
-    }
-  })], 1), _vm._v(" "), _c('v-flex', {
-    attrs: {
-      "xs12": ""
-    }
-  }, [_c('v-text-field', {
-    attrs: {
-      "label": "Password",
-      "type": "password",
-      "required": ""
-    }
-  })], 1), _vm._v(" "), _c('v-flex', {
-    attrs: {
-      "xs12": "",
-      "sm6": ""
-    }
-  }, [_c('v-select', {
-    attrs: {
-      "label": "Age",
-      "required": "",
-      "items": ['0-17', '18-29', '30-54', '54+']
-    }
-  })], 1), _vm._v(" "), _c('v-flex', {
-    attrs: {
-      "xs12": "",
-      "sm6": ""
-    }
-  }, [_c('v-select', {
-    attrs: {
-      "label": "Interests",
-      "multiple": "",
-      "autocomplete": "",
-      "chips": "",
-      "items": ['Skiing', 'Ice hockey', 'Soccer', 'Basketball', 'Hockey', 'Reading', 'Writing', 'Coding', 'Basejump']
-    }
-  })], 1)], 1)], 1), _vm._v(" "), _c('small', [_vm._v("*indicates required field")])], 1), _vm._v(" "), _c('v-card-actions', [_c('v-spacer'), _vm._v(" "), _c('v-btn', {
-    attrs: {
-      "color": "blue darken-1",
-      "flat": ""
+      "color": "green darken-1",
+      "flat": "flat"
     },
     nativeOn: {
       "click": function($event) {
         _vm.dialog = false
       }
     }
-  }, [_vm._v("Close")]), _vm._v(" "), _c('v-btn', {
-    attrs: {
-      "color": "blue darken-1",
-      "flat": ""
-    },
-    nativeOn: {
-      "click": function($event) {
-        _vm.dialog = false
-      }
-    }
-  }, [_vm._v("Save")])], 1)], 1)], 1)], 1)
+  }, [_vm._v("Войти")])], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -1357,30 +1198,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "row": "",
       "wrap": ""
     }
-  }, [_c('v-dialog', {
-    attrs: {
-      "max-width": "290"
-    },
-    model: {
-      value: (_vm.dialog),
-      callback: function($$v) {
-        _vm.dialog = $$v
-      },
-      expression: "dialog"
-    }
-  }, [_c('v-card', [_c('v-card-title', {
-    staticClass: "headline"
-  }, [_vm._v("Авторизация")]), _vm._v(" "), _c('v-card-text', [_vm._v("какой-то текст")]), _vm._v(" "), _c('v-card-actions', [_c('v-spacer'), _vm._v(" "), _c('v-btn', {
-    attrs: {
-      "color": "green darken-1",
-      "flat": "flat"
-    },
-    nativeOn: {
-      "click": function($event) {
-        _vm.dialog = false
-      }
-    }
-  }, [_vm._v("Войти")])], 1)], 1)], 1), _vm._v(" "), _c('v-flex', {
+  }, [_c('login'), _vm._v(" "), _c('v-flex', {
     attrs: {
       "xs12": ""
     }
@@ -1426,10 +1244,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "color": "success"
     },
-    nativeOn: {
+    on: {
       "click": function($event) {
-        $event.stopPropagation();
-        _vm.dialog = true
+        _vm.show_auth()
       }
     }
   }, [_vm._v(_vm._s(_vm.str_auth))]), _vm._v(" "), _c('br'), _c('br')], 1), _vm._v(" "), _c('v-card', {
