@@ -46,7 +46,10 @@
 		<h5>Добро пожаловать в <div style="margin-top:5px;font-size:22px"><b>LOVE IN TRAVELS!</b></div></h5>
 		<br>    
 		<b-button variant="success" @click="showModalReg">{{ str_reg }}</b-button>
-		<b-button @click="showModalAuth">{{ str_auth }}</b-button>		
+		<b-button @click="showModalAuth">{{ str_auth }}</b-button>
+		<br>
+		<br>
+		<h4>Как пользоваться сервисом:</h4>				
 	</b-col>
 	</b-row>	
     </b-container>
