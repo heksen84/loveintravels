@@ -19905,8 +19905,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-img', {
     attrs: {
-      "width": "30",
-      "height": "30",
+      "width": "25",
+      "height": "25",
       "src": "public/favicon.ico",
       "fluid": "",
       "alt": "Responsive image"
