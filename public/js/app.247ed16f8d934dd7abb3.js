@@ -7872,6 +7872,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -20007,7 +20012,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "fluid": "",
       "alt": "Responsive image"
     }
-  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание находясь в путешествии?")]), _vm._v(" "), _c('b-img', {
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание прибывая в путешествии?")]), _vm._v(" "), _c('b-img', {
     attrs: {
       "src": "public/images/acquaintance.jpg",
       "fluid": "",
@@ -20015,7 +20020,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Добро пожаловать в "), _c('div', {
     staticStyle: {
-      "margin-top": "5px"
+      "margin-top": "5px",
+      "font-size": "22px"
     }
   }, [_c('b', [_vm._v("LOVE IN TRAVELS!")])])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-button', {
     attrs: {
@@ -20157,7 +20163,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "bg-variant": "danger",
       "text-variant": "white"
     }
-  }, [_c('span', [_vm._v(_vm._s(_vm.str_footer_text) + "©")])])], 1)
+  }, [_c('span', [_vm._v(_vm._s(_vm.str_footer_text) + "©")]), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-1 text-center"
+  })], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
