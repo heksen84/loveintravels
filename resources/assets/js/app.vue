@@ -4,7 +4,6 @@
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="#"><b-img width="30" height="30" src="public/favicon.ico" fluid alt="Responsive image" /> love in travels</b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
-  
     <!-- Right aligned nav items -->
     <b-navbar-nav class="ml-auto">
       <b-nav-form>				
@@ -44,13 +43,10 @@
 		<h5>Добро пожаловать в <div style="margin-top:5px"><b>LOVE IN TRAVELS!</b></div></h5>
 		<br>    
 		<b-button variant="success" @click="showModalReg">{{ str_reg }}</b-button>
-		<b-button @click="showModalAuth">{{ str_auth }}</b-button>
-		<!--<div style="margin-top:10px">				
-		</div>-->
+		<b-button @click="showModalAuth">{{ str_auth }}</b-button>		
 	</b-col>
 	</b-row>	
     </b-container>
-	
 	<!-- форма регистрации -->
 	<b-modal ref="myModalRef" hide-footer title="Регистрация" size="sm">     	
 		<b-container fluid>
@@ -86,7 +82,6 @@
 		</b-row>		
 		</b-container>            
     </b-modal>
-	
 	<!-- форма авторизации -->
 	<b-modal ref="ModalAuth" hide-footer title="Вход" size="sm">
         <b-container fluid>
