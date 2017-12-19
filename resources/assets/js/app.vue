@@ -1,60 +1,130 @@
 ﻿<template>
-    <v-app light id="inspire">    
-	<v-container grid-list-md text-xs-center>	
-    <v-layout row wrap>
-		
-		<login></login>
+<div>
+
+<b-navbar toggleable="md" type="dark" variant="danger">
+  <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+  <b-navbar-brand href="#"><em>love in travels</em></b-navbar-brand>
+  <b-collapse is-nav id="nav_collapse">
+  
+    <!-- Right aligned nav items -->
+    <b-navbar-nav class="ml-auto">
+      <b-nav-form>				
+	<b-row class="mb-1 text-center">
+	<b-col>
+        <b-form-input size="sm" class="my-1 mr-sm-1" type="email" placeholder="Email"/>				
+        <b-form-input size="sm" class="my-1 mr-sm-1" type="password" placeholder="Пароль"/>
+        <b-button size="sm" class="my-1 mr-sm-1">Вход</b-button>
+        <b-button size="sm" class="my-1 mr-sm-1" variant="success" @click="showModalReg">Регистрация</b-button>
+	</b-col>
+	</b-row>
+      </b-nav-form>
+    </b-navbar-nav>
+  </b-collapse>
+</b-navbar>
+ <b-card bg-variant="danger" text-variant="white" class="text-center">
+    <div style="font-size:64px">{{ str_title }}</div>
+    <div style="font-size:24px">{{ str_desc }}</div>
+ </b-card>
+<br>
+    <center>
+    <h5>Любишь путешествовать?</h5>
+    <h5>Хочешь познакомиться с новым интересным тебе человеком?</h5>
+    <h5>Мечтаешь сходить на свидание находясь в путешествии?</h5>
+    <h5>Добро пожаловать в <b>LOVE IN TRAVELS !</b></h5>
+    <br>    
+    <b-button variant="success" @click="showModalReg">{{ str_reg }}</b-button>
+    <b-button variant="success" @click="showModalAuth">{{ str_auth }}</b-button>
+    </center>
+    
+	<!-- форма регистрации -->
+	<b-modal ref="myModalRef" hide-footer title="Регистрация" size="sm">     	
+		<b-container fluid>
+		<b-row class="mb-1 text-center">
+			<b-col>		
+			<b-form-input size="sm" class="mr-sm-2" type="email" placeholder="Email"/>				
+			</b-col>
+		</b-row>
+		<b-row class="mb-1 text-center">
+			<b-col>
+			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Имя"/>		
+			</b-col>
+		</b-row>
+		<b-row class="mb-1 text-center">
+			<b-col>
+			<b-form-input size="sm" class="mr-sm-2" type="password" placeholder="Пароль"/>		
+			</b-col>
+		</b-row>		
+		<b-row class="mb-1 text-center">
+			<b-col>
+			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Дата рождения"/>		
+			</b-col>
+		</b-row>
+		<b-row class="mb-1 text-center">
+			<b-col>
+			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Пол"/>		
+			</b-col>
+		</b-row>
+		<b-row class="mb-1 text-center">
+			<b-col>
+			<b-btn class="mt-1" variant="outline-danger" block @click="hideModalReg">Закрыть</b-btn>
+			</b-col>
+		</b-row>		
+		</b-container>            
+    </b-modal>
 	
-		<v-flex xs12>			
-          <v-card  dark color="white">            
-			<v-card-media src="public/images/logo.jpg" class="white--text">
-			<v-flex xs12 align-end flexbox>						
-			<br>
-            <span class="black_shadow_text" id="title">{{ str_title }}</span><span id="reg" class="grey_shadow_text">&reg</span>
-			<div class="grey_shadow_text text_space_3" style="font-size:22px;" id="description">{{ str_desc }}</div>
-			<br>			
-            </v-flex>
-			</v-card-media>			
-          </v-card>		  
-		  <v-card>
-		  <v-card-text>
-		  <div class="mt-4 title">Любишь знакомиться в путешествиях?</div>
-		  <div class="mt-4 title">Тогда этот сервис для тебя!</div>
-		  </v-card-text >				  
-		  <!-- <v-btn color="success" @click.native.stop="login = true">{{ str_auth }}</v-btn>-->
-		  <v-btn color="success" @click="show_auth()">{{ str_auth }}</v-btn>		  
-		   <br><br>
-		  </v-card>		  
-		  <v-card color="blue lighten-1" dark>
-		  <v-card-text><h2>Love In Travels - люби и путешествуй!</h2></v-card-text>				  
-		  </v-card>
-		<v-footer class="pa-2">
-		<v-spacer>{{ str_footer_text }}</v-spacer> 		
-		</v-footer>
-        </v-flex>        
-      </v-layout>
-    </v-container>
-  </v-app>  
+	<!-- форма авторизации -->
+	<b-modal ref="ModalAuth" hide-footer title="Вход" size="sm">
+        <b-container fluid>
+		<b-row class="mb-1 text-center">
+			<b-col>		
+			<b-form-input size="sm" class="mr-sm-2" type="email" placeholder="Email"/>				
+			</b-col>
+		</b-row>
+		<b-row class="mb-1 text-center">
+			<b-col>
+			<b-form-input size="sm" class="mr-sm-2" type="password" placeholder="Пароль"/>
+			</b-col>
+		</b-row>
+		<b-row class="mb-1 text-center">
+		<b-col>
+			<b-btn class="mt-3" variant="outline-danger" block @click="hideModalAuth">Войти</b-btn>
+		</b-col>
+		</b-row>
+        </b-container>
+    </b-modal>
+<br>
+
+<b-card class="text-center" no-body bg-variant="danger" text-variant="white"><span>{{ str_footer_text }}</span></b-card>
+
+</div>
 </template>
-<script type="text/javascript">
-import Login from './views/login.vue'
-export default { 
-	components: { login: Login }, 
+
+<script>
+export default {
 	data () {	
     return 	{				
-				loginData: 	Login.data,
-				loginMethods: Login.methods,
-				str_title: "Love In Travels",
-				str_desc: "Это лёгкий способ найти партнёра для совместного отдыха и путешествия.",
-				str_footer_text: "LoveInTravels (c) "+new Date().getFullYear(),
+				str_title: "love in travels",
+				str_desc: "Это отличный способ найти партнёра для совместного отдыха и путешествий.",
+				str_footer_text: "love in travels "+new Date().getFullYear()+" (c)",
 				str_auth: "Вход",
 				str_reg: "Регистрация"		
 			}
 	},
-	methods: { 
-	        show_auth() {
-				this.loginMethods.auth_hello();				
-			}
-	}
-};
+  methods: {
+    showModalAuth () {
+      this.$refs.ModalAuth.show()
+    },
+    hideModalAuth () {
+      this.$refs.ModalAuth.hide()
+    },
+	showModalReg () {
+      this.$refs.myModalRef.show()
+    },
+    hideModalReg () {
+      this.$refs.myModalRef.hide()
+    }
+  }
+}
 </script>
+
+<!-- modal-methods-1.vue -->
