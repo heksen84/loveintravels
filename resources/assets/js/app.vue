@@ -35,11 +35,12 @@
 		<br>
 		<br>
 		<h5>Хочешь познакомиться с новым интересным тебе человеком?</h5>
-		<b-img src="public/images/date.jpg" fluid alt="Responsive image" />		
+		<b-img src="public/images/date2.jpg" fluid alt="Responsive image" />		
 		<br>
 		<br>
-		<h5>Мечтаешь сходить на свидание в путешествии?</h5>		
-		<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />		
+		<h5>Мечтаешь сходить на свидание находясь в путешествии?</h5>		
+		<!--<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />-->
+		<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
 		<h5>Добро пожаловать в <div style="margin-top:5px"><b>LOVE IN TRAVELS!</b></div></h5>

@@ -7871,6 +7871,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -20002,11 +20003,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Хочешь познакомиться с новым интересным тебе человеком?")]), _vm._v(" "), _c('b-img', {
     attrs: {
-      "src": "public/images/date.jpg",
+      "src": "public/images/date2.jpg",
       "fluid": "",
       "alt": "Responsive image"
     }
-  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание в путешествии?")]), _vm._v(" "), _c('b-img', {
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание находясь в путешествии?")]), _vm._v(" "), _c('b-img', {
     attrs: {
       "src": "public/images/acquaintance.jpg",
       "fluid": "",
