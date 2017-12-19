@@ -22,12 +22,12 @@
   </b-collapse>
 </b-navbar>
  <b-card bg-variant="danger" text-variant="white" class="text-center">
-    <div style="font-size:66px;margin-top:-20px">{{ str_title }}</div>
-    <div style="font-size:22px">{{ str_desc }}</div>
+    <div id="title">{{ str_title }}</div>
+    <div id="desc">{{ str_desc }}</div>
  </b-card>
 <br>
 	<!-- контент -->
-	<b-container>
+    <b-container id="index_content">
     <b-row class="text-center">
 	<b-col cols="12">
 		<h5>Любишь путешествия?</h5>

@@ -19977,15 +19977,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "text-variant": "white"
     }
   }, [_c('div', {
-    staticStyle: {
-      "font-size": "66px",
-      "margin-top": "-20px"
+    attrs: {
+      "id": "title"
     }
   }, [_vm._v(_vm._s(_vm.str_title))]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "font-size": "22px"
+    attrs: {
+      "id": "desc"
     }
-  }, [_vm._v(_vm._s(_vm.str_desc))])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-container', [_c('b-row', {
+  }, [_vm._v(_vm._s(_vm.str_desc))])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-container', {
+    attrs: {
+      "id": "index_content"
+    }
+  }, [_c('b-row', {
     staticClass: "text-center"
   }, [_c('b-col', {
     attrs: {

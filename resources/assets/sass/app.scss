@@ -1,33 +1,14 @@
-.black_shadow_text
-{ 
- text-shadow: 	
--1px -1px 0 black, 
- 1px -1px 0 black, 
- -1px 1px 0 black, 
- 1px 1px 0 black;
+$my_grey: rgb(80,80,80);
+
+#title {
+	font-size:66px;
+	margin-top:-20px
 }
-.grey_shadow_text
-{ 
- text-shadow: 	
--1px -1px 0 rgb(70,70,70), 
- 1px -1px 0 rgb(70,70,70), 
- -1px 1px 0 rgb(70,70,70), 
- 1px 1px 0 rgb(70,70,70);
+
+#desc {
+	font-size:22px;
 }
-.text_space_3
-{
- letter-spacing: 3px;
-}
-#reg
-{
- vertical-align: super;
- position: relative;
- top: -35px;
- left: -5px;
- font-size:15px;
-}
-#title
-{
- font-size:70px;	
-/* color:#ff3385;*/
+
+#index_content h5 {
+ color: $my_grey;
 }
