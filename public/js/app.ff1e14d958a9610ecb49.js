@@ -7855,6 +7855,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -19918,9 +19920,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-navbar-nav', {
     staticClass: "ml-auto"
-  }, [_c('b-nav-form', [_c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
+  }, [_c('b-nav-form', [_c('b-container', [_c('b-row', {
+    staticClass: "text-center"
+  }, [_c('b-col', {
+    attrs: {
+      "cols": "12",
+      "md": "auto"
+    }
+  }, [_c('b-form-input', {
     staticClass: "my-1 mr-sm-1",
     attrs: {
       "size": "sm",
@@ -19948,7 +19955,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.showModalReg
     }
-  }, [_vm._v("Регистрация")])], 1)], 1)], 1)], 1)], 1)], 1), _vm._v(" "), _c('b-card', {
+  }, [_vm._v("Регистрация")])], 1)], 1)], 1)], 1)], 1)], 1)], 1), _vm._v(" "), _c('b-card', {
     staticClass: "text-center",
     attrs: {
       "bg-variant": "danger",

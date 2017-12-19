@@ -7,15 +7,17 @@
     <!-- Right aligned nav items -->
     <b-navbar-nav class="ml-auto">
       <b-nav-form>				
-	<b-row class="mb-1 text-center">
-	<b-col>
-        <b-form-input size="sm" class="my-1 mr-sm-1" type="email" placeholder="Email"/>				
-        <b-form-input size="sm" class="my-1 mr-sm-1" type="password" placeholder="Пароль"/>
-        <b-button size="sm" class="my-1 mr-sm-1">Вход</b-button>
-        <b-button size="sm" class="my-1 mr-sm-1" variant="success" @click="showModalReg">Регистрация</b-button>
+	<b-container>
+	<b-row class="text-center">
+	<b-col cols="12" md="auto">
+	        <b-form-input size="sm" class="my-1 mr-sm-1" type="email" placeholder="Email"/>				
+	        <b-form-input size="sm" class="my-1 mr-sm-1" type="password" placeholder="Пароль"/>
+	       	<b-button size="sm" class="my-1 mr-sm-1">Вход</b-button>
+	       	<b-button size="sm" class="my-1 mr-sm-1" variant="success" @click="showModalReg">Регистрация</b-button>
 	</b-col>
 	</b-row>
-      </b-nav-form>
+	</b-container>
+      </b-nav-form>	
     </b-navbar-nav>
   </b-collapse>
 </b-navbar>
