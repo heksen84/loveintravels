@@ -108,7 +108,7 @@
         </b-container>
     </b-modal>
 <br>
-<b-card class="text-center" no-body bg-variant="danger" text-variant="white"><span>{{ str_footer_text }}</span></b-card>
+<b-card class="text-center" bg-variant="danger" text-variant="white"><span>{{ str_footer_text }}</span></b-card>
 </div>
 </template>
 <script>
@@ -117,7 +117,7 @@ export default {
     return 	{				
 				str_title: "love in travels",
 				str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
-				str_footer_text: "love in travels "+new Date().getFullYear()+" (c)",
+				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear()+" (c)",
 				str_auth: "Вход",
 				str_reg: "Регистрация"		
 			}

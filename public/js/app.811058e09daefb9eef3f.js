@@ -7866,7 +7866,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       str_title: "love in travels",
       str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
-      str_footer_text: "love in travels " + new Date().getFullYear() + " (c)",
+      str_footer_text: "LOVE IN TRAVELS " + new Date().getFullYear() + " (c)",
       str_auth: "Вход",
       str_reg: "Регистрация"
     };
@@ -20109,7 +20109,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("Войти")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-card', {
     staticClass: "text-center",
     attrs: {
-      "no-body": "",
       "bg-variant": "danger",
       "text-variant": "white"
     }
