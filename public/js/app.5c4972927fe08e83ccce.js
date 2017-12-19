@@ -7866,7 +7866,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       str_title: "love in travels",
       str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
-      str_footer_text: "LOVE IN TRAVELS " + new Date().getFullYear() + " (c)",
+      str_footer_text: "LOVE IN TRAVELS " + new Date().getFullYear(),
       str_auth: "Вход",
       str_reg: "Регистрация"
     };
@@ -19908,7 +19908,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "#"
     }
-  }, [_c('em', [_vm._v("love in travels")])]), _vm._v(" "), _c('b-collapse', {
+  }, [_c('b-img', {
+    attrs: {
+      "width": "30",
+      "height": "30",
+      "src": "public/favicon.ico",
+      "fluid": "",
+      "alt": "Responsive image"
+    }
+  }), _vm._v(" love in travels")], 1), _vm._v(" "), _c('b-collapse', {
     attrs: {
       "is-nav": "",
       "id": "nav_collapse"
@@ -19978,7 +19986,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "fluid": "",
       "alt": "Responsive image"
     }
-  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание находясь в путешествии?")]), _vm._v(" "), _c('b-img', {
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание в путешествии?")]), _vm._v(" "), _c('b-img', {
     attrs: {
       "src": "public/images/acquaintance.jpg",
       "fluid": "",
@@ -20112,7 +20120,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "bg-variant": "danger",
       "text-variant": "white"
     }
-  }, [_c('span', [_vm._v(_vm._s(_vm.str_footer_text))])])], 1)
+  }, [_c('span', [_vm._v(_vm._s(_vm.str_footer_text) + "©")])])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

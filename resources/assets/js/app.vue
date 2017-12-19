@@ -2,7 +2,7 @@
 <div>
 <b-navbar toggleable="md" type="dark" variant="danger">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-  <b-navbar-brand href="#"><em>love in travels</em></b-navbar-brand>
+  <b-navbar-brand href="#"><b-img width="30" height="30" src="public/favicon.ico" fluid alt="Responsive image" /> love in travels</b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
   
     <!-- Right aligned nav items -->
@@ -37,7 +37,7 @@
 		<b-img src="public/images/date.jpg" fluid alt="Responsive image" />		
 		<br>
 		<br>
-		<h5>Мечтаешь сходить на свидание находясь в путешествии?</h5>		
+		<h5>Мечтаешь сходить на свидание в путешествии?</h5>		
 		<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />		
 		<br>
 		<br>
@@ -108,7 +108,7 @@
         </b-container>
     </b-modal>
 <br>
-<b-card class="text-center" bg-variant="danger" text-variant="white"><span>{{ str_footer_text }}</span></b-card>
+<b-card class="text-center" bg-variant="danger" text-variant="white"><span>{{ str_footer_text }}&copy;</span></b-card>
 </div>
 </template>
 <script>
@@ -117,7 +117,7 @@ export default {
     return 	{				
 				str_title: "love in travels",
 				str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
-				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear()+" (c)",
+				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear(),
 				str_auth: "Вход",
 				str_reg: "Регистрация"		
 			}
