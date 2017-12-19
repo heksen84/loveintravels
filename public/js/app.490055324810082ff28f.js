@@ -7850,12 +7850,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       str_title: "love in travels",
-      str_desc: "Это отличный способ найти партнёра для совместного отдыха и путешествий.",
+      str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
       str_footer_text: "love in travels " + new Date().getFullYear() + " (c)",
       str_auth: "Вход",
       str_reg: "Регистрация"
@@ -19943,11 +19953,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticStyle: {
-      "font-size": "64px"
+      "font-size": "64px",
+      "margin-top": "-25px"
     }
   }, [_vm._v(_vm._s(_vm.str_title))]), _vm._v(" "), _c('div', {
     staticStyle: {
-      "font-size": "24px"
+      "font-size": "22px"
     }
   }, [_vm._v(_vm._s(_vm.str_desc))])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-container', [_c('b-row', {
     staticClass: "text-center"
@@ -19955,7 +19966,29 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "cols": "12"
     }
-  }, [_c('h5', [_vm._v("Любишь путешествовать?")]), _vm._v(" "), _c('h5', [_vm._v("Хочешь познакомиться с новым интересным тебе человеком?")]), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание находясь в путешествии?")]), _vm._v(" "), _c('h5', [_vm._v("Добро пожаловать в "), _c('b', [_vm._v("LOVE IN TRAVELS!")])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-button', {
+  }, [_c('h5', [_vm._v("Любишь путешествия?")]), _vm._v(" "), _c('b-img', {
+    attrs: {
+      "src": "public/images/travels.jpg",
+      "fluid": "",
+      "alt": "Responsive image"
+    }
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Хочешь познакомиться с новым интересным тебе человеком?")]), _vm._v(" "), _c('b-img', {
+    attrs: {
+      "src": "public/images/date.jpg",
+      "fluid": "",
+      "alt": "Responsive image"
+    }
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание находясь в путешествии?")]), _vm._v(" "), _c('b-img', {
+    attrs: {
+      "src": "public/images/acquaintance.jpg",
+      "fluid": "",
+      "alt": "Responsive image"
+    }
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h5', [_vm._v("Добро пожаловать в "), _c('div', {
+    staticStyle: {
+      "margin-top": "5px"
+    }
+  }, [_c('b', [_vm._v("LOVE IN TRAVELS!")])])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-button', {
     attrs: {
       "variant": "success"
     },
@@ -19963,9 +19996,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.showModalReg
     }
   }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('b-button', {
-    attrs: {
-      "variant": "success"
-    },
     on: {
       "click": _vm.showModalAuth
     }

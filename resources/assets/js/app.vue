@@ -21,23 +21,34 @@
   </b-collapse>
 </b-navbar>
  <b-card bg-variant="danger" text-variant="white" class="text-center">
-    <div style="font-size:64px">{{ str_title }}</div>
-    <div style="font-size:24px">{{ str_desc }}</div>
+    <div style="font-size:64px;margin-top:-25px">{{ str_title }}</div>
+    <div style="font-size:22px">{{ str_desc }}</div>
  </b-card>
 <br>
 	<!-- контент -->
 	<b-container>
     <b-row class="text-center">
 	<b-col cols="12">
-		<h5>Любишь путешествовать?</h5>
+		<h5>Любишь путешествия?</h5>
+		<b-img src="public/images/travels.jpg" fluid alt="Responsive image" />
+		<br>
+		<br>
 		<h5>Хочешь познакомиться с новым интересным тебе человеком?</h5>
-		<h5>Мечтаешь сходить на свидание находясь в путешествии?</h5>
-		<h5>Добро пожаловать в <b>LOVE IN TRAVELS!</b></h5>
+		<b-img src="public/images/date.jpg" fluid alt="Responsive image" />		
+		<br>
+		<br>
+		<h5>Мечтаешь сходить на свидание находясь в путешествии?</h5>		
+		<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />		
+		<br>
+		<br>
+		<h5>Добро пожаловать в <div style="margin-top:5px"><b>LOVE IN TRAVELS!</b></div></h5>
 		<br>    
 		<b-button variant="success" @click="showModalReg">{{ str_reg }}</b-button>
-		<b-button variant="success" @click="showModalAuth">{{ str_auth }}</b-button>
+		<b-button @click="showModalAuth">{{ str_auth }}</b-button>
+		<!--<div style="margin-top:10px">				
+		</div>-->
 	</b-col>
-    </b-row>
+	</b-row>	
     </b-container>
 	
 	<!-- форма регистрации -->
@@ -105,7 +116,7 @@ export default {
 	data () {	
     return 	{				
 				str_title: "love in travels",
-				str_desc: "Это отличный способ найти партнёра для совместного отдыха и путешествий.",
+				str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
 				str_footer_text: "love in travels "+new Date().getFullYear()+" (c)",
 				str_auth: "Вход",
 				str_reg: "Регистрация"		
