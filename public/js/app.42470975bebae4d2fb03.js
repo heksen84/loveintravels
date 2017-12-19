@@ -7857,10 +7857,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
+      selected: null,
       str_title: "love in travels",
       str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
       str_footer_text: "LOVE IN TRAVELS " + new Date().getFullYear(),
@@ -20025,7 +20040,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-col', [_c('b-form-input', {
     staticClass: "mr-sm-2",
     attrs: {
-      "size": "sm",
       "type": "email",
       "placeholder": "Email"
     }
@@ -20034,7 +20048,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-col', [_c('b-form-input', {
     staticClass: "mr-sm-2",
     attrs: {
-      "size": "sm",
       "type": "text",
       "placeholder": "Имя"
     }
@@ -20043,7 +20056,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-col', [_c('b-form-input', {
     staticClass: "mr-sm-2",
     attrs: {
-      "size": "sm",
+      "type": "text",
+      "placeholder": "Дата рождения"
+    }
+  })], 1)], 1), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-1 text-center"
+  }, [_c('b-col', [_c('b-form-select', {
+    staticClass: "mr-sm-2",
+    model: {
+      value: (_vm.selected),
+      callback: function($$v) {
+        _vm.selected = $$v
+      },
+      expression: "selected"
+    }
+  }, [_c('option', {
+    domProps: {
+      "value": null
+    }
+  }, [_vm._v("Выберите пол")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "a"
+    }
+  }, [_vm._v("Мужской")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "b"
+    }
+  }, [_vm._v("Женский")])])], 1)], 1), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-1 text-center"
+  }, [_c('b-col', [_c('b-form-input', {
+    staticClass: "mr-sm-2",
+    attrs: {
       "type": "password",
       "placeholder": "Пароль"
     }
@@ -20052,18 +20095,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-col', [_c('b-form-input', {
     staticClass: "mr-sm-2",
     attrs: {
-      "size": "sm",
-      "type": "text",
-      "placeholder": "Дата рождения"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "size": "sm",
-      "type": "text",
-      "placeholder": "Пол"
+      "type": "password",
+      "placeholder": "Подтвердить пароль"
     }
   })], 1)], 1), _vm._v(" "), _c('b-row', {
     staticClass: "mb-1 text-center"
@@ -20092,7 +20125,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-col', [_c('b-form-input', {
     staticClass: "mr-sm-2",
     attrs: {
-      "size": "sm",
       "type": "email",
       "placeholder": "Email"
     }
@@ -20101,7 +20133,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-col', [_c('b-form-input', {
     staticClass: "mr-sm-2",
     attrs: {
-      "size": "sm",
       "type": "password",
       "placeholder": "Пароль"
     }

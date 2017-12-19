@@ -54,34 +54,48 @@
 		<b-container fluid>
 		<b-row class="mb-1 text-center">
 			<b-col>		
-			<b-form-input size="sm" class="mr-sm-2" type="email" placeholder="Email"/>				
+			<b-form-input class="mr-sm-2" type="email" placeholder="Email"/>				
 			</b-col>
 		</b-row>
 		<b-row class="mb-1 text-center">
 			<b-col>
-			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Имя"/>		
+			<b-form-input class="mr-sm-2" type="text" placeholder="Имя"/>		
 			</b-col>
 		</b-row>
 		<b-row class="mb-1 text-center">
 			<b-col>
-			<b-form-input size="sm" class="mr-sm-2" type="password" placeholder="Пароль"/>		
+			<b-form-input class="mr-sm-2" type="text" placeholder="Дата рождения"/>		
+			</b-col>
+		</b-row>
+<!--		<b-row class="mb-1 text-center">
+			<b-col>
+			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Пол"/>		
+			</b-col>
+		</b-row>-->
+		<b-row class="mb-1 text-center">
+		<b-col>
+		<b-form-select v-model="selected" class="mr-sm-2">
+		      <option :value="null">Выберите пол</option>
+		      <option value="a">Мужской</option>
+		      <option value="b">Женский</option>
+		    </b-form-select>
+		</b-col>
+		</b-row>
+		<b-row class="mb-1 text-center">
+			<b-col>
+			<b-form-input class="mr-sm-2" type="password" placeholder="Пароль"/>		
 			</b-col>
 		</b-row>		
 		<b-row class="mb-1 text-center">
 			<b-col>
-			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Дата рождения"/>		
+			<b-form-input class="mr-sm-2" type="password" placeholder="Подтвердить пароль"/>		
 			</b-col>
-		</b-row>
-		<b-row class="mb-1 text-center">
-			<b-col>
-			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Пол"/>		
-			</b-col>
-		</b-row>
+		</b-row>		
 		<b-row class="mb-1 text-center">
 			<b-col>
 			<b-btn class="mt-1" variant="outline-danger" block @click="hideModalReg">Закрыть</b-btn>
 			</b-col>
-		</b-row>		
+		</b-row>
 		</b-container>            
     </b-modal>
 	<!-- форма авторизации -->
@@ -89,12 +103,12 @@
         <b-container fluid>
 		<b-row class="mb-1 text-center">
 			<b-col>		
-			<b-form-input size="sm" class="mr-sm-2" type="email" placeholder="Email"/>				
+			<b-form-input class="mr-sm-2" type="email" placeholder="Email"/>				
 			</b-col>
 		</b-row>
 		<b-row class="mb-1 text-center">
 			<b-col>
-			<b-form-input size="sm" class="mr-sm-2" type="password" placeholder="Пароль"/>
+			<b-form-input class="mr-sm-2" type="password" placeholder="Пароль"/>
 			</b-col>
 		</b-row>
 		<b-row class="mb-1 text-center">
@@ -112,6 +126,7 @@
 export default {
 	data () {	
     return 	{				
+				selected: null,
 				str_title: "love in travels",
 				str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
 				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear(),
