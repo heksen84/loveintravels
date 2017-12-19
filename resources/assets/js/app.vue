@@ -2,7 +2,7 @@
 <div>
 <b-navbar toggleable="md" type="dark" variant="danger">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-  <b-navbar-brand href="#"><b-img width="25" height="25" src="public/favicon.ico" fluid alt="Responsive image" /> love in travels</b-navbar-brand>
+  <b-navbar-brand href="#"><b-img width="25" height="25" src="public/favicon.ico" fluid alt="Responsive image" />&nbsp;love in travels</b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
     <!-- Right aligned nav items -->
     <b-navbar-nav class="ml-auto">
@@ -22,7 +22,7 @@
   </b-collapse>
 </b-navbar>
  <b-card bg-variant="danger" text-variant="white" class="text-center">
-    <div style="font-size:64px;margin-top:-25px">{{ str_title }}</div>
+    <div style="font-size:66px;margin-top:-20px">{{ str_title }}</div>
     <div style="font-size:22px">{{ str_desc }}</div>
  </b-card>
 <br>
@@ -93,7 +93,7 @@
 		</b-row>		
 		<b-row class="mb-1 text-center">
 			<b-col>
-			<b-btn class="mt-1" variant="outline-danger" block @click="hideModalReg">Закрыть</b-btn>
+			<b-btn class="mt-1" variant="outline-success" block @click="hideModalReg">Продолжить</b-btn>
 			</b-col>
 		</b-row>
 		</b-container>            
@@ -113,7 +113,7 @@
 		</b-row>
 		<b-row class="mb-1 text-center">
 		<b-col>
-			<b-btn class="mt-3" variant="outline-danger" block @click="hideModalAuth">Войти</b-btn>
+			<b-btn class="mt-3" variant="outline-success" block @click="hideModalAuth">Войти</b-btn>
 		</b-col>
 		</b-row>
         </b-container>

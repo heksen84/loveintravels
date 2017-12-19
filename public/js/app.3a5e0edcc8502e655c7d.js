@@ -19928,7 +19928,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "fluid": "",
       "alt": "Responsive image"
     }
-  }), _vm._v(" love in travels")], 1), _vm._v(" "), _c('b-collapse', {
+  }), _vm._v(" love in travels")], 1), _vm._v(" "), _c('b-collapse', {
     attrs: {
       "is-nav": "",
       "id": "nav_collapse"
@@ -19978,8 +19978,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticStyle: {
-      "font-size": "64px",
-      "margin-top": "-25px"
+      "font-size": "66px",
+      "margin-top": "-20px"
     }
   }, [_vm._v(_vm._s(_vm.str_title))]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -20103,13 +20103,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-col', [_c('b-btn', {
     staticClass: "mt-1",
     attrs: {
-      "variant": "outline-danger",
+      "variant": "outline-success",
       "block": ""
     },
     on: {
       "click": _vm.hideModalReg
     }
-  }, [_vm._v("Закрыть")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('b-modal', {
+  }, [_vm._v("Продолжить")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('b-modal', {
     ref: "ModalAuth",
     attrs: {
       "hide-footer": "",
@@ -20141,7 +20141,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-col', [_c('b-btn', {
     staticClass: "mt-3",
     attrs: {
-      "variant": "outline-danger",
+      "variant": "outline-success",
       "block": ""
     },
     on: {
