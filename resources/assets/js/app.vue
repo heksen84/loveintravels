@@ -1,6 +1,5 @@
 ﻿<template>
 <div>
-
 <b-navbar toggleable="md" type="dark" variant="danger">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="#"><em>love in travels</em></b-navbar-brand>
@@ -26,16 +25,21 @@
     <div style="font-size:24px">{{ str_desc }}</div>
  </b-card>
 <br>
-    <center>
-    <h5>Любишь путешествовать?</h5>
-    <h5>Хочешь познакомиться с новым интересным тебе человеком?</h5>
-    <h5>Мечтаешь сходить на свидание находясь в путешествии?</h5>
-    <h5>Добро пожаловать в <b>LOVE IN TRAVELS !</b></h5>
-    <br>    
-    <b-button variant="success" @click="showModalReg">{{ str_reg }}</b-button>
-    <b-button variant="success" @click="showModalAuth">{{ str_auth }}</b-button>
-    </center>
-    
+	<!-- контент -->
+	<b-container>
+    <b-row class="text-center">
+	<b-col cols="12">
+		<h5>Любишь путешествовать?</h5>
+		<h5>Хочешь познакомиться с новым интересным тебе человеком?</h5>
+		<h5>Мечтаешь сходить на свидание находясь в путешествии?</h5>
+		<h5>Добро пожаловать в <b>LOVE IN TRAVELS!</b></h5>
+		<br>    
+		<b-button variant="success" @click="showModalReg">{{ str_reg }}</b-button>
+		<b-button variant="success" @click="showModalAuth">{{ str_auth }}</b-button>
+	</b-col>
+    </b-row>
+    </b-container>
+	
 	<!-- форма регистрации -->
 	<b-modal ref="myModalRef" hide-footer title="Регистрация" size="sm">     	
 		<b-container fluid>
@@ -93,12 +97,9 @@
         </b-container>
     </b-modal>
 <br>
-
 <b-card class="text-center" no-body bg-variant="danger" text-variant="white"><span>{{ str_footer_text }}</span></b-card>
-
 </div>
 </template>
-
 <script>
 export default {
 	data () {	

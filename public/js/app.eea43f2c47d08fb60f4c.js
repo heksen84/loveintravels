@@ -7848,6 +7848,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -19947,7 +19949,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "font-size": "24px"
     }
-  }, [_vm._v(_vm._s(_vm.str_desc))])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('center', [_c('h5', [_vm._v("Любишь путешествовать?")]), _vm._v(" "), _c('h5', [_vm._v("Хочешь познакомиться с новым интересным тебе человеком?")]), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание находясь в путешествии?")]), _vm._v(" "), _c('h5', [_vm._v("Добро пожаловать в "), _c('b', [_vm._v("LOVE IN TRAVELS !")])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-button', {
+  }, [_vm._v(_vm._s(_vm.str_desc))])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-container', [_c('b-row', {
+    staticClass: "text-center"
+  }, [_c('b-col', {
+    attrs: {
+      "cols": "12"
+    }
+  }, [_c('h5', [_vm._v("Любишь путешествовать?")]), _vm._v(" "), _c('h5', [_vm._v("Хочешь познакомиться с новым интересным тебе человеком?")]), _vm._v(" "), _c('h5', [_vm._v("Мечтаешь сходить на свидание находясь в путешествии?")]), _vm._v(" "), _c('h5', [_vm._v("Добро пожаловать в "), _c('b', [_vm._v("LOVE IN TRAVELS!")])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-button', {
     attrs: {
       "variant": "success"
     },
@@ -19961,7 +19969,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.showModalAuth
     }
-  }, [_vm._v(_vm._s(_vm.str_auth))])], 1), _vm._v(" "), _c('b-modal', {
+  }, [_vm._v(_vm._s(_vm.str_auth))])], 1)], 1)], 1), _vm._v(" "), _c('b-modal', {
     ref: "myModalRef",
     attrs: {
       "hide-footer": "",
