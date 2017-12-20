@@ -1,5 +1,6 @@
 ﻿<template>
 <div>
+<router-view></router-view>
 <b-navbar toggleable="md" type="dark" variant="danger">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="#"><b-img width="25" height="25" src="public/favicon.ico" fluid alt="Responsive image" />&nbsp;love in travels</b-navbar-brand>
@@ -71,11 +72,6 @@
 			<b-form-input class="mr-sm-2" type="text" placeholder="Дата рождения"/>		
 			</b-col>
 		</b-row>
-<!--		<b-row class="mb-1 text-center">
-			<b-col>
-			<b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Пол"/>		
-			</b-col>
-		</b-row>-->
 		<b-row class="mb-1 text-center">
 		<b-col>
 		<b-form-select v-model="selected" class="mr-sm-2">
@@ -126,7 +122,6 @@
 <b-card class="text-center" bg-variant="danger" text-variant="white">
 	<span>{{ str_footer_text }}&copy;</span>
 	<b-row class="mb-1 text-center">
-<!--	<b-link href="#foo" text-variant="white">Инструкция</b-link>-->
 	</b-row>
 </b-card>
 </div>
