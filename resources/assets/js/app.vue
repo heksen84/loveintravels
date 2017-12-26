@@ -39,8 +39,7 @@
 		<b-img src="public/images/date2.jpg" fluid alt="Responsive image" />		
 		<br>
 		<br>
-		<h5>Мечтаешь сходить на свидание прибывая в путешествии?</h5>		
-		<!--<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />-->
+		<h5>Мечтаешь сходить на свидание находясь в путешествии?</h5>		
 		<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
@@ -120,7 +119,7 @@
     </b-modal>
 <br>
 <b-card class="text-center" bg-variant="danger" text-variant="white">
-	<span>{{ str_footer_text }}&copy;</span>
+	<span>{{ str_footer_text }} &copy;</span>
 	<b-row class="mb-1 text-center">
 	</b-row>
 </b-card>
@@ -131,7 +130,7 @@ export default {
 	data () {	
     return 	{				
 				selected: null,
-				str_title: "love in travels",
+				str_title: "Love in travels",
 				str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
 				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear(),
 				str_auth: "Вход",
