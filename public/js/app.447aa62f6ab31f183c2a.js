@@ -18566,10 +18566,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.$refs.ModalAuth.hide();
     },
     showModalReg: function showModalReg() {
-      this.$refs.myModalRef.show();
+      this.$refs.ModalReg.show();
     },
     hideModalReg: function hideModalReg() {
-      this.$refs.myModalRef.hide();
+      this.$refs.ModalReg.hide();
     }
   }
 });
@@ -30752,7 +30752,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.showModalAuth
     }
   }, [_vm._v(_vm._s(_vm.str_auth))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h4', [_vm._v("Как пользоваться:")])], 1)], 1)], 1), _vm._v(" "), _c('b-modal', {
-    ref: "myModalRef",
+    ref: "ModalReg",
     attrs: {
       "hide-footer": "",
       "title": "Регистрация",

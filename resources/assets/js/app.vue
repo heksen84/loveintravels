@@ -54,7 +54,7 @@
 	</b-row>	
     </b-container>
 	<!-- форма регистрации -->
-	<b-modal ref="myModalRef" hide-footer title="Регистрация" size="sm">     	
+	<b-modal ref="ModalReg" hide-footer title="Регистрация" size="sm">     	
 		<b-container fluid>
 		<b-row class="mb-1 text-center">
 			<b-col>		
@@ -145,10 +145,10 @@ export default {
       this.$refs.ModalAuth.hide()
     },
 	showModalReg () {
-      this.$refs.myModalRef.show()
+      this.$refs.ModalReg.show()
     },
     hideModalReg () {
-      this.$refs.myModalRef.hide()
+      this.$refs.ModalReg.hide()
     }
   }
 }
