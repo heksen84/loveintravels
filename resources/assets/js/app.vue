@@ -49,7 +49,7 @@
 		<b-button @click="showModalAuth">{{ str_auth }}</b-button>
 		<br>
 		<br>
-		<h4>Как пользоваться:</h4>				
+		<!--<h4>Как пользоваться:</h4>-->
 	</b-col>
 	</b-row>	
     </b-container>
