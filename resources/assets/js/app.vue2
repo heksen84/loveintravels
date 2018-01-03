@@ -1,5 +1,27 @@
 ﻿<template>
 <div>
+<router-view></router-view>
+<b-navbar toggleable="md" type="dark" variant="danger">
+  <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+  <b-navbar-brand href="#"><b-img width="25" height="25" src="public/favicon.ico" fluid alt="Responsive image" />&nbsp;love in travels</b-navbar-brand>
+  <b-collapse is-nav id="nav_collapse">
+    <!-- Right aligned nav items -->
+    <b-navbar-nav class="ml-auto">
+      <b-nav-form>				
+	<b-container>
+	<b-row class="text-center">
+	<b-col cols="12" md="auto">
+	        <b-form-input size="sm" class="my-1 mr-sm-1" type="email" placeholder="Email"/>				
+	        <b-form-input size="sm" class="my-1 mr-sm-1" type="password" placeholder="Пароль"/>
+	       	<b-button size="sm" class="my-1 mr-sm-1">Вход</b-button>
+	       	<b-button size="sm" class="my-1 mr-sm-1" variant="success" @click="showModalReg">Регистрация</b-button>
+	</b-col>
+	</b-row>
+	</b-container>
+      </b-nav-form>	
+    </b-navbar-nav>
+  </b-collapse>
+</b-navbar>
  <b-card bg-variant="danger" text-variant="white" class="text-center">
     <div id="title">{{ str_title }}</div>
     <div id="desc">{{ str_desc }}</div>
@@ -9,19 +31,19 @@
     <b-container id="index_content">
     <b-row class="text-center">
 	<b-col cols="12">
-		<h4>Любишь путешествия?</h4>
+		<h5>Любишь путешествия?</h5>
 		<b-img src="public/images/travels.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
-		<h4>Хочешь познакомиться с новым интересным тебе человеком?</h4>
+		<h5>Хочешь познакомиться с новым интересным тебе человеком?</h5>
 		<b-img src="public/images/date2.jpg" fluid alt="Responsive image" />		
 		<br>
 		<br>
-		<h4>Мечтаешь сходить на свидание находясь в путешествии?</h4>		
+		<h5>Мечтаешь сходить на свидание находясь в путешествии?</h5>		
 		<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
-		<h3>Добро пожаловать в <div style="margin-top:5px;font-size:22px"><b>LOVE IN TRAVELS!</b></div></h3>
+		<h4>Добро пожаловать в <div style="margin-top:5px;font-size:22px"><b>LOVE IN TRAVELS!</b></div></h4>
 		<br>    
 		<b-button variant="success" @click="showModalReg">{{ str_reg }}</b-button>
 		<b-button @click="showModalAuth">{{ str_auth }}</b-button>

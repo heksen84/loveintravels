@@ -1,16 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Index from '../views/Index.vue'
-import NotFound from '../views/NotFound.vue'
+import Index from '../views/index.vue'
+import NotFound from '../views/404.vue'
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
 	mode: 'history',
 	routes: [
-/*		{ path: '/', component: RecipeIndex },*/
-		{ path: '/not-found', component: NotFound }/*,
-		{ path: '*', component: NotFound }*/
+		{ path: '/', component: Index },
+		{ path: '/not-found', component: NotFound },
+		{ path: '*', component: NotFound }
 	]
 })
 
