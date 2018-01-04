@@ -1,8 +1,7 @@
 ﻿<template>
 <div>
 	<center>
-	<h4>поездки</h4>
-	<h4>Август</h4>
+	<h3 style="margin-top:20px;text-decoration:underline">Поездки на август</h3>
 	<h5>Сергей едет в тайланд</h5>
 	<h5>Наталья летит в турцию</h5>
 	<h5>Михаил летит в турцию</h5>

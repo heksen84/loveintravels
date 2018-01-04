@@ -30981,7 +30981,12 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('center', [_c('h4', [_vm._v("поездки")]), _vm._v(" "), _c('h4', [_vm._v("Август")]), _vm._v(" "), _c('h5', [_vm._v("Сергей едет в тайланд")]), _vm._v(" "), _c('h5', [_vm._v("Наталья летит в турцию")]), _vm._v(" "), _c('h5', [_vm._v("Михаил летит в турцию")]), _vm._v(" "), _c('b-btn', {
+  return _c('div', [_c('center', [_c('h3', {
+    staticStyle: {
+      "margin-top": "20px",
+      "text-decoration": "underline"
+    }
+  }, [_vm._v("Поездки на август")]), _vm._v(" "), _c('h5', [_vm._v("Сергей едет в тайланд")]), _vm._v(" "), _c('h5', [_vm._v("Наталья летит в турцию")]), _vm._v(" "), _c('h5', [_vm._v("Михаил летит в турцию")]), _vm._v(" "), _c('b-btn', {
     staticClass: "mt-1",
     attrs: {
       "variant": "outline-success",
