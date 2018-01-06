@@ -2,7 +2,7 @@
 <div>
 <b-navbar toggleable="md" type="dark" variant="danger">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-  <b-navbar-brand href="/"><b-img width="25" height="25" src="public/favicon.ico" fluid alt="Responsive image"/><span class="carefree-font">&nbsp;love in travels</span></b-navbar-brand>
+  <b-navbar-brand href="/"><span class="carefree-font"><b-img width="25" height="25" src="public/favicon.ico" fluid alt="Responsive image"/>&nbsp;love in travels</span></b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
     <b-navbar-nav class="ml-auto">
       <b-nav-form>				
