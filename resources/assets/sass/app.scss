@@ -1,12 +1,26 @@
+@font-face {
+  font-family: 'carefree';
+  src: url('../fonts/carefree.ttf') format('truetype');
+  font-weight: normal;
+}
+
+
+
+/*@include font-face(carefree, ../fonts/Samplino);*/
+
+$font-family-1: 'carefree';
+
 $my_grey: rgb(80,80,80);
 
 #title {
-	font-size:66px;
-	margin-top:-10px
+	font-size:140px;	
+	font-family: $font-family-1;
+	line-height: 130px;
 }
 
 #desc {
-	font-size:22px;
+	font-size:23px;
+	margin-top:10px;
 }
 
 #index_content h5 {

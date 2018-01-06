@@ -115,7 +115,7 @@ export default {
     return 	{				
 				selected: null,
 				str_title: "Love in travels",
-				str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
+				str_desc: "- это отличный способ найти партнёра для совместного отдыха и путешествий.",
 				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear(),
 				str_auth: "Вход",
 				str_reg: "Регистрация"		
