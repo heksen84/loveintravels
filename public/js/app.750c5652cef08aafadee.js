@@ -18746,6 +18746,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -31176,15 +31177,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('span', {
     staticClass: "carefree-font"
-  }, [_c('b-img', {
-    attrs: {
-      "width": "25",
-      "height": "25",
-      "src": "public/favicon.ico",
-      "fluid": "",
-      "alt": "Responsive image"
-    }
-  }), _vm._v(" love in travels")], 1)]), _vm._v(" "), _c('b-collapse', {
+  }, [_vm._v(" love in travels")])]), _vm._v(" "), _c('b-collapse', {
     attrs: {
       "is-nav": "",
       "id": "nav_collapse"
