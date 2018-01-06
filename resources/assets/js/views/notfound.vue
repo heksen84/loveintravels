@@ -1,9 +1,22 @@
 <template>
-		<b-container>
-			<b-row class="text-center">
-				<b-col cols="12">
-					<h4 style="margin-top:20px">Сорян, но страница не найдена!</h4>		
+	<div>
+		<b-container class="bv-example-row bv-example-row-flex-cols">
+			<b-row class="text-center" align-v="center">
+				<b-col>
+					<h4>Сорян, но страница не найдена!</h4>		
 				</b-col>
 			</b-row>
 		</b-container>
+	</div>
 </template>
+
+<script type="text/javascript">
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+export default {
+		data() {			
+		},
+		created() {
+		}
+}
+</script>
