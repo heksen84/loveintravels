@@ -1,9 +1,9 @@
 ﻿<template>
 <div>
     <b-container>
-    <b-row class="text-center">		
-		<b-col cols="12">		
-			Вход
+    <b-row class="text-center">	
+		<b-col cols="12"><h1>Вход</h1></b-col>
+		<b-col cols="12">					
 			<b-button @click="showModalAuth">Войти</b-button>
 		</b-col>
 	</b-row>

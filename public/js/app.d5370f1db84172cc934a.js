@@ -30892,7 +30892,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "cols": "12"
     }
-  }, [_vm._v("\t\t\r\n\t\t\tВход\r\n\t\t\t"), _c('b-button', {
+  }, [_c('h1', [_vm._v("Вход")])]), _vm._v(" "), _c('b-col', {
+    attrs: {
+      "cols": "12"
+    }
+  }, [_c('b-button', {
     on: {
       "click": _vm.showModalAuth
     }
