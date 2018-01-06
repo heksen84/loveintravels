@@ -6,7 +6,7 @@
     <div id="desc">{{ str_desc }}</div>
  </b-card>
 <br>
-	<!-- контент -->
+    <!-- контент -->
     <b-container id="index_content">
     <b-row class="text-center">
 	<b-col cols="12">
@@ -124,5 +124,3 @@ export default {
 	components: { NavBar }
 }
 </script>
-
-<!-- modal-methods-1.vue -->
