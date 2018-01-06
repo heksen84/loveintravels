@@ -4,7 +4,6 @@
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="/"><b-img width="25" height="25" src="public/favicon.ico" fluid alt="Responsive image" />&nbsp;love in travels</b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
-    <!-- Right aligned nav items -->
     <b-navbar-nav class="ml-auto">
       <b-nav-form>				
 	<b-container>
@@ -23,9 +22,13 @@
 </b-navbar>
 </div>
 </template>
+<script type="text/javascript">
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
 export default {
 		data() {			
 		},
 		created() {
 		}
 }
+</script>

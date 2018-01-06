@@ -1,6 +1,5 @@
 ﻿<template>
 <div>
- <NavBar></NavBar>
  <b-card bg-variant="danger" text-variant="white" class="text-center">
     <div id="title">{{ str_title }}</div>
     <div id="desc">{{ str_desc }}</div>
@@ -121,7 +120,20 @@ export default {
 				str_reg: "Регистрация"		
 			}
 	},
-	components: { NavBar }
+  methods: {
+    showModalAuth () {
+      this.$refs.ModalAuth.show()
+    },
+    hideModalAuth () {
+      this.$refs.ModalAuth.hide()
+    },
+	showModalReg () {
+      this.$refs.ModalReg.show()
+    },
+    hideModalReg () {
+      this.$refs.ModalReg.hide()
+    }
+  }
 }
 </script>
 

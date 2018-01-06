@@ -1,9 +1,10 @@
 ﻿<template>
 <div>
-<!--<b-navbar toggleable="md" type="dark" variant="danger">
+<b-navbar toggleable="md" type="dark" variant="danger">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
   <b-navbar-brand href="/"><b-img width="25" height="25" src="public/favicon.ico" fluid alt="Responsive image" />&nbsp;love in travels</b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
+    <!-- Right aligned nav items -->
     <b-navbar-nav class="ml-auto">
       <b-nav-form>				
 	<b-container>
@@ -19,37 +20,16 @@
       </b-nav-form>	
     </b-navbar-nav>
   </b-collapse>
-</b-navbar>-->
-<router-view></router-view>
+</b-navbar>
 </div>
 </template>
-<script>
+<script type="text/javascript">
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
 export default {
-	data () {	
-    return 	{				
-				selected: null,
-				str_title: "Love in travels",
-				str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
-				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear(),
-				str_auth: "Вход",
-				str_reg: "Регистрация"		
-			}
-	},
-  methods: {
-    showModalAuth () {
-      this.$refs.ModalAuth.show()
-    },
-    hideModalAuth () {
-      this.$refs.ModalAuth.hide()
-    },
-	showModalReg () {
-      this.$refs.ModalReg.show()
-    },
-    hideModalReg () {
-      this.$refs.ModalReg.hide()
-    }
-  }
+		data() {			
+		},
+		created() {
+		}
 }
 </script>
-
-<!-- modal-methods-1.vue -->

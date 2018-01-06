@@ -1,5 +1,6 @@
 ﻿<template>
 <div>
+	<NavBar></NavBar>
     <b-container>
     <b-row class="text-center">
 	<b-col>
@@ -13,3 +14,12 @@
     </b-container>
 </div>
 </template>
+
+<script type="text/javascript">
+
+import NavBar from './navbar.vue'
+
+export default {	
+	components: { NavBar }
+}
+</script>
