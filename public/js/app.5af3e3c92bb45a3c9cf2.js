@@ -31182,7 +31182,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "fluid": "",
       "alt": "Responsive image"
     }
-  }), _vm._v(" love in travels")], 1), _vm._v(" "), _c('b-collapse', {
+  }), _c('span', {
+    staticClass: "carefree-font"
+  }, [_vm._v(" love in travels")])], 1), _vm._v(" "), _c('b-collapse', {
     attrs: {
       "is-nav": "",
       "id": "nav_collapse"

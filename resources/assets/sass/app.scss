@@ -8,14 +8,19 @@
 
 /*@include font-face(carefree, ../fonts/Samplino);*/
 
-$font-family-1: 'carefree';
+$title-font: 'carefree';
 
 $my_grey: rgb(80,80,80);
 
+.carefree-font{
+	font-family: $title-font;
+	font-size:40px;
+	line-height: 40px;	
+}
 #title {
 	font-size:140px;	
-	font-family: $font-family-1;
-	line-height: 130px;
+	font-family: $title-font;
+	line-height: 120px;
 }
 
 #desc {
