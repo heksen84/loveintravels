@@ -11,7 +11,7 @@
 	<b-col cols="12" md="auto">
 	    <b-form-input size="sm" class="my-1 mr-sm-1" type="email" placeholder="Email"/>				
 	    <b-form-input size="sm" class="my-1 mr-sm-1" type="password" placeholder="Пароль"/>
-	    <b-button size="sm" class="my-1 mr-sm-1">Вход</b-button>
+	    <b-button size="sm" class="my-1 mr-sm-1" @click="showModalAuth">Вход</b-button>
 	    <b-button size="sm" class="my-1 mr-sm-1" variant="success" @click="showModalReg">Регистрация</b-button>
 	</b-col>
 	</b-row>
@@ -29,6 +29,20 @@ export default {
 		data() {			
 		},
 		created() {
+		},
+		methods: {
+		showModalAuth () {
+			alert("auth1");
+		},
+		hideModalAuth () {
+			alert("auth2");
+		},
+		showModalReg () {
+			alert("auth3");
+		},
+		hideModalReg () {
+			alert("auth4");
 		}
+  }
 }
 </script>

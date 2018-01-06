@@ -9,14 +9,5 @@
 		</b-container>
 	</div>
 </template>
-
 <script type="text/javascript">
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
-export default {
-		data() {			
-		},
-		created() {
-		}
-}
 </script>
