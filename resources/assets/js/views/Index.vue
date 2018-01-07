@@ -24,12 +24,11 @@
 		<br>
 		<h3>Добро пожаловать в <div style="margin-top:5px;font-size:22px"><b>LOVE IN TRAVELS!</b></div></h3>
 		<br>    
-			<b-button variant="success" href="/signup">{{ str_reg }}</b-button>
 			<b-button href="/login">{{ str_auth }}</b-button>
+			<b-button variant="success" href="/signup">{{ str_reg }}</b-button>			
 		<br>
 		<br>
 		Love in travels - люби и путешествуй!
-		<!--<h4>Как пользоваться:</h4>-->
 	</b-col>
 	</b-row>	
     </b-container>
@@ -76,27 +75,7 @@
 			</b-col>
 		</b-row>
 		</b-container>            
-    </b-modal>
-	<!-- форма авторизации -->
-	<b-modal ref="ModalAuth" hide-footer title="Вход" size="sm">
-        <b-container fluid>
-		<b-row class="mb-1 text-center">
-			<b-col>		
-			<b-form-input class="mr-sm-2" type="email" placeholder="Email"/>				
-			</b-col>
-		</b-row>
-		<b-row class="mb-1 text-center">
-			<b-col>
-			<b-form-input class="mr-sm-2" type="password" placeholder="Пароль"/>
-			</b-col>
-		</b-row>
-		<b-row class="mb-1 text-center">
-		<b-col>
-			<b-btn class="mt-3" variant="outline-success" block @click="hideModalAuth">Войти</b-btn>
-		</b-col>
-		</b-row>
-        </b-container>
-    </b-modal>
+    </b-modal>	
 <br>
 <b-card class="text-center" bg-variant="danger" text-variant="white">
 	<span>{{ str_footer_text }} &copy;</span>
@@ -115,7 +94,7 @@ export default {
     return 	{				
 				selected: null,
 				str_title: "Love in travels",
-				str_desc: "- это отличный способ найти партнёра для совместного отдыха и путешествий.",
+				str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
 				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear(),
 				str_auth: "Вход",
 				str_reg: "Регистрация"		

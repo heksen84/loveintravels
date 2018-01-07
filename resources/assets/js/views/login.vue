@@ -14,11 +14,20 @@
 				<b-form-input class="mr-sm-2" type="password" placeholder="Пароль"/>
 			</b-col>
 		</b-row>
+		
+		<b-form-checkbox id="checkbox1"
+                     v-model="status"
+                     value="accepted"
+                     unchecked-value="not_accepted">
+		Запомнить меня
+		</b-form-checkbox>
+		
 		<b-row class="mb-1 text-center">
 			<b-col>				
 				<b-button variant="success" @click="">Войти</b-button>
 			</b-col>
-		</b-row>	
+		</b-row>
+	
     </b-container>
     </b-modal>
 </div>

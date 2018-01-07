@@ -18640,27 +18640,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -18671,7 +18650,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		return {
 			selected: null,
 			str_title: "Love in travels",
-			str_desc: "- это отличный способ найти партнёра для совместного отдыха и путешествий.",
+			str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
 			str_footer_text: "LOVE IN TRAVELS " + new Date().getFullYear(),
 			str_auth: "Вход",
 			str_reg: "Регистрация"
@@ -18687,6 +18666,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -31003,7 +30991,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "password",
       "placeholder": "Пароль"
     }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
+  })], 1)], 1), _vm._v(" "), _c('b-form-checkbox', {
+    attrs: {
+      "id": "checkbox1",
+      "value": "accepted",
+      "unchecked-value": "not_accepted"
+    },
+    model: {
+      value: (_vm.status),
+      callback: function($$v) {
+        _vm.status = $$v
+      },
+      expression: "status"
+    }
+  }, [_vm._v("\r\n\t\tЗапомнить меня\r\n\t\t")]), _vm._v(" "), _c('b-row', {
     staticClass: "mb-1 text-center"
   }, [_c('b-col', [_c('b-button', {
     attrs: {
@@ -31076,14 +31077,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b', [_vm._v("LOVE IN TRAVELS!")])])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-button', {
     attrs: {
+      "href": "/login"
+    }
+  }, [_vm._v(_vm._s(_vm.str_auth))]), _vm._v(" "), _c('b-button', {
+    attrs: {
       "variant": "success",
       "href": "/signup"
     }
-  }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('b-button', {
-    attrs: {
-      "href": "/login"
-    }
-  }, [_vm._v(_vm._s(_vm.str_auth))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v("\r\n\t\tLove in travels - люби и путешествуй!\r\n\t\t")], 1)], 1)], 1), _vm._v(" "), _c('b-modal', {
+  }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v("\r\n\t\tLove in travels - люби и путешествуй!\r\n\t")], 1)], 1)], 1), _vm._v(" "), _c('b-modal', {
     ref: "ModalReg",
     attrs: {
       "hide-footer": "",
@@ -31168,45 +31169,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.hideModalReg
     }
-  }, [_vm._v("Продолжить")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('b-modal', {
-    ref: "ModalAuth",
-    attrs: {
-      "hide-footer": "",
-      "title": "Вход",
-      "size": "sm"
-    }
-  }, [_c('b-container', {
-    attrs: {
-      "fluid": ""
-    }
-  }, [_c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "type": "email",
-      "placeholder": "Email"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "type": "password",
-      "placeholder": "Пароль"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-btn', {
-    staticClass: "mt-3",
-    attrs: {
-      "variant": "outline-success",
-      "block": ""
-    },
-    on: {
-      "click": _vm.hideModalAuth
-    }
-  }, [_vm._v("Войти")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-card', {
+  }, [_vm._v("Продолжить")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-card', {
     staticClass: "text-center",
     attrs: {
       "bg-variant": "danger",
