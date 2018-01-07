@@ -31277,7 +31277,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-row', {
     staticClass: "text-center"
-  }, [_c('b-col', [_c('h3', [_vm._v("Присоединиться к Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
+  }, [_c('b-col', [_c('h3', [_vm._v("Присоединиться к "), _c('br'), _vm._v("Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
     staticClass: "mb-1 text-center"
   }, [_c('b-col', [_c('b-form-input', {
     staticClass: "mr-sm-2",

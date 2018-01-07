@@ -2,7 +2,7 @@
 <div>
     <b-container class="text-center" style="max-width: 400px;">
 		<b-row class="text-center">	
-			<b-col><h3>Присоединиться к Love in travels</h3></b-col>
+			<b-col><h3>Присоединиться к <br>Love in travels</h3></b-col>
 		</b-row>	
 		<b-row class="mb-1 text-center">
 			<b-col>		
