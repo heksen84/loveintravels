@@ -1,9 +1,9 @@
 ﻿<template>
 <div>
     <b-container>
-    <b-row class="text-center">	
-		<b-col><h3>Вход в Love in travels</h3></b-col>
-	</b-row>	
+		<b-row class="text-center">	
+			<b-col><h3>Вход в Love in travels</h3></b-col>
+		</b-row>	
 		<b-row class="mb-1 text-center">
 			<b-col>		
 				<b-form-input class="mr-sm-2" type="email" placeholder="Email"/>				
