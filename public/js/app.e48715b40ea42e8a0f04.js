@@ -18818,6 +18818,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -30975,7 +30989,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-row', {
     staticClass: "text-center"
-  }, [_c('b-col', [_c('h3', [_vm._v("Вход в Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
+  }, [_c('b-col', [_c('h2', [_vm._v("Вход в Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
     staticClass: "mb-2 text-center"
   }, [_c('b-col', [_c('b-form-input', {
     attrs: {
@@ -31238,7 +31252,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-row', {
     staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('h2', [_vm._v("Создать аккаунт "), _c('br'), _vm._v("Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
+  }, [_c('b-col', [_c('h2', [_vm._v("Создать аккаунт")])])], 1), _vm._v(" "), _c('b-row', {
     staticClass: "mb-2 text-center"
   }, [_c('b-col', [_c('b-form-input', {
     attrs: {
@@ -31258,6 +31272,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "placeholder": "Дата рождения"
+    }
+  })], 1)], 1), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-2 text-center"
+  }, [_c('b-col', [_c('b-form-select', {
+    staticClass: "mr-sm-2",
+    model: {
+      value: (_vm.selected),
+      callback: function($$v) {
+        _vm.selected = $$v
+      },
+      expression: "selected"
+    }
+  }, [_c('option', {
+    domProps: {
+      "value": null
+    }
+  }, [_vm._v("Выберите пол")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "a"
+    }
+  }, [_vm._v("Мужской")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "b"
+    }
+  }, [_vm._v("Женский")])])], 1)], 1), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-2 text-center"
+  }, [_c('b-col', [_c('b-form-input', {
+    staticClass: "mr-sm-2",
+    attrs: {
+      "type": "password",
+      "placeholder": "Пароль"
     }
   })], 1)], 1), _vm._v(" "), _c('b-row', {
     staticClass: "mb-2 text-center"

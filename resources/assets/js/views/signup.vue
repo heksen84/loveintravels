@@ -2,7 +2,7 @@
 <div>
     <b-container class="text-center" style="max-width: 400px;">
 		<b-row class="mb-2 text-center">	
-			<b-col><h2>Создать аккаунт <br>Love in travels</h2></b-col>
+			<b-col><h2>Создать аккаунт</h2></b-col>
 		</b-row>	
 		<b-row class="mb-2 text-center">
 			<b-col>		
@@ -17,6 +17,20 @@
 		<b-row class="mb-2 text-center">
 			<b-col>
 			<b-form-input type="text" placeholder="Дата рождения"/>		
+			</b-col>
+		</b-row>
+		<b-row class="mb-2 text-center">
+		<b-col>
+		<b-form-select v-model="selected" class="mr-sm-2">
+		      <option :value="null">Выберите пол</option>
+		      <option value="a">Мужской</option>
+		      <option value="b">Женский</option>
+		    </b-form-select>
+		</b-col>
+		</b-row>
+		<b-row class="mb-2 text-center">
+			<b-col>
+			<b-form-input class="mr-sm-2" type="password" placeholder="Пароль"/>		
 			</b-col>
 		</b-row>		
 		<b-row class="mb-2 text-center">
