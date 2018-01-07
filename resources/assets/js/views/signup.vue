@@ -21,7 +21,7 @@
 		</b-row>		
 		<b-row class="mb-1 text-center">
 		<b-col>					
-			<b-button @click="">Регистрация</b-button>
+			<b-button variant="success" @click="">Регистрация</b-button>
 		</b-col>
 		</b-row>	
     </b-container>

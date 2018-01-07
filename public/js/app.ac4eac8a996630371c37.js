@@ -31001,6 +31001,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })], 1)], 1), _vm._v(" "), _c('b-row', {
     staticClass: "mb-1 text-center"
   }, [_c('b-col', [_c('b-button', {
+    attrs: {
+      "variant": "success"
+    },
     on: {
       "click": function($event) {}
     }
@@ -31291,6 +31294,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })], 1)], 1), _vm._v(" "), _c('b-row', {
     staticClass: "mb-1 text-center"
   }, [_c('b-col', [_c('b-button', {
+    attrs: {
+      "variant": "success"
+    },
     on: {
       "click": function($event) {}
     }
