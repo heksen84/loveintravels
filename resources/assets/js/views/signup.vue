@@ -1,25 +1,25 @@
 ﻿<template>
 <div>
     <b-container class="text-center" style="max-width: 400px;">
-		<b-row class="text-center">	
-			<b-col><h3>Присоединиться к <br>Love in travels</h3></b-col>
+		<b-row class="mb-2 text-center">	
+			<b-col><h2>Создать аккаунт <br>Love in travels</h2></b-col>
 		</b-row>	
-		<b-row class="mb-1 text-center">
+		<b-row class="mb-2 text-center">
 			<b-col>		
-			<b-form-input class="mr-sm-2" type="email" placeholder="Email"/>				
+			<b-form-input type="email" placeholder="Email"/>				
 			</b-col>
 		</b-row>
-		<b-row class="mb-1 text-center">
+		<b-row class="mb-2 text-center">
 			<b-col>
-			<b-form-input class="mr-sm-2" type="text" placeholder="Имя"/>		
+			<b-form-input type="text" placeholder="Имя"/>		
 			</b-col>
 		</b-row>
-		<b-row class="mb-1 text-center">
+		<b-row class="mb-2 text-center">
 			<b-col>
-			<b-form-input class="mr-sm-2" type="text" placeholder="Дата рождения"/>		
+			<b-form-input type="text" placeholder="Дата рождения"/>		
 			</b-col>
 		</b-row>		
-		<b-row class="mb-1 text-center">
+		<b-row class="mb-2 text-center">
 		<b-col>					
 			<b-button variant="success" @click="">Регистрация</b-button>
 		</b-col>

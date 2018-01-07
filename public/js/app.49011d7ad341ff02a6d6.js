@@ -30976,17 +30976,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-row', {
     staticClass: "text-center"
   }, [_c('b-col', [_c('h3', [_vm._v("Вход в Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
+    staticClass: "mb-2 text-center"
   }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
     attrs: {
       "type": "email",
       "placeholder": "Email"
     }
   })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
+    staticClass: "mb-2 text-center"
   }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
     attrs: {
       "type": "password",
       "placeholder": "Пароль"
@@ -31239,33 +31237,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "max-width": "400px"
     }
   }, [_c('b-row', {
-    staticClass: "text-center"
-  }, [_c('b-col', [_c('h3', [_vm._v("Присоединиться к "), _c('br'), _vm._v("Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
+    staticClass: "mb-2 text-center"
+  }, [_c('b-col', [_c('h2', [_vm._v("Создать аккаунт "), _c('br'), _vm._v("Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-2 text-center"
   }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
     attrs: {
       "type": "email",
       "placeholder": "Email"
     }
   })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
+    staticClass: "mb-2 text-center"
   }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
     attrs: {
       "type": "text",
       "placeholder": "Имя"
     }
   })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
+    staticClass: "mb-2 text-center"
   }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
     attrs: {
       "type": "text",
       "placeholder": "Дата рождения"
     }
   })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
+    staticClass: "mb-2 text-center"
   }, [_c('b-col', [_c('b-button', {
     attrs: {
       "variant": "success"
