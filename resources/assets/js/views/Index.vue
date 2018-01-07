@@ -28,54 +28,10 @@
 			<b-button variant="success" href="/signup">{{ str_reg }}</b-button>			
 		<br>
 		<br>
-		Love in travels - люби и путешествуй!
+		<!--Love in travels - люби и путешествуй!-->
 	</b-col>
 	</b-row>	
-    </b-container>
-	<!-- форма регистрации -->
-	<b-modal ref="ModalReg" hide-footer title="Регистрация" size="sm">     	
-		<b-container fluid>
-		<b-row class="mb-1 text-center">
-			<b-col>		
-			<b-form-input class="mr-sm-2" type="email" placeholder="Email"/>				
-			</b-col>
-		</b-row>
-		<b-row class="mb-1 text-center">
-			<b-col>
-			<b-form-input class="mr-sm-2" type="text" placeholder="Имя"/>		
-			</b-col>
-		</b-row>
-		<b-row class="mb-1 text-center">
-			<b-col>
-			<b-form-input class="mr-sm-2" type="text" placeholder="Дата рождения"/>		
-			</b-col>
-		</b-row>
-		<b-row class="mb-1 text-center">
-		<b-col>
-		<b-form-select v-model="selected" class="mr-sm-2">
-		      <option :value="null">Выберите пол</option>
-		      <option value="a">Мужской</option>
-		      <option value="b">Женский</option>
-		    </b-form-select>
-		</b-col>
-		</b-row>
-		<b-row class="mb-1 text-center">
-			<b-col>
-			<b-form-input class="mr-sm-2" type="password" placeholder="Пароль"/>		
-			</b-col>
-		</b-row>		
-		<b-row class="mb-1 text-center">
-			<b-col>
-			<b-form-input class="mr-sm-2" type="password" placeholder="Подтвердить пароль"/>		
-			</b-col>
-		</b-row>		
-		<b-row class="mb-1 text-center">
-			<b-col>
-			<b-btn class="mt-1" variant="outline-success" block @click="hideModalReg">Продолжить</b-btn>
-			</b-col>
-		</b-row>
-		</b-container>            
-    </b-modal>	
+    </b-container>	
 <br>
 <b-card class="text-center" bg-variant="danger" text-variant="white">
 	<span>{{ str_footer_text }} &copy;</span>

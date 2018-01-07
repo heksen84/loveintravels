@@ -18596,50 +18596,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -31096,92 +31052,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "success",
       "href": "/signup"
     }
-  }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v("\r\n\t\tLove in travels - люби и путешествуй!\r\n\t")], 1)], 1)], 1), _vm._v(" "), _c('b-modal', {
-    ref: "ModalReg",
-    attrs: {
-      "hide-footer": "",
-      "title": "Регистрация",
-      "size": "sm"
-    }
-  }, [_c('b-container', {
-    attrs: {
-      "fluid": ""
-    }
-  }, [_c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "type": "email",
-      "placeholder": "Email"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "type": "text",
-      "placeholder": "Имя"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "type": "text",
-      "placeholder": "Дата рождения"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-select', {
-    staticClass: "mr-sm-2",
-    model: {
-      value: (_vm.selected),
-      callback: function($$v) {
-        _vm.selected = $$v
-      },
-      expression: "selected"
-    }
-  }, [_c('option', {
-    domProps: {
-      "value": null
-    }
-  }, [_vm._v("Выберите пол")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "a"
-    }
-  }, [_vm._v("Мужской")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "b"
-    }
-  }, [_vm._v("Женский")])])], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "type": "password",
-      "placeholder": "Пароль"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "type": "password",
-      "placeholder": "Подтвердить пароль"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-btn', {
-    staticClass: "mt-1",
-    attrs: {
-      "variant": "outline-success",
-      "block": ""
-    },
-    on: {
-      "click": _vm.hideModalReg
-    }
-  }, [_vm._v("Продолжить")])], 1)], 1)], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-card', {
+  }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')], 1)], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-card', {
     staticClass: "text-center",
     attrs: {
       "bg-variant": "danger",
