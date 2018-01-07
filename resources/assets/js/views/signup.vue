@@ -21,7 +21,7 @@
 		</b-row>
 		<b-row class="mb-2 text-center">
 		<b-col>
-		<b-form-select v-model="selected" class="mr-sm-2">
+			<b-form-select v-model="selected" class="mr-sm-2">
 		      <option :value="null">Выберите пол</option>
 		      <option value="a">Мужской</option>
 		      <option value="b">Женский</option>
