@@ -1,6 +1,6 @@
 ﻿<template>
 <div>
-    <b-container>
+    <b-container class="text-center" style="max-width: 400px;">	
 		<b-row class="text-center">	
 			<b-col><h3>Вход в Love in travels</h3></b-col>
 		</b-row>	
