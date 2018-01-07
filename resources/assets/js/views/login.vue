@@ -24,8 +24,7 @@
 		<b-col>					
 			<b-button @click="showModalAuth">Войти</b-button>
 		</b-col>
-		</b-row>
-	
+		</b-row>	
     </b-container>
     </b-modal>
 </div>
@@ -37,11 +36,8 @@ export default {
 			}
 	},
   methods: {
-    showModalAuth () {
-      //this.$refs.ModalAuth.show()
+    showModalAuth () {      
     }
   }
 }
 </script>
-
-<!-- modal-methods-1.vue -->
