@@ -10,22 +10,22 @@
     <b-container id="index_content">
     <b-row class="text-center">
 	<b-col cols="12">
-		<h4>Любишь путешествия?</h4>
-		<b-img src="public/images/travels.jpg" fluid alt="Responsive image" />
+			<h4>Любишь путешествия?</h4>
+			<b-img src="public/images/travels.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
-		<h4>Хочешь познакомиться с новым интересным тебе человеком?</h4>
-		<b-img src="public/images/date2.jpg" fluid alt="Responsive image" />		
+			<h4>Хочешь познакомиться с новым интересным тебе человеком?</h4>
+			<b-img src="public/images/date2.jpg" fluid alt="Responsive image" />		
 		<br>
 		<br>
-		<h4>Мечтаешь сходить на свидание находясь в путешествии?</h4>		
-		<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />
+			<h4>Мечтаешь сходить на свидание находясь в путешествии?</h4>		
+			<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
 		<h3>Добро пожаловать в <div style="margin-top:5px;font-size:22px"><b>LOVE IN TRAVELS!</b></div></h3>
 		<br>    
-		<b-button variant="success" @click="showModalReg">{{ str_reg }}</b-button>
-		<b-button @click="showModalAuth">{{ str_auth }}</b-button>
+			<b-button variant="success" href="/signup">{{ str_reg }}</b-button>
+			<b-button href="/login">{{ str_auth }}</b-button>
 		<br>
 		<br>
 		Love in travels - люби и путешествуй!

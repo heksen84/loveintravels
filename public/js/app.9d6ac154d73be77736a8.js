@@ -18700,6 +18700,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -18722,8 +18741,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue__ = __webpack_require__(43);
-//
-//
 //
 //
 //
@@ -30889,15 +30906,33 @@ module.exports = Component.exports
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('b-container', [_c('b-row', {
     staticClass: "text-center"
-  }, [_c('b-col', {
+  }, [_c('b-col', [_c('h3', [_vm._v("Вход в Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-1 text-center"
+  }, [_c('b-col', [_c('b-form-input', {
+    staticClass: "mr-sm-2",
     attrs: {
-      "cols": "12"
+      "type": "email",
+      "placeholder": "Email"
     }
-  }, [_c('h1', [_vm._v("Вход")])]), _vm._v(" "), _c('b-col', {
+  })], 1)], 1), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-1 text-center"
+  }, [_c('b-col', [_c('b-form-input', {
+    staticClass: "mr-sm-2",
     attrs: {
-      "cols": "12"
+      "type": "text",
+      "placeholder": "Имя"
     }
-  }, [_c('b-button', {
+  })], 1)], 1), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-1 text-center"
+  }, [_c('b-col', [_c('b-form-input', {
+    staticClass: "mr-sm-2",
+    attrs: {
+      "type": "text",
+      "placeholder": "Дата рождения"
+    }
+  })], 1)], 1), _vm._v(" "), _c('b-row', {
+    staticClass: "mb-1 text-center"
+  }, [_c('b-col', [_c('b-button', {
     on: {
       "click": _vm.showModalAuth
     }
@@ -30965,14 +31000,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b', [_vm._v("LOVE IN TRAVELS!")])])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-button', {
     attrs: {
-      "variant": "success"
-    },
-    on: {
-      "click": _vm.showModalReg
+      "variant": "success",
+      "href": "/signup"
     }
   }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('b-button', {
-    on: {
-      "click": _vm.showModalAuth
+    attrs: {
+      "href": "/login"
     }
   }, [_vm._v(_vm._s(_vm.str_auth))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v("\r\n\t\tLove in travels - люби и путешествуй!\r\n\t\t")], 1)], 1)], 1), _vm._v(" "), _c('b-modal', {
     ref: "ModalReg",
@@ -31194,19 +31227,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-button', {
     staticClass: "my-1 mr-sm-1",
     attrs: {
-      "size": "sm"
-    },
-    on: {
-      "click": _vm.showModalAuth
+      "size": "sm",
+      "href": "/login"
     }
   }, [_vm._v("Вход")]), _vm._v(" "), _c('b-button', {
     staticClass: "my-1 mr-sm-1",
     attrs: {
       "size": "sm",
-      "variant": "success"
-    },
-    on: {
-      "click": _vm.showModalReg
+      "variant": "success",
+      "href": "/signup"
     }
   }, [_vm._v("Регистрация")])], 1)], 1)], 1)], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
