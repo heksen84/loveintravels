@@ -31191,21 +31191,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "cols": "12",
       "md": "auto"
     }
-  }, [_c('b-form-input', {
-    staticClass: "my-1 mr-sm-1",
-    attrs: {
-      "size": "sm",
-      "type": "email",
-      "placeholder": "Email"
-    }
-  }), _vm._v(" "), _c('b-form-input', {
-    staticClass: "my-1 mr-sm-1",
-    attrs: {
-      "size": "sm",
-      "type": "password",
-      "placeholder": "Пароль"
-    }
-  }), _vm._v(" "), _c('b-button', {
+  }, [_c('b-button', {
     staticClass: "my-1 mr-sm-1",
     attrs: {
       "size": "sm"
