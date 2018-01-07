@@ -6,24 +6,18 @@
 	</b-row>	
 		<b-row class="mb-1 text-center">
 			<b-col>		
-			<b-form-input class="mr-sm-2" type="email" placeholder="Email"/>				
+				<b-form-input class="mr-sm-2" type="email" placeholder="Email"/>				
 			</b-col>
 		</b-row>
 		<b-row class="mb-1 text-center">
 			<b-col>
-			<b-form-input class="mr-sm-2" type="text" placeholder="Имя"/>		
+				<b-form-input class="mr-sm-2" type="password" placeholder="Пароль"/>
 			</b-col>
 		</b-row>
 		<b-row class="mb-1 text-center">
-			<b-col>
-			<b-form-input class="mr-sm-2" type="text" placeholder="Дата рождения"/>		
+			<b-col>				
+				<b-button @click="">Войти</b-button>
 			</b-col>
-		</b-row>
-		
-		<b-row class="mb-1 text-center">
-		<b-col>					
-			<b-button @click="showModalAuth">Войти</b-button>
-		</b-col>
 		</b-row>	
     </b-container>
     </b-modal>

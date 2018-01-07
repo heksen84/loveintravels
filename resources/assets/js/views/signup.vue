@@ -18,8 +18,7 @@
 			<b-col>
 			<b-form-input class="mr-sm-2" type="text" placeholder="Дата рождения"/>		
 			</b-col>
-		</b-row>
-		
+		</b-row>		
 		<b-row class="mb-1 text-center">
 		<b-col>					
 			<b-button @click="">Регистрация</b-button>

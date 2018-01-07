@@ -18712,12 +18712,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -18806,7 +18800,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -31002,22 +30995,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-col', [_c('b-form-input', {
     staticClass: "mr-sm-2",
     attrs: {
-      "type": "text",
-      "placeholder": "Имя"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "type": "text",
-      "placeholder": "Дата рождения"
+      "type": "password",
+      "placeholder": "Пароль"
     }
   })], 1)], 1), _vm._v(" "), _c('b-row', {
     staticClass: "mb-1 text-center"
   }, [_c('b-col', [_c('b-button', {
     on: {
-      "click": _vm.showModalAuth
+      "click": function($event) {}
     }
   }, [_vm._v("Войти")])], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
