@@ -18721,35 +18721,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -31082,7 +31053,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.password"
     }
-  })], 1)], 1) : _vm._e()], 1)], 1)
+  })], 1), _vm._v(" "), _c('b-form-group', {
+    staticClass: "text-center"
+  }, [_c('b-button', {
+    attrs: {
+      "variant": "success"
+    },
+    on: {
+      "click": function($event) {}
+    }
+  }, [_vm._v("Войти")])], 1)], 1) : _vm._e()], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
