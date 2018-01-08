@@ -5,7 +5,7 @@
 <b-form v-if="show">
 
 	<b-form-group class="text-center">
-		<h1>Восстановить пароль</h1>
+		<h1>Сброс пароля</h1>
     </b-form-group>
 	
     <b-form-group id="emailGroup"

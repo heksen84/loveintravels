@@ -31383,7 +31383,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
     staticClass: "text-center"
-  }, [_c('h1', [_vm._v("Восстановить пароль")])]), _vm._v(" "), _c('b-form-group', {
+  }, [_c('h1', [_vm._v("Сброс пароля")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
       "label": "Электронная почта",
