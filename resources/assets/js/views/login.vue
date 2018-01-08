@@ -1,5 +1,5 @@
 ﻿<template>
-<div>
+<!--<div>
     <b-container class="text-center" style="max-width: 400px;">	
 		<b-row class="text-center">	
 			<b-col><h2>Вход в Love in travels</h2></b-col>
@@ -30,17 +30,36 @@
 	
     </b-container>
     </b-modal>
+</div>-->
+
+<div>
+<b-container style="max-width: 400px;">	
+<b-form v-if="show">
+    <b-form-group id="exampleInputGroup1"
+                  label="Email address:"
+                  label-for="exampleInput1">
+      <b-form-input id="exampleInput1"
+                  type="email"
+                  v-model="form.email"
+                  required
+                  placeholder="Введи email">
+      </b-form-input>
+    </b-form-group>
+</b-form>
+</b-container>
 </div>
 </template>
 <script>
 export default {
 	data () {	
-    return 	{										
-			}
+    return 	{
+				form: {
+					email: ''					
+				},
+				show: true
+			}			
 	},
-  methods: {
-    showModalAuth () {      
-    }
+  methods: {   
   }
 }
 </script>

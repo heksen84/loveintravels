@@ -18715,15 +18715,35 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {};
-  },
+	data: function data() {
+		return {
+			form: {
+				email: ''
+			},
+			show: true
+		};
+	},
 
-  methods: {
-    showModalAuth: function showModalAuth() {}
-  }
+	methods: {}
 });
 
 /***/ }),
@@ -30998,49 +31018,30 @@ module.exports = Component.exports
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('b-container', {
-    staticClass: "text-center",
     staticStyle: {
       "max-width": "400px"
     }
-  }, [_c('b-row', {
-    staticClass: "text-center"
-  }, [_c('b-col', [_c('h2', [_vm._v("Вход в Love in travels")])])], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
+  }, [(_vm.show) ? _c('b-form', [_c('b-form-group', {
     attrs: {
+      "id": "exampleInputGroup1",
+      "label": "Email address:",
+      "label-for": "exampleInput1"
+    }
+  }, [_c('b-form-input', {
+    attrs: {
+      "id": "exampleInput1",
       "type": "email",
-      "placeholder": "Email"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    attrs: {
-      "type": "password",
-      "placeholder": "Пароль"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-form-checkbox', {
-    attrs: {
-      "id": "checkbox1",
-      "value": "accepted",
-      "unchecked-value": "not_accepted"
+      "required": "",
+      "placeholder": "Введи email"
     },
     model: {
-      value: (_vm.status),
+      value: (_vm.form.email),
       callback: function($$v) {
-        _vm.status = $$v
+        _vm.$set(_vm.form, "email", $$v)
       },
-      expression: "status"
+      expression: "form.email"
     }
-  }, [_vm._v("\r\n\t\tЗапомнить меня\r\n\t\t")]), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-1 text-center"
-  }, [_c('b-col', [_c('b-button', {
-    attrs: {
-      "variant": "success"
-    },
-    on: {
-      "click": function($event) {}
-    }
-  }, [_vm._v("Войти")])], 1)], 1)], 1)], 1)
+  })], 1)], 1) : _vm._e()], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
