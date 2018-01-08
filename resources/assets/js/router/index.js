@@ -5,6 +5,7 @@ import NotFound from '../views/notfound.vue'
 import Trips from '../views/trips.vue'
 import Login from '../views/login.vue'
 import Signup from '../views/signup.vue'
+import Forgot from '../views/forgot.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,7 @@ const router = new VueRouter({
 		{ path: '/not-found', component: NotFound },
 		{ path: '/login', component: Login },
 		{ path: '/signup', component: Signup },
+		{ path: '/forgot', component: Forgot },
 		{ path: '/trips', component: Trips },
 		{ path: '*', component: NotFound }
 	]
