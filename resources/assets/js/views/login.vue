@@ -1,6 +1,6 @@
 ﻿<template>
 <div>
-<b-container style="max-width: 400px;">	
+<b-container style="max-width: 350px;">	
 <br>
 <b-form v-if="show">
 
@@ -9,9 +9,9 @@
     </b-form-group>
 	
     <b-form-group id="emailGroup"
-                  label="Email address:"
-                  label-for="exampleInput1">
-      <b-form-input id="exampleInput1"
+                  label="Email адрес:"
+                  label-for="emailInput">
+      <b-form-input id="emailInput"
                   type="email"
                   v-model="form.email"
                   required
@@ -20,9 +20,9 @@
     </b-form-group>
 	
 	<b-form-group id="passwordGroup"
-                  label="Password:"
-                  label-for="password">
-      <b-form-input id="password"
+                  label="Пароль:"
+                  label-for="passwordInput">
+      <b-form-input id="passwordInput"
                   type="password"
                   v-model="form.password"
                   required

@@ -31009,19 +31009,19 @@ module.exports = Component.exports
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('b-container', {
     staticStyle: {
-      "max-width": "400px"
+      "max-width": "350px"
     }
   }, [_c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
     staticClass: "text-center"
   }, [_c('h1', [_vm._v("Вход в "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
-      "label": "Email address:",
-      "label-for": "exampleInput1"
+      "label": "Email адрес:",
+      "label-for": "emailInput"
     }
   }, [_c('b-form-input', {
     attrs: {
-      "id": "exampleInput1",
+      "id": "emailInput",
       "type": "email",
       "required": "",
       "placeholder": "Введи email"
@@ -31036,12 +31036,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "passwordGroup",
-      "label": "Password:",
-      "label-for": "password"
+      "label": "Пароль:",
+      "label-for": "passwordInput"
     }
   }, [_c('b-form-input', {
     attrs: {
-      "id": "password",
+      "id": "passwordInput",
       "type": "password",
       "required": "",
       "placeholder": "Введи пароль"
