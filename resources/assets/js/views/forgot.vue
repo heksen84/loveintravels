@@ -20,7 +20,7 @@
     </b-form-group>	
 	
 	<b-form-group class="text-center">
-		<b-button variant="success" @click="">Воccтановить</b-button>
+		<b-button variant="success" @click="">Отправить</b-button>
     </b-form-group>	
 	
 </b-form>

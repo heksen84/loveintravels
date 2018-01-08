@@ -31412,7 +31412,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": function($event) {}
     }
-  }, [_vm._v("Воccтановить")])], 1)], 1) : _vm._e()], 1)], 1)
+  }, [_vm._v("Отправить")])], 1)], 1) : _vm._e()], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
