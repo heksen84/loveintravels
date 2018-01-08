@@ -18732,12 +18732,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
 		return {
 			form: {
-				email: ''
+				email: '',
+				password: ''
 			},
 			show: true
 		};
@@ -31021,9 +31040,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "max-width": "400px"
     }
-  }, [(_vm.show) ? _c('b-form', [_c('b-form-group', {
+  }, [_c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
+    staticClass: "text-center"
+  }, [_c('h1', [_vm._v("Вход в "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
-      "id": "exampleInputGroup1",
+      "id": "emailGroup",
       "label": "Email address:",
       "label-for": "exampleInput1"
     }
@@ -31040,6 +31061,26 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.$set(_vm.form, "email", $$v)
       },
       expression: "form.email"
+    }
+  })], 1), _vm._v(" "), _c('b-form-group', {
+    attrs: {
+      "id": "passwordGroup",
+      "label": "Password:",
+      "label-for": "password"
+    }
+  }, [_c('b-form-input', {
+    attrs: {
+      "id": "password",
+      "type": "password",
+      "required": "",
+      "placeholder": "Введи пароль"
+    },
+    model: {
+      value: (_vm.form.password),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "password", $$v)
+      },
+      expression: "form.password"
     }
   })], 1)], 1) : _vm._e()], 1)], 1)
 },staticRenderFns: []}
