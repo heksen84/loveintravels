@@ -9,7 +9,7 @@
     </b-form-group>
 	
     <b-form-group id="emailGroup"
-                  label="Email адрес:"
+                  label="Электронная почта"
                   label-for="emailInput">
       <b-form-input id="emailInput"
                   type="email"
@@ -20,7 +20,7 @@
     </b-form-group>
 	
 	<b-form-group id="passwordGroup"
-                  label="Пароль:"
+                  label="Пароль"
                   label-for="passwordInput">
       <b-form-input id="passwordInput"
                   type="password"
@@ -31,8 +31,12 @@
     </b-form-group>
 	
 	<b-form-group class="text-center">
+		<h5>Забыли пароль? <b-link href="/forgot">Сбросить</b-link></h5>
+	</b-form-group>
+	
+	<b-form-group class="text-center">
 		<b-button variant="success" @click="">Войти</b-button>
-    </b-form-group>
+    </b-form-group>	
 	
 </b-form>
 </b-container>

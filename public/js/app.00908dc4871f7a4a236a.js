@@ -18721,6 +18721,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -31016,7 +31020,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('h1', [_vm._v("Вход в "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
-      "label": "Email адрес:",
+      "label": "Электронная почта",
       "label-for": "emailInput"
     }
   }, [_c('b-form-input', {
@@ -31036,7 +31040,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "passwordGroup",
-      "label": "Пароль:",
+      "label": "Пароль",
       "label-for": "passwordInput"
     }
   }, [_c('b-form-input', {
@@ -31054,6 +31058,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "form.password"
     }
   })], 1), _vm._v(" "), _c('b-form-group', {
+    staticClass: "text-center"
+  }, [_c('h5', [_vm._v("Забыли пароль? "), _c('b-link', {
+    attrs: {
+      "href": "/forgot"
+    }
+  }, [_vm._v("Сбросить")])], 1)]), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {
