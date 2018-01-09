@@ -47,8 +47,8 @@
                   label-for="sexInput">
 	<b-form-select v-model="selected" class="mb-3">
       <option :value="null">Please select an option</option>
-      <option value="a">Option A</option>
-      <option value="b" disabled>Option B (disabled)</option>     
+      <option value="a">Муж.</option>
+      <option value="b">Жен.</option>     
     </b-form-select>
     </b-form-group>	
 	

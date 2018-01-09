@@ -31409,12 +31409,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "value": "a"
     }
-  }, [_vm._v("Option A")]), _vm._v(" "), _c('option', {
+  }, [_vm._v("Муж.")]), _vm._v(" "), _c('option', {
     attrs: {
-      "value": "b",
-      "disabled": ""
+      "value": "b"
     }
-  }, [_vm._v("Option B (disabled)")])])], 1), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v("Жен.")])])], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {
