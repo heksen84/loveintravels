@@ -18919,6 +18919,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -31380,7 +31384,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": function($event) {}
     }
-  }, [_vm._v("Создать новый аккаунт")])], 1)], 1) : _vm._e()], 1)], 1)
+  }, [_vm._v("Создать новый аккаунт")])], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
+    staticClass: "text-center"
+  }, [_c('h5', [_vm._v("У вас уже есть аккаунт? "), _c('b-link', {
+    attrs: {
+      "href": "/login"
+    }
+  }, [_vm._v("Войти")])], 1)])], 1) : _vm._e()], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

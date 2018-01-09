@@ -45,6 +45,10 @@
 	<b-form-group class="text-center">
 		<b-button variant="success" @click="">Создать новый аккаунт</b-button>
     </b-form-group>	
+	<br>
+	<b-form-group class="text-center">
+		<h5>У вас уже есть аккаунт? <b-link href="/login">Войти</b-link></h5>
+	</b-form-group>
 	
 </b-form>
 </b-container>
