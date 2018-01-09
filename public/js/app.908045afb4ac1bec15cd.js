@@ -18780,8 +18780,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	data: function data() {
 		return {
 			form: {
-				email: '',
-				password: ''
+				email: "",
+				password: ""
 			},
 			show: true
 		};
@@ -18867,6 +18867,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -31338,6 +31350,26 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.$set(_vm.form, "email", $$v)
       },
       expression: "form.email"
+    }
+  })], 1), _vm._v(" "), _c('b-form-group', {
+    attrs: {
+      "id": "passwordGroup",
+      "label": "Пароль",
+      "label-for": "passwordInput"
+    }
+  }, [_c('b-form-input', {
+    attrs: {
+      "id": "passwordInput",
+      "type": "password",
+      "required": "",
+      "placeholder": "Введи пароль"
+    },
+    model: {
+      value: (_vm.form.password),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "password", $$v)
+      },
+      expression: "form.password"
     }
   })], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"

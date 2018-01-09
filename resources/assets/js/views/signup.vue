@@ -30,6 +30,18 @@
       </b-form-input>	  
     </b-form-group>	
 	
+	
+	<b-form-group id="passwordGroup"
+                  label="Пароль"
+                  label-for="passwordInput">
+      <b-form-input id="passwordInput"
+                  type="password"
+                  v-model="form.password"
+                  required
+                  placeholder="Введи пароль">
+      </b-form-input>	  
+    </b-form-group>	
+	
 	<b-form-group class="text-center">
 		<b-button variant="success" @click="">Создать новый аккаунт</b-button>
     </b-form-group>	
