@@ -13,7 +13,7 @@
                   label-for="nameInput">
       <b-form-input id="nameInput"
                   type="text"
-                  v-model="form.email"
+                  v-model="form.name"
                   required
                   placeholder="Например, Татьяна">
       </b-form-input>	  
@@ -24,7 +24,7 @@
                   label-for="emailInput">
       <b-form-input id="emailInput"
                   type="email"
-                  v-model="form.password"
+                  v-model="form.email"
                   required
                   placeholder="Введи email">
       </b-form-input>	  
@@ -43,8 +43,9 @@ export default {
 	data () {	
     return 	{
 				form: {
-					email: '',
-					password: ''					
+					name: "",
+					email: "",
+					password: ""					
 				},
 				show: true
 			}			

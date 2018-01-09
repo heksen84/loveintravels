@@ -18912,8 +18912,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	data: function data() {
 		return {
 			form: {
-				email: '',
-				password: ''
+				name: "",
+				email: "",
+				password: ""
 			},
 			show: true
 		};
@@ -31312,11 +31313,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "Например, Татьяна"
     },
     model: {
-      value: (_vm.form.email),
+      value: (_vm.form.name),
       callback: function($$v) {
-        _vm.$set(_vm.form, "email", $$v)
+        _vm.$set(_vm.form, "name", $$v)
       },
-      expression: "form.email"
+      expression: "form.name"
     }
   })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
@@ -31332,11 +31333,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "Введи email"
     },
     model: {
-      value: (_vm.form.password),
+      value: (_vm.form.email),
       callback: function($$v) {
-        _vm.$set(_vm.form, "password", $$v)
+        _vm.$set(_vm.form, "email", $$v)
       },
-      expression: "form.password"
+      expression: "form.email"
     }
   })], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
