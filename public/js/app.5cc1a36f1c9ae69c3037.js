@@ -18907,21 +18907,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {};
-  },
+	data: function data() {
+		return {
+			form: {
+				email: '',
+				password: ''
+			},
+			show: true
+		};
+	},
 
-  methods: {
-    showModalAuth: function showModalAuth() {
-      //this.$refs.ModalAuth.show()
-    }
-  }
+	methods: {}
 });
 
 /***/ }),
@@ -31295,74 +31293,61 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('b-container', {
-    staticClass: "text-center",
     staticStyle: {
-      "max-width": "400px"
+      "max-width": "350px"
     }
-  }, [_c('b-row', {
-    staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('h2', [_vm._v("Создать аккаунт")])])], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
+  }, [_c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
+    staticClass: "text-center"
+  }, [_c('h1', [_vm._v("Создать аккаунт "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
-      "type": "email",
-      "placeholder": "Email"
+      "id": "nameGroup",
+      "label": "Имя",
+      "label-for": "nameInput"
     }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
+  }, [_c('b-form-input', {
     attrs: {
+      "id": "nameInput",
       "type": "text",
-      "placeholder": "Имя"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    attrs: {
-      "type": "text",
-      "placeholder": "Дата рождения"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('b-form-select', {
-    staticClass: "mr-sm-2",
+      "required": "",
+      "placeholder": "Например, Татьяна"
+    },
     model: {
-      value: (_vm.selected),
+      value: (_vm.form.email),
       callback: function($$v) {
-        _vm.selected = $$v
+        _vm.$set(_vm.form, "email", $$v)
       },
-      expression: "selected"
+      expression: "form.email"
     }
-  }, [_c('option', {
-    domProps: {
-      "value": null
-    }
-  }, [_vm._v("Выберите пол")]), _vm._v(" "), _c('option', {
+  })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
-      "value": "a"
+      "id": "emailGroup",
+      "label": "Электронная почта",
+      "label-for": "emailInput"
     }
-  }, [_vm._v("Мужской")]), _vm._v(" "), _c('option', {
+  }, [_c('b-form-input', {
     attrs: {
-      "value": "b"
+      "id": "emailInput",
+      "type": "email",
+      "required": "",
+      "placeholder": "Введи email"
+    },
+    model: {
+      value: (_vm.form.password),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "password", $$v)
+      },
+      expression: "form.password"
     }
-  }, [_vm._v("Женский")])])], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('b-form-input', {
-    staticClass: "mr-sm-2",
-    attrs: {
-      "type": "password",
-      "placeholder": "Пароль"
-    }
-  })], 1)], 1), _vm._v(" "), _c('b-row', {
-    staticClass: "mb-2 text-center"
-  }, [_c('b-col', [_c('b-button', {
+  })], 1), _vm._v(" "), _c('b-form-group', {
+    staticClass: "text-center"
+  }, [_c('b-button', {
     attrs: {
       "variant": "success"
     },
     on: {
       "click": function($event) {}
     }
-  }, [_vm._v("Регистрация")])], 1)], 1)], 1)], 1)
+  }, [_vm._v("Создать новый аккаунт")])], 1)], 1) : _vm._e()], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

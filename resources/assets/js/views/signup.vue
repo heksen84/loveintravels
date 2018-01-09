@@ -1,57 +1,55 @@
 ﻿<template>
 <div>
-    <b-container class="text-center" style="max-width: 400px;">
-		<b-row class="mb-2 text-center">	
-			<b-col><h2>Создать аккаунт</h2></b-col>
-		</b-row>	
-		<b-row class="mb-2 text-center">
-			<b-col>		
-			<b-form-input type="email" placeholder="Email"/>				
-			</b-col>
-		</b-row>
-		<b-row class="mb-2 text-center">
-			<b-col>
-			<b-form-input type="text" placeholder="Имя"/>		
-			</b-col>
-		</b-row>
-		<b-row class="mb-2 text-center">
-			<b-col>
-			<b-form-input type="text" placeholder="Дата рождения"/>		
-			</b-col>
-		</b-row>
-		<b-row class="mb-2 text-center">
-		<b-col>
-			<b-form-select v-model="selected" class="mr-sm-2">
-		      <option :value="null">Выберите пол</option>
-		      <option value="a">Мужской</option>
-		      <option value="b">Женский</option>
-		    </b-form-select>
-		</b-col>
-		</b-row>
-		<b-row class="mb-2 text-center">
-			<b-col>
-			<b-form-input class="mr-sm-2" type="password" placeholder="Пароль"/>		
-			</b-col>
-		</b-row>		
-		<b-row class="mb-2 text-center">
-		<b-col>					
-			<b-button variant="success" @click="">Регистрация</b-button>
-		</b-col>
-		</b-row>	
-    </b-container>
-    </b-modal>
+<b-container style="max-width: 350px;">	
+<br>
+<b-form v-if="show">
+
+	<b-form-group class="text-center">
+		<h1>Создать аккаунт <br>Love in travels</h1>
+    </b-form-group>
+	
+    <b-form-group id="nameGroup"
+                  label="Имя"
+                  label-for="nameInput">
+      <b-form-input id="nameInput"
+                  type="text"
+                  v-model="form.email"
+                  required
+                  placeholder="Например, Татьяна">
+      </b-form-input>	  
+    </b-form-group>
+	
+	<b-form-group id="emailGroup"
+                  label="Электронная почта"
+                  label-for="emailInput">
+      <b-form-input id="emailInput"
+                  type="email"
+                  v-model="form.password"
+                  required
+                  placeholder="Введи email">
+      </b-form-input>	  
+    </b-form-group>	
+	
+	<b-form-group class="text-center">
+		<b-button variant="success" @click="">Создать новый аккаунт</b-button>
+    </b-form-group>	
+	
+</b-form>
+</b-container>
 </div>
 </template>
-<script>
+<script type="text/javascript">
 export default {
 	data () {	
-    return 	{										
-			}
+    return 	{
+				form: {
+					email: '',
+					password: ''					
+				},
+				show: true
+			}			
 	},
-  methods: {
-    showModalAuth () {
-      //this.$refs.ModalAuth.show()
-    }
+  methods: {   
   }
 }
 </script>
