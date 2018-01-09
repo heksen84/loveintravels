@@ -18923,6 +18923,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -18932,7 +18942,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				email: "",
 				password: ""
 			},
-			show: true
+			show: true,
+			selected: null
 		};
 	},
 
@@ -31376,6 +31387,34 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "form.password"
     }
   })], 1), _vm._v(" "), _c('b-form-group', {
+    attrs: {
+      "id": "sexGroup",
+      "label": "Выберите свой пол",
+      "label-for": "sexInput"
+    }
+  }, [_c('b-form-select', {
+    staticClass: "mb-3",
+    model: {
+      value: (_vm.selected),
+      callback: function($$v) {
+        _vm.selected = $$v
+      },
+      expression: "selected"
+    }
+  }, [_c('option', {
+    domProps: {
+      "value": null
+    }
+  }, [_vm._v("Please select an option")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "a"
+    }
+  }, [_vm._v("Option A")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "b",
+      "disabled": ""
+    }
+  }, [_vm._v("Option B (disabled)")])])], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {

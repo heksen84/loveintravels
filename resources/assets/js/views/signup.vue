@@ -42,6 +42,16 @@
       </b-form-input>	  
     </b-form-group>	
 	
+	<b-form-group id="sexGroup"
+                  label="Выберите свой пол"
+                  label-for="sexInput">
+	<b-form-select v-model="selected" class="mb-3">
+      <option :value="null">Please select an option</option>
+      <option value="a">Option A</option>
+      <option value="b" disabled>Option B (disabled)</option>     
+    </b-form-select>
+    </b-form-group>	
+	
 	<b-form-group class="text-center">
 		<b-button variant="success" @click="">Создать новый аккаунт</b-button>
     </b-form-group>	
@@ -63,7 +73,8 @@ export default {
 					email: "",
 					password: ""					
 				},
-				show: true
+				show: true,
+				selected: null
 			}			
 	},
   methods: {   
