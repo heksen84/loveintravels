@@ -18932,7 +18932,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -18943,7 +18942,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				password: ""
 			},
 			show: true,
-			selected: null
+			selected: "man"
 		};
 	},
 
@@ -31389,7 +31388,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "sexGroup",
-      "label": "Выберите свой пол",
+      "label": "Ваш пол",
       "label-for": "sexInput"
     }
   }, [_c('b-form-select', {
@@ -31402,16 +31401,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "selected"
     }
   }, [_c('option', {
-    domProps: {
-      "value": null
-    }
-  }, [_vm._v("Please select an option")]), _vm._v(" "), _c('option', {
     attrs: {
-      "value": "a"
+      "value": "man"
     }
   }, [_vm._v("Муж.")]), _vm._v(" "), _c('option', {
     attrs: {
-      "value": "b"
+      "value": "woman"
     }
   }, [_vm._v("Жен.")])])], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"

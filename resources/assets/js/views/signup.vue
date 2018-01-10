@@ -43,12 +43,11 @@
     </b-form-group>	
 	
 	<b-form-group id="sexGroup"
-                  label="Выберите свой пол"
+                  label="Ваш пол"
                   label-for="sexInput">
-	<b-form-select v-model="selected" class="mb-3">
-      <option :value="null">Please select an option</option>
-      <option value="a">Муж.</option>
-      <option value="b">Жен.</option>     
+	<b-form-select v-model="selected" class="mb-3">      
+      <option value="man">Муж.</option>
+      <option value="woman">Жен.</option>     
     </b-form-select>
     </b-form-group>	
 	
@@ -74,7 +73,7 @@ export default {
 					password: ""					
 				},
 				show: true,
-				selected: null
+				selected: "man"
 			}			
 	},
   methods: {   
