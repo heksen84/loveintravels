@@ -18898,6 +18898,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /***/ }),
 /* 65 */
@@ -18906,9 +18909,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__router__ = __webpack_require__(22);
-//
-//
-//
 //
 //
 //
@@ -31608,7 +31608,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "align-v": "center"
     }
-  }, [_c('b-col', [_c('h4', [_vm._v("Сорян, но страница не найдена!")])])], 1)], 1)], 1)
+  }, [_c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-col', [_c('h4', [_vm._v("Сорян, но страница не найдена!")])])], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
