@@ -20541,6 +20541,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			console.log(this.form.name);
 			//this.answer = 'Ожидаю, когда вы закончите печатать...'
 			//this.getAnswer()
+		},
+		'form.age': function formAge(val) {
+			if (function (val) {
+				return 80;
+			}) this.form.age = 80;
+			if (val <= 18) this.form.age = 18;
+			console.log(this.form.age);
 		}
 	}
 });
