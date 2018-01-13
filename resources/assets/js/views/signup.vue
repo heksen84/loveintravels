@@ -96,8 +96,20 @@ export default {
 	},
   methods: {
 		CreateAccount () {
+			this.axios.get('/url').then((response) => {
+ 				console.log(response.data)
+			})
+
 			this.$router.push('/welcome');
 		}
-  }
+  },
+	watch: {
+	// эта функция запускается при любом изменении вопроса
+	'form.name': function () {
+		console.log(this.form.name);
+		//this.answer = 'Ожидаю, когда вы закончите печатать...'
+		//this.getAnswer()
+	}
+}
 }
 </script>
