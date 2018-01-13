@@ -37,7 +37,7 @@ export default {
 				show: true
 			}
 	},
-  methods: {
+  methods: {		
   }
 }
 </script>

@@ -3,7 +3,7 @@
 <b-container style="max-width: 350px;">
 <br>
 <b-form v-if="show">
-
+<form v-on:submit.prevent="CreateAccount">
 	<b-form-group class="text-center">
 		<h1>Создать аккаунт <br>Love in travels</h1>
     </b-form-group>
@@ -67,13 +67,13 @@
     </b-form-group>
 
 	<b-form-group class="text-center">
-		<b-button variant="success" @click="">Создать новый аккаунт</b-button>
+		<b-button variant="success" type="submit">Создать новый аккаунт</b-button>
     </b-form-group>
 	<br>
 	<b-form-group class="text-center">
 		<h5>У вас уже есть аккаунт? <b-link href="/login">Войти</b-link></h5>
 	</b-form-group>
-
+</form>
 </b-form>
 </b-container>
 </div>
@@ -94,6 +94,9 @@ export default {
 			}
 	},
   methods: {
+		CreateAccount () {
+			alert(this.form.name);
+		}
   }
 }
 </script>

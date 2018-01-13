@@ -3,7 +3,6 @@
 <b-container style="max-width: 350px;">
 <br>
 <br>
-<br>
 <b-form v-if="show">
 
 	<b-form-group class="text-center">

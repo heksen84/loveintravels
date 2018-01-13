@@ -18775,7 +18775,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -18964,7 +18963,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		};
 	},
 
-	methods: {}
+	methods: {
+		CreateAccount: function CreateAccount() {
+			alert(this.form.name);
+		}
+	}
 });
 
 /***/ }),
@@ -31145,7 +31148,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "max-width": "350px"
     }
-  }, [_c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
+  }, [_c('br'), _vm._v(" "), _c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
     staticClass: "text-center"
   }, [_c('h1', [_vm._v("Вход в "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
@@ -31341,7 +31344,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "max-width": "350px"
     }
-  }, [_c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
+  }, [_c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.CreateAccount($event)
+      }
+    }
+  }, [_c('b-form-group', {
     staticClass: "text-center"
   }, [_c('h1', [_vm._v("Создать аккаунт "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
@@ -31454,10 +31464,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {
-      "variant": "success"
-    },
-    on: {
-      "click": function($event) {}
+      "variant": "success",
+      "type": "submit"
     }
   }, [_vm._v("Создать новый аккаунт")])], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
@@ -31465,7 +31473,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "/login"
     }
-  }, [_vm._v("Войти")])], 1)])], 1) : _vm._e()], 1)], 1)
+  }, [_vm._v("Войти")])], 1)])], 1)]) : _vm._e()], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
