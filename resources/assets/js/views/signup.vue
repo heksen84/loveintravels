@@ -1,13 +1,13 @@
 ﻿<template>
 <div>
-<b-container style="max-width: 350px;">	
+<b-container style="max-width: 350px;">
 <br>
 <b-form v-if="show">
 
 	<b-form-group class="text-center">
 		<h1>Создать аккаунт <br>Love in travels</h1>
     </b-form-group>
-	
+
     <b-form-group id="nameGroup"
                   label="Имя"
                   label-for="nameInput">
@@ -16,9 +16,18 @@
                   v-model="form.name"
                   required
                   placeholder="Например, Татьяна">
-      </b-form-input>	  
+      </b-form-input>
     </b-form-group>
-	
+
+		<b-form-group id="sexGroup"
+	                  label="Ваш пол"
+	                  label-for="sexInput">
+		<b-form-select v-model="selected">
+	      	<option value="man">Мужской</option>
+	      	<option value="woman">Женский</option>
+	  </b-form-select>
+	  </b-form-group>
+
 	<b-form-group id="emailGroup"
                   label="Электронная почта"
                   label-for="emailInput">
@@ -27,10 +36,10 @@
                   v-model="form.email"
                   required
                   placeholder="Введи email">
-      </b-form-input>	  
-    </b-form-group>	
-	
-	
+      </b-form-input>
+    </b-form-group>
+
+
 	<b-form-group id="passwordGroup"
                   label="Пароль"
                   label-for="passwordInput">
@@ -39,44 +48,35 @@
                   v-model="form.password"
                   required
                   placeholder="Введи пароль">
-      </b-form-input>	  
-    </b-form-group>	
-	
-	<b-form-group id="sexGroup"
-                  label="Ваш пол"
-                  label-for="sexInput">
-	<b-form-select v-model="selected" class="mb-3">      
-      <option value="man">Муж.</option>
-      <option value="woman">Жен.</option>     
-    </b-form-select>
-    </b-form-group>	
-	
+      </b-form-input>
+    </b-form-group>
+
 	<b-form-group class="text-center">
 		<b-button variant="success" @click="">Создать новый аккаунт</b-button>
-    </b-form-group>	
+    </b-form-group>
 	<br>
 	<b-form-group class="text-center">
 		<h5>У вас уже есть аккаунт? <b-link href="/login">Войти</b-link></h5>
 	</b-form-group>
-	
+
 </b-form>
 </b-container>
 </div>
 </template>
 <script type="text/javascript">
 export default {
-	data () {	
+	data () {
     return 	{
 				form: {
 					name: "",
 					email: "",
-					password: ""					
+					password: ""
 				},
 				show: true,
 				selected: "man"
-			}			
+			}
 	},
-  methods: {   
+  methods: {
   }
 }
 </script>
