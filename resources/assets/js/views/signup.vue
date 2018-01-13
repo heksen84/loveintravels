@@ -28,7 +28,6 @@
 	  </b-form-select>
 	  </b-form-group>
 
-
 		<b-form-group id="userAgeGroup"
 	                  label="Ваш возраст"
 	                  label-for="userAgeInput"
@@ -42,7 +41,6 @@
 	      </b-form-input>
 	    </b-form-group>
 
-
 	<b-form-group id="emailGroup"
                   label="Электронная почта"
                   label-for="emailInput">
@@ -53,7 +51,6 @@
                   placeholder="Введи email">
       </b-form-input>
     </b-form-group>
-
 
 	<b-form-group id="passwordGroup"
                   label="Пароль"
@@ -79,7 +76,11 @@
 </div>
 </template>
 <script type="text/javascript">
+
+import router from './../router'
+
 export default {
+	components: { router },
 	data () {
     return 	{
 				form: {
@@ -95,7 +96,7 @@ export default {
 	},
   methods: {
 		CreateAccount () {
-			alert(this.form.name);
+			this.$router.push('/welcome');
 		}
   }
 }
