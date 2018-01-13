@@ -28,6 +28,21 @@
 	  </b-form-select>
 	  </b-form-group>
 
+
+		<b-form-group id="userAgeGroup"
+	                  label="Кол-во лет"
+	                  label-for="userAgeInput"
+										class="text-center">
+	      <b-form-input id="userAgeInput"
+	                  type="text"
+	                  v-model="form.age"
+	                  required
+										style="max-width: 80px; margin:auto"
+										class="text-center">
+	      </b-form-input>
+	    </b-form-group>
+
+
 	<b-form-group id="emailGroup"
                   label="Электронная почта"
                   label-for="emailInput">
@@ -68,9 +83,11 @@ export default {
 	data () {
     return 	{
 				form: {
-					name: "",
-					email: "",
-					password: ""
+					name:"",
+					sex:"",
+					age:"",
+					email:"",
+					password:""
 				},
 				show: true,
 				selected: "man"

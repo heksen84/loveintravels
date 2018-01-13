@@ -18931,12 +18931,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
 		return {
 			form: {
 				name: "",
+				sex: "",
+				age: "",
 				email: "",
 				password: ""
 			},
@@ -31367,6 +31384,31 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "value": "woman"
     }
   }, [_vm._v("Женский")])])], 1), _vm._v(" "), _c('b-form-group', {
+    staticClass: "text-center",
+    attrs: {
+      "id": "userAgeGroup",
+      "label": "Кол-во лет",
+      "label-for": "userAgeInput"
+    }
+  }, [_c('b-form-input', {
+    staticClass: "text-center",
+    staticStyle: {
+      "max-width": "80px",
+      "margin": "auto"
+    },
+    attrs: {
+      "id": "userAgeInput",
+      "type": "text",
+      "required": ""
+    },
+    model: {
+      value: (_vm.form.age),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "age", $$v)
+      },
+      expression: "form.age"
+    }
+  })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
       "label": "Электронная почта",
