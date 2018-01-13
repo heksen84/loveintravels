@@ -18774,6 +18774,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	data: function data() {
@@ -31143,7 +31145,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "max-width": "350px"
     }
-  }, [_c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
+  }, [_c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
     staticClass: "text-center"
   }, [_c('h1', [_vm._v("Вход в "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
