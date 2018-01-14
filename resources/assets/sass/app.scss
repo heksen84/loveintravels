@@ -11,10 +11,10 @@ $my_grey: rgb(80,80,80);
 .carefree-font{
 	font-family: $title-font;
 	font-size:40px;
-	line-height: 30px;	
+	line-height: 30px;
 }
 #title {
-	font-size:140px;	
+	font-size:140px;
 	font-family: $title-font;
 	line-height: 110px;
 }
@@ -26,4 +26,36 @@ $my_grey: rgb(80,80,80);
 
 #index_content h5 {
  color: $my_grey;
+}
+
+::-webkit-scrollbar
+{
+ width: 8px;
+ background: white;
+}
+::-webkit-scrollbar:horizontal
+{
+ height: 8px;
+ background: white;
+}
+::-webkit-scrollbar-thumb
+{
+ width: 8px;
+ background: white;
+ border: 1px solid black;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+ height: 8px;
+ background: white;
+ border: 1px solid black;
+}
+::-webkit-scrollbar-thumb:hover
+{
+ background: white;
+ border: 1px solid black;
+}
+::-webkit-scrollbar-thumb:active
+{
+ background: white;
 }
