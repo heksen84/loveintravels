@@ -13,7 +13,7 @@
 	    <b-button size="sm" class="my-1 mr-sm-1" variant="success" href="/signup">Регистрация</b-button>
 	</b-col>
   <b-col cols="12" md="auto" v-if="show_user_info">
-    <h5>{{ user_name }}</h5>
+    <h4>{{ user.name }}</h4>
 	</b-col>
 	</b-row>
 	</b-container>
@@ -30,7 +30,7 @@ export default {
   data () {
     return 	{
         user: {
-          name: ""
+          name: "user-name"
         },
 				show_auth_buttons: true,
         show_user_info: true

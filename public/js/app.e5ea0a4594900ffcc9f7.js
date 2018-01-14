@@ -20392,7 +20392,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       user: {
-        name: ""
+        name: "user-name"
       },
       show_auth_buttons: true,
       show_user_info: true
@@ -33135,7 +33135,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "cols": "12",
       "md": "auto"
     }
-  }, [_c('h5', [_vm._v(_vm._s(_vm.user_name))])]) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
+  }, [_c('h4', [_vm._v(_vm._s(_vm.user.name))])]) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
