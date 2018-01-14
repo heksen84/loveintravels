@@ -13,6 +13,9 @@
 	    <b-button size="sm" class="my-1 mr-sm-1" href="/login">Вход</b-button>
 	    <b-button size="sm" class="my-1 mr-sm-1" variant="success" href="/signup">Регистрация</b-button>
 	</b-col>
+  <b-col cols="12" md="auto" v-if="show_user_info">
+    <h5>{{ user.name }}</h5>
+	</b-col>
 	</b-row>
 	</b-container>
       </b-nav-form>
@@ -27,7 +30,11 @@ import BootstrapVue from 'bootstrap-vue'
 export default {
   data () {
     return 	{
-				show_auth_buttons: true
+        user: {
+          name: ""
+        },
+				show_auth_buttons: true,
+        show_user_info: false
 			}
 	}
 }

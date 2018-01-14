@@ -20380,15 +20380,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-		data: function data() {
-				return {
-						show_auth_buttons: true
-				};
-		}
+  data: function data() {
+    return {
+      user: {
+        name: ""
+      },
+      show_auth_buttons: true,
+      show_user_info: false
+    };
+  }
 });
 
 /***/ }),
@@ -33121,7 +33128,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "success",
       "href": "/signup"
     }
-  }, [_vm._v("Регистрация")])], 1) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
+  }, [_vm._v("Регистрация")])], 1) : _vm._e(), _vm._v(" "), (_vm.show_user_info) ? _c('b-col', {
+    attrs: {
+      "cols": "12",
+      "md": "auto"
+    }
+  }, [_c('h5', [_vm._v(_vm._s(_vm.user.name))])]) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
