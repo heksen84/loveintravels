@@ -61,7 +61,7 @@ export default {
 	},
   methods: {
 		Auth() {
-			cfg.name = "HELLO!";
+			cfg.name = "Привет, Илья!";
 			this.$router.push('/welcome');
 		}
   }

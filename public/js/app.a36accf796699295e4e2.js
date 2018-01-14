@@ -17046,7 +17046,7 @@ module.exports = function bind(fn, thisArg) {
 /***/ (function(module, exports) {
 
 module.exports = {
-  name: "привет Илья!",
+  name: "",
   fam: 2
 };
 
@@ -20388,7 +20388,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 	methods: {
 		Auth: function Auth() {
-			__WEBPACK_IMPORTED_MODULE_1__cfg_js___default.a.name = "HELLO!";
+			__WEBPACK_IMPORTED_MODULE_1__cfg_js___default.a.name = "Привет, Илья!";
 			this.$router.push('/welcome');
 		}
 	}
