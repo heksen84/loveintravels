@@ -36,7 +36,7 @@
 	</b-form-group>
 
 	<b-form-group class="text-center">
-		<b-button variant="success" @click="">Войти</b-button>
+		<b-button variant="success" @click="Auth">Войти</b-button>
     </b-form-group>
 
 </b-form>
@@ -44,7 +44,11 @@
 </div>
 </template>
 <script type="text/javascript">
+
+import router from './../router'
+
 export default {
+	components: { router },
 	data () {
     return 	{
 				form: {
@@ -55,6 +59,9 @@ export default {
 			}
 	},
   methods: {
+		Auth() {
+			this.$router.push('/welcome');
+		}
   }
 }
 </script>
