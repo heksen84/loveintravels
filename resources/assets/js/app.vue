@@ -5,7 +5,6 @@
 export default {
   data () {
     return 	{
-        super_name: "sdfsdfsdf"
 			}
 	}
 }

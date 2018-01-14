@@ -14,7 +14,6 @@ const app = new Vue({
 	el: '#root',
 	template: `<app></app>`,
 	components: { App }, router,
-	data: {
-		user_name: 'Hello Vue!'
+	data: {		
 	}
 })

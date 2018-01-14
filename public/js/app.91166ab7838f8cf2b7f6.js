@@ -18873,9 +18873,7 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 	el: '#root',
 	template: '<app></app>',
 	components: { App: __WEBPACK_IMPORTED_MODULE_2__app_vue___default.a }, router: __WEBPACK_IMPORTED_MODULE_3__router__["a" /* default */],
-	data: {
-		user_name: 'Hello Vue!'
-	}
+	data: {}
 });
 
 /***/ }),
@@ -20188,9 +20186,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
-    return {
-      super_name: "sdfsdfsdf"
-    };
+    return {};
   }
 });
 
