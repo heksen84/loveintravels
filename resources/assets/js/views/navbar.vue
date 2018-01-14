@@ -27,14 +27,13 @@
 
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
-import app from '..//app.vue'
+import cfg from '..//cfg.js'
 
 export default {
-  components: { app },
   data () {
     return 	{
         user: {
-          name: app.data.super_name
+          name: cfg.name
         },
 				show_auth_buttons: true,
         show_user_info: true
