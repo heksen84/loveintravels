@@ -47,13 +47,11 @@ $my_grey: rgb(80,80,80);
 ::-webkit-scrollbar-thumb:horizontal
 {
  height: 8px;
- background: white;
- border: 1px solid black;
+ background: white; 
 }
 ::-webkit-scrollbar-thumb:hover
 {
  background: white;
- border: 1px solid black;
 }
 ::-webkit-scrollbar-thumb:active
 {
