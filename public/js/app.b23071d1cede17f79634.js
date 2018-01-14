@@ -20383,25 +20383,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-	data: function data() {},
-	created: function created() {},
-
-	methods: {
-		showModalAuth: function showModalAuth() {
-			alert("auth1");
-		},
-		hideModalAuth: function hideModalAuth() {
-			alert("auth2");
-		},
-		showModalReg: function showModalReg() {
-			alert("auth3");
-		},
-		hideModalReg: function hideModalReg() {
-			alert("auth4");
-		}
-	}
-});
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 /* 89 */
