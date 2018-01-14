@@ -33268,7 +33268,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "cols": "12",
       "md": "auto"
     }
-  }, [_c('h4', [_vm._v(_vm._s(_vm.user.name))])]) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
+  }, [_c('h4', {
+    staticStyle: {
+      "color": "white"
+    }
+  }, [_vm._v(_vm._s(_vm.user.name))])]) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
