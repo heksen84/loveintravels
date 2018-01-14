@@ -4,7 +4,7 @@
 <br>
 <br>
 <b-form v-if="show">
-
+	<form v-on:submit.prevent="Auth">
 	<b-form-group class="text-center">
 		<h1>Вход в <br>Love in travels</h1>
     </b-form-group>
@@ -36,9 +36,9 @@
 	</b-form-group>
 
 	<b-form-group class="text-center">
-		<b-button variant="success" @click="Auth">Войти</b-button>
+		<b-button variant="success" type="submit">Войти</b-button>
     </b-form-group>
-
+</form>
 </b-form>
 </b-container>
 </div>
