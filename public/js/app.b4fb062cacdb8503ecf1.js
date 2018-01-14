@@ -20383,7 +20383,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+		data: function data() {
+				return {
+						show_auth_buttons: true
+				};
+		}
+});
 
 /***/ }),
 /* 89 */
@@ -33097,7 +33103,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "ml-auto"
   }, [_c('b-nav-form', [_c('b-container', [_c('b-row', {
     staticClass: "text-center"
-  }, [_c('b-col', {
+  }, [(_vm.show_auth_buttons) ? _c('b-col', {
     attrs: {
       "cols": "12",
       "md": "auto"
@@ -33115,7 +33121,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "success",
       "href": "/signup"
     }
-  }, [_vm._v("Регистрация")])], 1)], 1)], 1)], 1)], 1)], 1)], 1)], 1)
+  }, [_vm._v("Регистрация")])], 1) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

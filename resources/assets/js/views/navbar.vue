@@ -9,7 +9,7 @@
       <b-nav-form>
 	<b-container>
 	<b-row class="text-center">
-	<b-col cols="12" md="auto">
+	<b-col cols="12" md="auto" v-if="show_auth_buttons">
 	    <b-button size="sm" class="my-1 mr-sm-1" href="/login">Вход</b-button>
 	    <b-button size="sm" class="my-1 mr-sm-1" variant="success" href="/signup">Регистрация</b-button>
 	</b-col>
@@ -25,5 +25,10 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 export default {
+  data () {
+    return 	{
+				show_auth_buttons: true
+			}
+	}
 }
 </script>
