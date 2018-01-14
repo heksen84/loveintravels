@@ -13,5 +13,8 @@ Vue.use(BootstrapVue);
 const app = new Vue({
 	el: '#root',
 	template: `<app></app>`,
-	components: { App }, router
+	components: { App }, router,
+	data: {
+		user_name: 'Hello Vue!'
+	}
 })

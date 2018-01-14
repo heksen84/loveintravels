@@ -18860,7 +18860,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_boot
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 	el: '#root',
 	template: '<app></app>',
-	components: { App: __WEBPACK_IMPORTED_MODULE_2__app_vue___default.a }, router: __WEBPACK_IMPORTED_MODULE_3__router__["a" /* default */]
+	components: { App: __WEBPACK_IMPORTED_MODULE_2__app_vue___default.a }, router: __WEBPACK_IMPORTED_MODULE_3__router__["a" /* default */],
+	data: {
+		user_name: 'Hello Vue!'
+	}
 });
 
 /***/ }),
@@ -20393,7 +20396,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         name: ""
       },
       show_auth_buttons: true,
-      show_user_info: false
+      show_user_info: true
     };
   }
 });
@@ -33133,7 +33136,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "cols": "12",
       "md": "auto"
     }
-  }, [_c('h5', [_vm._v(_vm._s(_vm.user.name))])]) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
+  }, [_c('h5', [_vm._v(_vm._s(_vm.user_name))])]) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
