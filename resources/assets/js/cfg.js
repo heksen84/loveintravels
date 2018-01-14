@@ -1,4 +1,4 @@
 module.exports = {
-  name: "привет это я!",
+  name: "привет Илья!",
   fam: 2
 }

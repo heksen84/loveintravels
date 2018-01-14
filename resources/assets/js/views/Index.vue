@@ -15,23 +15,23 @@
 		<br>
 		<br>
 			<h4>Хочешь познакомиться с новым интересным тебе человеком?</h4>
-			<b-img src="public/images/date2.jpg" fluid alt="Responsive image" />		
+			<b-img src="public/images/date2.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
-			<h4>Мечтаешь сходить на свидание находясь в путешествии?</h4>		
+			<h4>Мечтаешь сходить на свидание находясь в путешествии?</h4>
 			<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
 		<h3>Добро пожаловать в <div style="margin-top:5px;font-size:22px"><b>LOVE IN TRAVELS!</b></div></h3>
-		<br>    
+		<br>
 			<b-button href="/login">{{ str_auth }}</b-button>
-			<b-button variant="success" href="/signup">{{ str_reg }}</b-button>			
+			<b-button variant="success" href="/signup">{{ str_reg }}</b-button>
 		<br>
 		<br>
 		<!--Love in travels - люби и путешествуй!-->
 	</b-col>
-	</b-row>	
-    </b-container>	
+	</b-row>
+    </b-container>
 <br>
 <b-card class="text-center" bg-variant="danger" text-variant="white">
 	<span>{{ str_footer_text }} &copy;</span>
@@ -46,14 +46,14 @@ import Vue from 'vue'
 import NavBar from './navbar.vue'
 
 export default {
-	data () {	
-    return 	{				
+	data () {
+    return 	{
 				selected: null,
 				str_title: "Love in travels",
 				str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествий.",
 				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear(),
 				str_auth: "Вход",
-				str_reg: "Регистрация"		
+				str_reg: "Регистрация"
 			}
 	},
 	components: { NavBar }

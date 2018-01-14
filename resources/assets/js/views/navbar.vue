@@ -2,7 +2,7 @@
 <div>
 <b-navbar toggleable="md" type="dark" variant="danger">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-  <b-navbar-brand href="/"><span class="carefree-font">&nbsp;love in travels</span></b-navbar-brand>
+  <b-navbar-brand style="cursor:default"><span class="carefree-font" v-on:click="GoHome">&nbsp;love in travels</span></b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
     <b-navbar-nav class="ml-auto">
       <b-nav-form>
@@ -28,8 +28,10 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import cfg from '..//cfg.js'
+import router from './../router'
 
 export default {
+  components: { router },
   data () {
     return 	{
         user: {
@@ -38,6 +40,11 @@ export default {
 				show_auth_buttons: true,
         show_user_info: true
 			}
-	}
+	},
+  methods: {
+		GoHome() {
+			this.$router.push('/');
+		}
+  }
 }
 </script>
