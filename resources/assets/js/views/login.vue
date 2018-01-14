@@ -46,6 +46,7 @@
 <script type="text/javascript">
 
 import router from './../router'
+import cfg from '..//cfg.js'
 
 export default {
 	components: { router },
@@ -60,6 +61,7 @@ export default {
 	},
   methods: {
 		Auth() {
+			cfg.name = "HELLO!";
 			this.$router.push('/welcome');
 		}
   }
