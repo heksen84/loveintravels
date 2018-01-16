@@ -46,7 +46,8 @@
 <script type="text/javascript">
 
 import router from './../router'
-import cfg from '..//cfg.js'
+import { post, interceptors } from './../helpers/api'
+import cfg from '../cfg.js'
 
 export default {
 	components: { router },
@@ -61,8 +62,15 @@ export default {
 	},
   methods: {
 		Auth() {
-			cfg.name = "Привет, Илья!";
-			this.$router.push('/welcome');
+			/*cfg.name = "Привет, Илья!";*/
+			post('/api/logout').then((res) => {
+				if(res.data.done) {
+					this.$router.push('/welcome');
+				}
+		}).catch(function (error) {
+    	alert(error);
+  	});
+
 		}
   }
 }
