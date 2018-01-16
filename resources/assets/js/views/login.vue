@@ -63,12 +63,13 @@ export default {
   methods: {
 		Auth() {
 			/*cfg.name = "Привет, Илья!";*/
-			post('/api/logout').then((res) => {
+			post('/api/test').then((res) => {
 				if(res.data.done) {
+					console.log(res.statusText);
 					this.$router.push('/welcome');
 				}
 		}).catch(function (error) {
-    	alert(error);
+    	this.$router.push('/error');
   	});
 
 		}

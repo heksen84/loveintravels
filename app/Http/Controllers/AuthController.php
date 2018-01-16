@@ -71,4 +71,8 @@ class AuthController extends Controller
                 'done' => true
             ]);
     }
+
+		public function test(Request $request) {
+        return response()->json(['done' => true]);
+    }
 }
