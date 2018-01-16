@@ -1,6 +1,8 @@
 ﻿<template>
 <div>
 <NavBar></NavBar>
+<br>
+<b-alert show variant="error"><h5>Ошибка!</h5></b-alert>
 </div>
 </template>
 <script type="text/javascript">
