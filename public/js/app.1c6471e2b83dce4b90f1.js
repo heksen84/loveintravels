@@ -20419,16 +20419,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 	methods: {
 		Auth: function Auth() {
-			var _this = this;
-
 			/*cfg.name = "Привет, Илья!";*/
-			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/test').then(function (res) {
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/login', this.form).then(function (res) {
 				if (res.data.done) {
 					console.log(res.statusText);
-					_this.$router.push('/welcome');
+					//		this.$router.push('/welcome');
 				}
 			}).catch(function (error) {
-				this.$router.push('/error');
+				//this.$router.push('/error');
 			});
 		}
 	}
