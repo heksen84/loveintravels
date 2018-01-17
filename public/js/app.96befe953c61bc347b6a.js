@@ -20666,7 +20666,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			var _this = this;
 
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/signup', this.form).then(function (res) {
-
 				if (res.data.registered) {
 					console.log(res.statusText);
 					_this.$router.push('/welcome');

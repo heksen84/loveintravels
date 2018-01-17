@@ -98,7 +98,6 @@ export default {
   methods: {
 		CreateAccount () {
 			post('/api/signup', this.form).then((res) => {
-
 				if(res.data.registered) {
 					console.log(res.statusText);
 					this.$router.push('/welcome');
