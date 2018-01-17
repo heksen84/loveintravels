@@ -101,7 +101,7 @@ export default {
 
 				if(res.data.registered) {
 					console.log(res.statusText);
-			//		this.$router.push('/welcome');
+					this.$router.push('/welcome');
 				}
 		}).catch(function (error) {
     	this.$router.push('/error');
