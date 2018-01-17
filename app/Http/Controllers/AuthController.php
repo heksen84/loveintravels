@@ -16,9 +16,9 @@ class AuthController extends Controller
 		/*--------------------------------------------
 		  регистрация
 		----------------------------------------------*/
-    public function register(Request $request)
+    public function signup(Request $request)
     {
-        $this->validate($request, [
+      /*  $this->validate($request, [
             'name' 			=> 'required|max:255',
 						'sex' 			=> 'required|between:0,1',
 						'age' 			=> 'required|between:18,80',
@@ -28,7 +28,7 @@ class AuthController extends Controller
 
         $user = new User($request->all());
         $user->password = bcrypt($request->password);
-        $user->save();
+        $user->save();*/
 
         return response()->json(['registered' => true]);
     }

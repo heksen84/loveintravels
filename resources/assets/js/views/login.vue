@@ -47,7 +47,7 @@
 
 import router from './../router'
 import { post, interceptors } from './../helpers/api'
-import cfg from '../cfg.js'
+//import cfg from '../cfg.js'
 
 export default {
 	components: { router },

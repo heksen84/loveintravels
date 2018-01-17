@@ -78,6 +78,7 @@
 <script type="text/javascript">
 
 import router from './../router'
+import { post, interceptors } from './../helpers/api'
 
 export default {
 	components: { router },
@@ -96,11 +97,15 @@ export default {
 	},
   methods: {
 		CreateAccount () {
-			this.axios.get('/url').then((response) => {
- 				console.log(response.data)
-			})
+			post('/api/signup', this.form).then((res) => {
 
-			this.$router.push('/welcome');
+				if(res.data.registered) {
+					console.log(res.statusText);
+			//		this.$router.push('/welcome');
+				}
+		}).catch(function (error) {
+    	this.$router.push('/error');
+  	});
 		}
   },
 	watch: {
