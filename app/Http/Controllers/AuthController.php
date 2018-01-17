@@ -13,22 +13,24 @@ class AuthController extends Controller
 	    $this->middleware('auth:api')->only('logout');
 	}
 
+		/*--------------------------------------------
+		  регистрация
+		----------------------------------------------*/
     public function register(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|between:6,25|confirmed'
+            'name' 			=> 'required|max:255',
+						'sex' 			=> 'required|between:0,1',
+						'age' 			=> 'required|between:18,80',
+            'email' 		=> 'required|email|unique:users',
+            'password' 	=> 'required|between:6,25|confirmed'
         ]);
 
         $user = new User($request->all());
         $user->password = bcrypt($request->password);
         $user->save();
 
-        return response()
-            ->json([
-                'registered' => true
-            ]);
+        return response()->json(['registered' => true]);
     }
 
     public function login(Request $request)
