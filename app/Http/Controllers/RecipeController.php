@@ -100,9 +100,7 @@ class RecipeController extends Controller
             ->findOrFail($id);
 
         return response()
-            ->json([
-                'recipe' => $recipe
-            ]);
+            ->json(['recipe' => $recipe]);
     }
 
 
