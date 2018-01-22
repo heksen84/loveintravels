@@ -1,0 +1,5 @@
+*** Перед началом: ***
+config/local/app.php debug=>true
+php artisan key:generate
+php artisan config:clear
+-----------------------------------
