@@ -18,7 +18,7 @@
 			<b-img src="public/images/date2.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
-			<h4>Мечтаешь сходить на свидание находясь в путешествии?</h4>
+			<h4>Мечтаешь сходить на свидание в путешествии?</h4>
 			<b-img src="public/images/acquaintance.jpg" fluid alt="Responsive image" />
 		<br>
 		<br>
@@ -51,7 +51,7 @@ export default {
 				selected: null,
 				str_title: "Love in travels",
 				//str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествия.",
-        str_desc: "это отличный способ найти себе половинку или завязать близкие отношения находясь в путешествии.",
+        str_desc: "это отличный способ найти себе половинку находясь в путешествии или прибывая за границей.",
 				str_footer_text: "LOVE IN TRAVELS "+new Date().getFullYear(),
 				str_auth: "Вход",
 				str_reg: "Регистрация"

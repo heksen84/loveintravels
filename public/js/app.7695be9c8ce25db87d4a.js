@@ -20380,7 +20380,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			selected: null,
 			str_title: "Love in travels",
 			//str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествия.",
-			str_desc: "это отличный способ найти себе половинку или завязать близкие отношения находясь в путешествии.",
+			str_desc: "это отличный способ найти себе половинку находясь в путешествии или прибывая за границей.",
 			str_footer_text: "LOVE IN TRAVELS " + new Date().getFullYear(),
 			str_auth: "Вход",
 			str_reg: "Регистрация"
@@ -33078,7 +33078,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "fluid": "",
       "alt": "Responsive image"
     }
-  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h4', [_vm._v("Мечтаешь сходить на свидание находясь в путешествии?")]), _vm._v(" "), _c('b-img', {
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h4', [_vm._v("Мечтаешь сходить на свидание в путешествии?")]), _vm._v(" "), _c('b-img', {
     attrs: {
       "src": "public/images/acquaintance.jpg",
       "fluid": "",
