@@ -33163,7 +33163,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "success",
       "href": "/signup"
     }
-  }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h4', [_vm._v("Как происходит знакомство?")]), _vm._v(" "), _c('h5', [_vm._v("1. Вы регистрируетесь в нашей системе")]), _vm._v(" "), _c('h5', [_vm._v("2. Указываете место куда собираетесь отправляться")])], 1)], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-card', {
+  }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h4', [_vm._v("Как происходит знакомство в Love in travels?")]), _vm._v(" "), _c('h5', [_vm._v("1. Вы регистрируетесь в нашей системе")]), _vm._v(" "), _c('h5', [_vm._v("2. Указываете место куда планируете отправиться")])], 1)], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-card', {
     staticClass: "text-center",
     attrs: {
       "bg-variant": "danger",
