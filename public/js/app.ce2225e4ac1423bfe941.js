@@ -20280,11 +20280,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			}
 
 			if (err.response.status === 404) {
-				_this.$router.push('/notfound');
+				//this.$router.push('/notfound')
 			}
 		});
 		//Auth.initialize()
-		alert("ready!");
+		//alert("ready!");
+		//this.$router.push('/login')
 	},
 	data: function data() {
 		return {};
@@ -20380,6 +20381,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_vue__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__navbar_vue__);
+//
+//
+//
 //
 //
 //
@@ -33159,7 +33163,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "success",
       "href": "/signup"
     }
-  }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br')], 1)], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-card', {
+  }, [_vm._v(_vm._s(_vm.str_reg))]), _vm._v(" "), _c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('h4', [_vm._v("Как происходит знакомство?")]), _vm._v(" "), _c('h5', [_vm._v("1. Вы регистрируетесь в нашей системе")]), _vm._v(" "), _c('h5', [_vm._v("2. Указываете место куда собираетесь отправляться")])], 1)], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-card', {
     staticClass: "text-center",
     attrs: {
       "bg-variant": "danger",

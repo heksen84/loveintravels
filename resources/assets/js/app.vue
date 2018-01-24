@@ -19,11 +19,12 @@ export default {
 		}
 
 		if(err.response.status === 404) {
-			this.$router.push('/notfound')
+			//this.$router.push('/notfound')
 		}
 	})
 		//Auth.initialize()
-		alert("ready!");
+		//alert("ready!");
+		//this.$router.push('/login')
 	},
   data () {
     return 	{
