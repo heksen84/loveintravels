@@ -20709,10 +20709,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		return {
 			form: {
 				name: "",
-				sex: "mmm",
-				age: "35",
 				email: "",
-				password: ''
+				password: "",
+				sex: "mmm",
+				age: "35"
 			},
 			show: true,
 			selected: "man"
