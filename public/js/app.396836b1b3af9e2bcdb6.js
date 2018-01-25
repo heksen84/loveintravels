@@ -20709,10 +20709,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		return {
 			form: {
 				name: "",
-				sex: "",
-				age: "",
+				sex: "mmm",
+				age: "35",
 				email: "",
-				password: ""
+				password: ''
 			},
 			show: true,
 			selected: "man"
@@ -20721,32 +20721,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 	methods: {
 		CreateAccount: function CreateAccount() {
-			var _this = this;
-
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/signup', this.form).then(function (res) {
 				if (res.data.registered) {
-					console.log(res.statusText);
-					_this.$router.push('/welcome');
+					console.log(res.data);
+					//this.$router.push('/welcome');
 				}
 			}).catch(function (error) {
-				this.$router.push('/error');
+				console.log(error);
+				//this.$router.push('/error');
 			});
 		}
 	},
 	watch: {
-		// эта функция запускается при любом изменении вопроса
 		'form.name': function formName() {
 			console.log(this.form.name);
-			//this.answer = 'Ожидаю, когда вы закончите печатать...'
-			//this.getAnswer()
 		},
-		'form.age': function formAge(val) {
-			if (function (val) {
-				return 80;
-			}) this.form.age = 80;
-			if (val <= 18) this.form.age = 18;
-			console.log(this.form.age);
-		}
+		'form.age': function formAge(val) {}
 	}
 });
 

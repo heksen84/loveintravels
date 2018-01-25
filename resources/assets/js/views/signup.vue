@@ -86,10 +86,10 @@ export default {
     return 	{
 				form: {
 					name:"",
-					sex:"",
-					age:"",
+					sex:"mmm",
+					age:"35",
 					email:"",
-					password:""
+					password:''
 				},
 				show: true,
 				selected: "man"
@@ -99,25 +99,21 @@ export default {
 		CreateAccount () {
 			post('/api/signup', this.form).then((res) => {
 				if(res.data.registered) {
-					console.log(res.statusText);
-					this.$router.push('/welcome');
+					console.log(res.data);
+					//this.$router.push('/welcome');
 				}
 		}).catch(function (error) {
-    	this.$router.push('/error');
+			console.log(error);
+    	//this.$router.push('/error');
   	});
 		}
   },
 	watch: {
-	// эта функция запускается при любом изменении вопроса
 	'form.name': function () {
 		console.log(this.form.name);
-		//this.answer = 'Ожидаю, когда вы закончите печатать...'
-		//this.getAnswer()
 	},
 	'form.age': function (val) {
-		if (val => 80) this.form.age=80;
-		if (val <= 18) this.form.age=18;
-		console.log(this.form.age);
+
 	}
 }
 }
