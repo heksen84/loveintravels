@@ -20727,7 +20727,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 					//this.$router.push('/welcome');
 				}
 			}).catch(function (error) {
-				console.log(error);
+				console.log(error.response.data);
 				//this.$router.push('/error');
 			});
 		}

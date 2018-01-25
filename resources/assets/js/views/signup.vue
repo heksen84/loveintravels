@@ -103,7 +103,7 @@ export default {
 					//this.$router.push('/welcome');
 				}
 		}).catch(function (error) {
-			console.log(error);
+			console.log(error.response.data);
     	//this.$router.push('/error');
   	});
 		}
