@@ -20698,6 +20698,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -20714,6 +20716,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				sex: "mmm",
 				age: "35"
 			},
+			error: {},
 			show: true,
 			selected: "man"
 		};
@@ -33238,7 +33241,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "nameGroup",
       "label": "Имя",
-      "label-for": "nameInput"
+      "label-for": "nameInput",
+      "description": "We'll never share your email with anyone else."
     }
   }, [_c('b-form-input', {
     attrs: {
@@ -33254,7 +33258,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.name"
     }
-  })], 1), _vm._v(" "), _c('b-form-group', {
+  }), _vm._v(" "), _c('small', {
+    staticClass: "error_control"
+  }, [_vm._v(_vm._s(_vm.error.name))])], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "sexGroup",
       "label": "Ваш пол",

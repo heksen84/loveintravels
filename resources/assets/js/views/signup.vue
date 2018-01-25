@@ -10,13 +10,15 @@
 
     <b-form-group id="nameGroup"
                   label="Имя"
-                  label-for="nameInput">
+                  label-for="nameInput"
+									description="We'll never share your email with anyone else.">
       <b-form-input id="nameInput"
                   type="text"
                   v-model="form.name"
                   required
                   placeholder="Например, Татьяна">
       </b-form-input>
+			<small class="error_control">{{ error.name }}</small>
     </b-form-group>
 
 		<b-form-group id="sexGroup"
@@ -91,6 +93,7 @@ export default {
 					sex:"mmm",
 					age:"35"
 				},
+				error: {},
 				show: true,
 				selected: "man"
 			}
