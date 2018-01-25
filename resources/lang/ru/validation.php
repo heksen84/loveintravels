@@ -109,9 +109,6 @@ return [
     */
 
     'custom'               => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
-        ],
     ],
 
     /*
@@ -132,7 +129,8 @@ return [
     */
 
     'attributes'           => [
-        //
+       'email' => 'электронный адрес',
+       'password' => 'пароль'
     ],
 
 ];
