@@ -10,8 +10,7 @@
 
     <b-form-group id="nameGroup"
                   label="Имя"
-                  label-for="nameInput"
-									description="We'll never share your email with anyone else.">
+                  label-for="nameInput">
       <b-form-input id="nameInput"
                   type="text"
                   v-model="form.name"
@@ -28,6 +27,7 @@
 	      	<option value="man">Мужской</option>
 	      	<option value="woman">Женский</option>
 	  </b-form-select>
+		<small class="error_control">{{ error.sex }}</small>
 	  </b-form-group>
 
 		<b-form-group id="userAgeGroup"
@@ -41,6 +41,7 @@
 										style="max-width: 80px; margin:auto"
 										class="text-center">
 	      </b-form-input>
+				<small class="error_control">{{ error.age }}</small>
 	    </b-form-group>
 
 	<b-form-group id="emailGroup"
@@ -52,6 +53,7 @@
                   required
                   placeholder="Введи email">
       </b-form-input>
+			<small class="error_control">{{ error.email }}</small>
     </b-form-group>
 
 	<b-form-group id="passwordGroup"
@@ -63,6 +65,7 @@
                   required
                   placeholder="Введи пароль">
       </b-form-input>
+			<small class="error_control">{{ error.password }}</small>
     </b-form-group>
 
 	<b-form-group class="text-center">
@@ -90,8 +93,8 @@ export default {
 					name:"",
 					email:"",
 					password:"",
-					sex:"mmm",
-					age:"35"
+					sex:"",
+					age:""
 				},
 				error: {},
 				show: true,

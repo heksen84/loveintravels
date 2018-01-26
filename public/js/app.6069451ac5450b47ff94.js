@@ -20700,6 +20700,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -20713,8 +20716,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				name: "",
 				email: "",
 				password: "",
-				sex: "mmm",
-				age: "35"
+				sex: "",
+				age: ""
 			},
 			error: {},
 			show: true,
@@ -33256,8 +33259,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "nameGroup",
       "label": "Имя",
-      "label-for": "nameInput",
-      "description": "We'll never share your email with anyone else."
+      "label-for": "nameInput"
     }
   }, [_c('b-form-input', {
     attrs: {
@@ -33297,7 +33299,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "value": "woman"
     }
-  }, [_vm._v("Женский")])])], 1), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v("Женский")])]), _vm._v(" "), _c('small', {
+    staticClass: "error_control"
+  }, [_vm._v(_vm._s(_vm.error.sex))])], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center",
     attrs: {
       "id": "userAgeGroup",
@@ -33322,7 +33326,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.age"
     }
-  })], 1), _vm._v(" "), _c('b-form-group', {
+  }), _vm._v(" "), _c('small', {
+    staticClass: "error_control"
+  }, [_vm._v(_vm._s(_vm.error.age))])], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
       "label": "Электронная почта",
@@ -33342,7 +33348,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.email"
     }
-  })], 1), _vm._v(" "), _c('b-form-group', {
+  }), _vm._v(" "), _c('small', {
+    staticClass: "error_control"
+  }, [_vm._v(_vm._s(_vm.error.email))])], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "passwordGroup",
       "label": "Пароль",
@@ -33362,7 +33370,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.password"
     }
-  })], 1), _vm._v(" "), _c('b-form-group', {
+  }), _vm._v(" "), _c('small', {
+    staticClass: "error_control"
+  }, [_vm._v(_vm._s(_vm.error.password))])], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {
