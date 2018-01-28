@@ -1,33 +1,27 @@
 // -------- переменые --------
 $my_grey: rgb(80,80,80);
 // ---------------------------
-::-webkit-scrollbar
-{
+::-webkit-scrollbar{
  width: 8px;
  background: white;
 }
-::-webkit-scrollbar:horizontal
-{
+::-webkit-scrollbar:horizontal{
  height: 8px;
  background: white;
 }
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb{
  width: 8px;
  background: white;
  border: 1px solid black;
 }
-::-webkit-scrollbar-thumb:horizontal
-{
+::-webkit-scrollbar-thumb:horizontal{
  height: 8px;
  background: white;
 }
-::-webkit-scrollbar-thumb:hover
-{
+::-webkit-scrollbar-thumb:hover{
  background: white;
 }
-::-webkit-scrollbar-thumb:active
-{
+::-webkit-scrollbar-thumb:active{
  background: white;
 }
 
