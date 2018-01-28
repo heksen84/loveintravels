@@ -96,7 +96,7 @@ export default {
 					sex:"",
 					age:""
 				},
-				error: {},
+				error: { name: "Поле не должно быть пустым"},
 				show: true,
 				selected: "man"
 			}

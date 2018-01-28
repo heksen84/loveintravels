@@ -47,7 +47,7 @@ $my_grey: rgb(80,80,80);
 ::-webkit-scrollbar-thumb:horizontal
 {
  height: 8px;
- background: white; 
+ background: white;
 }
 ::-webkit-scrollbar-thumb:hover
 {
@@ -56,4 +56,9 @@ $my_grey: rgb(80,80,80);
 ::-webkit-scrollbar-thumb:active
 {
  background: white;
+}
+
+.error_control {
+  color: red;
+  font-size: 14px;
 }

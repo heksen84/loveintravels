@@ -20719,7 +20719,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				sex: "",
 				age: ""
 			},
-			error: {},
+			error: { name: "Поле не должно быть пустым" },
 			show: true,
 			selected: "man"
 		};
