@@ -3,7 +3,7 @@
 <b-container style="max-width: 350px;">
 <br>
 <b-form v-if="show">
-<form v-on:submit.prevent="CreateAccount">
+<form @submit.prevent="CreateAccount">
 	<b-form-group class="text-center">
 		<h1>Создать аккаунт <br>Love in travels</h1>
     </b-form-group>
@@ -17,7 +17,7 @@
                   required
                   placeholder="Например, Татьяна">
       </b-form-input>
-			<small class="error_control">{{ error.name }}</small>
+			<small class="error_control" v-if="error.name">{{ error.name[0] }}</small>
     </b-form-group>
 
 		<b-form-group id="sexGroup"
@@ -27,7 +27,7 @@
 	      	<option value="man">Мужской</option>
 	      	<option value="woman">Женский</option>
 	  </b-form-select>
-		<small class="error_control">{{ error.sex }}</small>
+		<small class="error_control" v-if="error.sex">{{ error.sex[0] }}</small>
 	  </b-form-group>
 
 		<b-form-group id="userAgeGroup"
@@ -41,7 +41,7 @@
 										style="max-width: 80px; margin:auto"
 										class="text-center">
 	      </b-form-input>
-				<small class="error_control">{{ error.age }}</small>
+				<small class="error_control" v-if="error.age">{{ error.age[0] }}</small>
 	    </b-form-group>
 
 	<b-form-group id="emailGroup"
@@ -53,7 +53,7 @@
                   required
                   placeholder="Введи email">
       </b-form-input>
-			<small class="error_control">{{ error.email }}</small>
+			<small class="error_control" v-if="error.email">{{ error.email[0] }}</small>
     </b-form-group>
 
 	<b-form-group id="passwordGroup"
@@ -65,7 +65,7 @@
                   required
                   placeholder="Введи пароль">
       </b-form-input>
-			<small class="error_control">{{ error.password }}</small>
+			<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>
     </b-form-group>
 
 	<b-form-group class="text-center">
@@ -96,21 +96,24 @@ export default {
 					sex:"",
 					age:""
 				},
-				error: { name: "Поле не должно быть пустым"},
+				error: {},
 				show: true,
 				selected: "man"
 			}
 	},
   methods: {
 		CreateAccount () {
+			this.error = {}
 			post('/api/signup', this.form).then((res) => {
 				if(res.data.registered) {
 					console.log(res.data);
 					//this.$router.push('/welcome');
 				}
-		}).catch(function (error) {
-			console.log(error.response.data);
-    	//this.$router.push('/error');
+		}).catch((err) => {
+			console.log(err.response.data);
+			if(err.response.status === 422) {
+	         this.error = err.response.data
+			}
   	});
 		}
   },

@@ -32,8 +32,8 @@ class AuthController extends Controller
 																		//'sex' 			=> 'required|between:0,1',
 																		//'age' 			=> 'required|between:18,80'
 																	]);
-        $user = new User($request->all());
-        $user->password = bcrypt($request->password);
+        //$user = new User($request->all());
+        //$user->password = bcrypt($request->password);
         //$user->save();
 
 				//echo print_r($request);

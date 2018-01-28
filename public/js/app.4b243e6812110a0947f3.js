@@ -20719,7 +20719,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				sex: "",
 				age: ""
 			},
-			error: { name: "Поле не должно быть пустым" },
+			error: {},
 			show: true,
 			selected: "man"
 		};
@@ -20727,14 +20727,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 	methods: {
 		CreateAccount: function CreateAccount() {
+			var _this = this;
+
+			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/signup', this.form).then(function (res) {
 				if (res.data.registered) {
 					console.log(res.data);
 					//this.$router.push('/welcome');
 				}
-			}).catch(function (error) {
-				console.log(error.response.data);
-				//this.$router.push('/error');
+			}).catch(function (err) {
+				console.log(err.response.data);
+				if (err.response.status === 422) {
+					_this.error = err.response.data;
+				}
 			});
 		}
 	},
@@ -33275,9 +33280,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.name"
     }
-  }), _vm._v(" "), _c('small', {
+  }), _vm._v(" "), (_vm.error.name) ? _c('small', {
     staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.name))])], 1), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v(_vm._s(_vm.error.name[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "sexGroup",
       "label": "Ваш пол",
@@ -33299,9 +33304,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "value": "woman"
     }
-  }, [_vm._v("Женский")])]), _vm._v(" "), _c('small', {
+  }, [_vm._v("Женский")])]), _vm._v(" "), (_vm.error.sex) ? _c('small', {
     staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.sex))])], 1), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v(_vm._s(_vm.error.sex[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center",
     attrs: {
       "id": "userAgeGroup",
@@ -33326,9 +33331,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.age"
     }
-  }), _vm._v(" "), _c('small', {
+  }), _vm._v(" "), (_vm.error.age) ? _c('small', {
     staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.age))])], 1), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v(_vm._s(_vm.error.age[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
       "label": "Электронная почта",
@@ -33348,9 +33353,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.email"
     }
-  }), _vm._v(" "), _c('small', {
+  }), _vm._v(" "), (_vm.error.email) ? _c('small', {
     staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.email))])], 1), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v(_vm._s(_vm.error.email[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "passwordGroup",
       "label": "Пароль",
@@ -33370,9 +33375,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.password"
     }
-  }), _vm._v(" "), _c('small', {
+  }), _vm._v(" "), (_vm.error.password) ? _c('small', {
     staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.password))])], 1), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v(_vm._s(_vm.error.password[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {
