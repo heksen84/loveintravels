@@ -123,7 +123,7 @@ export default {
 			post('/api/signup', this.form).then((res) => {
 				if(res.data.registered) {
 					console.log(res.data);
-					//this.$router.push('/welcome');
+					this.$router.push('/welcome');
 				}
 		}).catch((err) => {
 			console.log(err.response.data);

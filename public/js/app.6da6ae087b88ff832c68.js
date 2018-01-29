@@ -20749,7 +20749,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/signup', this.form).then(function (res) {
 				if (res.data.registered) {
 					console.log(res.data);
-					//this.$router.push('/welcome');
+					_this.$router.push('/welcome');
 				}
 			}).catch(function (err) {
 				console.log(err.response.data);
