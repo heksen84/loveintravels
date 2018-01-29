@@ -20520,15 +20520,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 	methods: {
 		Login: function Login() {
+			var _this = this;
+
 			/*cfg.name = "Привет, Илья!";*/
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/login', this.form).then(function (res) {
-				if (res.data.done) {
-					console.log(res.statusText);
-					//		this.$router.push('/welcome');
+				if (res.data.authenticated) {
+					_this.$router.push('/welcome');
 				}
 			}).catch(function (err) {
 				console.log(err.response.data);
-				//this.$router.push('/error');
 			});
 		}
 	}

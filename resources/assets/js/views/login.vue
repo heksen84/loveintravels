@@ -64,13 +64,11 @@ export default {
 		Login() {
 			/*cfg.name = "Привет, Илья!";*/
 			post('/api/login', this.form).then((res) => {
-				if(res.data.done) {
-					console.log(res.statusText);
-			//		this.$router.push('/welcome');
+				if(res.data.authenticated) {
+					this.$router.push('/welcome');
 				}
 		}).catch((err) => {
-			console.log(err.response.data);
-			//this.$router.push('/error');
+			console.log(err.response.data);			
   	});
 
 		}
