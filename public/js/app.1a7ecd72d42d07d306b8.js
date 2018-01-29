@@ -20742,7 +20742,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 
 	methods: {
-		CreateAccount: function CreateAccount() {
+		Continue: function Continue() {
 			var _this = this;
 
 			this.error = {};
@@ -33271,7 +33271,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "submit": function($event) {
         $event.preventDefault();
-        _vm.CreateAccount($event)
+        _vm.Continue($event)
       }
     }
   }, [_c('b-form-group', {
@@ -33349,7 +33349,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "success",
       "type": "submit"
     }
-  }, [_vm._v("Создать новый аккаунт")])], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v("Продолжить")])], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('h5', [_vm._v("У вас уже есть аккаунт? "), _c('b-link', {
     attrs: {

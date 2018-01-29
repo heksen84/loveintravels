@@ -3,7 +3,7 @@
 <b-container style="max-width: 350px;">
 <br>
 <b-form v-if="show">
-<form @submit.prevent="CreateAccount">
+<form @submit.prevent="Continue">
 	<b-form-group class="text-center">
 		<h1>Создать аккаунт <br>Love in travels</h1>
     </b-form-group>
@@ -84,7 +84,7 @@
 -->
 
 	<b-form-group class="text-center">
-		<b-button variant="success" type="submit">Создать новый аккаунт</b-button>
+		<b-button variant="success" type="submit">Продолжить</b-button>
     </b-form-group>
 	<br>
 	<b-form-group class="text-center">
@@ -118,7 +118,7 @@ export default {
 			}
 	},
   methods: {
-		CreateAccount () {
+		Continue () {
 			this.error = {}
 			post('/api/signup', this.form).then((res) => {
 				if(res.data.registered) {
