@@ -29,6 +29,8 @@
                   required
                   placeholder="Введи пароль">
       </b-form-input>
+			<!--<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>-->
+			<small class="error_control" >123</small>
     </b-form-group>
 
 	<b-form-group class="text-center">
@@ -68,7 +70,7 @@ export default {
 					this.$router.push('/welcome');
 				}
 		}).catch((err) => {
-			console.log(err.response.data);			
+			console.log(err.response.data);
   	});
 
 		}

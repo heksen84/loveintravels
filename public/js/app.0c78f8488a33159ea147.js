@@ -20500,6 +20500,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -33112,7 +33114,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.password"
     }
-  })], 1), _vm._v(" "), _c('b-form-group', {
+  }), _vm._v(" "), _c('small', {
+    staticClass: "error_control"
+  }, [_vm._v("123")])], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('h5', [_vm._v("Забыли пароль? "), _c('b-link', {
     attrs: {

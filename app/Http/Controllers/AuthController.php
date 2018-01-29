@@ -8,16 +8,14 @@ use Hash;
 
 class AuthController extends Controller
 {
-	public function __construct()
-	{
+	public function __construct() {
 	    $this->middleware('auth:api')->only('logout');
 	}
 
 		/*--------------------------------------------
 		  регистрация
 		----------------------------------------------*/
-    public function signup(Request $request)
-    {
+    public function signup(Request $request) {
 				$this->validate($request, [
 																		'name' 			=> 'required|max:255',
 																		'email' 		=> 'required|email|unique:users',
@@ -37,7 +35,7 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $this->validate($request, [
-            'email' => 'required|email',
+            'email'		 => 'required|email',
             'password' => 'required|between:6,25'
         ]);
 
@@ -58,20 +56,15 @@ class AuthController extends Controller
         }
 
         return response()
-            ->json(['email' => ['Provided email and password does not match!']
-					], 422);
+            ->json(['email' => ['Пароль или почта указаны не верно!']], 422);
     }
 
-    public function logout(Request $request)
-    {
+    public function logout(Request $request) {
         $user = $request->user();
         $user->api_token = null;
         $user->save();
 
-        return response()
-            ->json([
-                'done' => true
-            ]);
+        return response()->json(['done' => true]);
     }
 
 		public function test(Request $request) {
