@@ -20703,6 +20703,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -20716,12 +20718,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				name: "",
 				email: "",
 				password: "",
-				sex: "",
-				age: ""
+				sex: 0,
+				age: 0
 			},
 			error: {},
 			show: true,
-			selected: "man"
+			selected: 0
 		};
 	},
 
@@ -33290,19 +33292,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-form-select', {
     model: {
-      value: (_vm.selected),
+      value: (_vm.form.sex),
       callback: function($$v) {
-        _vm.selected = $$v
+        _vm.$set(_vm.form, "sex", $$v)
       },
-      expression: "selected"
+      expression: "form.sex"
     }
   }, [_c('option', {
     attrs: {
-      "value": "man"
+      "value": "0"
     }
   }, [_vm._v("Мужской")]), _vm._v(" "), _c('option', {
     attrs: {
-      "value": "woman"
+      "value": "1"
     }
   }, [_vm._v("Женский")])]), _vm._v(" "), (_vm.error.sex) ? _c('small', {
     staticClass: "error_control"
@@ -33321,7 +33323,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     attrs: {
       "id": "userAgeInput",
-      "type": "text",
+      "type": "number",
       "required": ""
     },
     model: {

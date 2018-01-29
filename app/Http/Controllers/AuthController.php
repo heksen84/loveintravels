@@ -18,29 +18,24 @@ class AuthController extends Controller
 		----------------------------------------------*/
     public function signup(Request $request)
     {
-      /*  $this->validate($request, [
-            'name' 			=> 'required|max:255',
-					// 'sex' 			=> 'required|between:0,1',
-					// 'age' 			=> 'required|between:18,80',
-            'email' 		=> 'required|email|unique:users',
-            'password' 	=> 'required|between:6,25|confirmed'
-        ]);*/
-
-				$this->validate($request, [	'name' 			=> 'required|max:255',
+				$this->validate($request, [
+																		'name' 			=> 'required|max:255',
 																		'email' 		=> 'required|email|unique:users',
 																	 	'password' 	=> 'required|between:6,25',
-																		//'sex' 			=> 'required|between:0,1',
-																		//'age' 			=> 'required|between:18,80'
+																		'sex' 			=> 'required|between:0,1',
+																		'age' 			=> 'required'
 																	]);
-        //$user = new User($request->all());
-        //$user->password = bcrypt($request->password);
-        //$user->save();
 
-				//echo print_r($request);
+        $user = new User($request->all());
+        $user->password = bcrypt($request->password);
+        $user->save();
 
         return response()->json(['registered' => true]);
     }
 
+		/*--------------------------------------------
+		авторизация
+		----------------------------------------------*/
     public function login(Request $request)
     {
         $this->validate($request, [
