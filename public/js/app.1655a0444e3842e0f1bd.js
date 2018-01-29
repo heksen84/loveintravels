@@ -33344,7 +33344,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v(_vm._s(_vm.error.password[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "passwordConfirmGroup",
-      "label": "Пароль",
+      "label": "Подтверждение пароля",
       "label-for": "passwordConfirmInput"
     }
   }, [_c('b-form-input', {
@@ -33352,7 +33352,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "id": "passwordConfirmInput",
       "type": "password",
       "required": "",
-      "placeholder": "Введи пароль"
+      "placeholder": "Повторите пароль"
     },
     model: {
       value: (_vm.form.password_confirmation),

@@ -71,13 +71,13 @@
     </b-form-group>
 
 		<b-form-group id="passwordConfirmGroup"
-	                  label="Пароль"
+	                  label="Подтверждение пароля"
 	                  label-for="passwordConfirmInput">
 	      <b-form-input id="passwordConfirmInput"
 	                  type="password"
 	                  v-model="form.password_confirmation"
 	                  required
-	                  placeholder="Введи пароль">
+	                  placeholder="Повторите пароль">
 	      </b-form-input>
 				<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>
 	    </b-form-group>
