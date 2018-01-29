@@ -20,7 +20,7 @@
 			<small class="error_control" v-if="error.name">{{ error.name[0] }}</small>
     </b-form-group>
 
-		<b-form-group id="sexGroup"
+		<!--<b-form-group id="sexGroup"
 	                  label="Ваш пол"
 	                  label-for="sexInput">
 		<b-form-select v-model="form.sex">
@@ -45,7 +45,7 @@
 
 				<small class="error_control" v-if="error.age">{{ error.age[0] }}</small>
 	    </b-form-group>
-
+-->
 	<b-form-group id="emailGroup"
                   label="Электронная почта"
                   label-for="emailInput">
@@ -69,6 +69,18 @@
       </b-form-input>
 			<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>
     </b-form-group>
+
+		<b-form-group id="passwordConfirmGroup"
+	                  label="Пароль"
+	                  label-for="passwordConfirmInput">
+	      <b-form-input id="passwordConfirmInput"
+	                  type="password"
+	                  v-model="form.password_confirmation"
+	                  required
+	                  placeholder="Введи пароль">
+	      </b-form-input>
+				<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>
+	    </b-form-group>
 
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Создать новый аккаунт</b-button>
@@ -95,8 +107,9 @@ export default {
 					name:"",
 					email:"",
 					password:"",
-					sex:0,
-					age:0
+					password_confirmation:""
+					//sex:0,
+					//age:0
 				},
 				error: {},
 				show: true,

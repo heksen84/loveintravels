@@ -19,14 +19,15 @@ class AuthController extends Controller
     public function signup(Request $request)
     {
 				$this->validate($request, [
-																		'name' 			=> 'required|max:255',
 																		'email' 		=> 'required|email|unique:users',
-																	 	'password' 	=> 'required|between:6,25',
-																		'sex' 			=> 'required|between:0,1',
-																		'age' 			=> 'required'
+																		'name' 			=> 'required|max:255',
+																	 	'password' 	=> 'required|between:6,25'
+																		//'sex' 			=> 'required|between:0,1',
+																		//'age' 			=> 'required'
 																	]);
 
-        $user = new User($request->all());
+        //$user = new User($request->all());
+				$user = new User($request->input("email", "name", "password"));
         $user->password = bcrypt($request->password);
         $user->save();
 

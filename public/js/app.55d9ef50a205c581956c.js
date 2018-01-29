@@ -20705,6 +20705,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -20718,8 +20730,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				name: "",
 				email: "",
 				password: "",
-				sex: 0,
-				age: 0
+				password_confirmation: ""
+				//sex:0,
+				//age:0
 			},
 			error: {},
 			show: true,
@@ -33286,57 +33299,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "error_control"
   }, [_vm._v(_vm._s(_vm.error.name[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
-      "id": "sexGroup",
-      "label": "Ваш пол",
-      "label-for": "sexInput"
-    }
-  }, [_c('b-form-select', {
-    model: {
-      value: (_vm.form.sex),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "sex", $$v)
-      },
-      expression: "form.sex"
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": "0"
-    }
-  }, [_vm._v("Мужской")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1"
-    }
-  }, [_vm._v("Женский")])]), _vm._v(" "), (_vm.error.sex) ? _c('small', {
-    staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.sex[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
-    staticClass: "text-center",
-    attrs: {
-      "id": "userAgeGroup",
-      "label": "Ваш возраст",
-      "label-for": "userAgeInput"
-    }
-  }, [_c('b-form-input', {
-    staticClass: "text-center",
-    staticStyle: {
-      "max-width": "80px",
-      "margin": "auto"
-    },
-    attrs: {
-      "id": "userAgeInput",
-      "type": "number",
-      "required": ""
-    },
-    model: {
-      value: (_vm.form.age),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "age", $$v)
-      },
-      expression: "form.age"
-    }
-  }), _vm._v(" "), (_vm.error.age) ? _c('small', {
-    staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.age[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
-    attrs: {
       "id": "emailGroup",
       "label": "Электронная почта",
       "label-for": "emailInput"
@@ -33376,6 +33338,28 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.$set(_vm.form, "password", $$v)
       },
       expression: "form.password"
+    }
+  }), _vm._v(" "), (_vm.error.password) ? _c('small', {
+    staticClass: "error_control"
+  }, [_vm._v(_vm._s(_vm.error.password[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
+    attrs: {
+      "id": "passwordConfirmGroup",
+      "label": "Пароль",
+      "label-for": "passwordConfirmInput"
+    }
+  }, [_c('b-form-input', {
+    attrs: {
+      "id": "passwordConfirmInput",
+      "type": "password",
+      "required": "",
+      "placeholder": "Введи пароль"
+    },
+    model: {
+      value: (_vm.form.password_confirmation),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "password_confirmation", $$v)
+      },
+      expression: "form.password_confirmation"
     }
   }), _vm._v(" "), (_vm.error.password) ? _c('small', {
     staticClass: "error_control"
