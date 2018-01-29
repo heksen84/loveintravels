@@ -27,8 +27,7 @@ class User extends Authenticatable
         'password', 'remember_token', 'api_token'
     ];
 
-    public function recipes()
-    {
+    public function recipes(){
         return $this->hasMany(Recipe::class);
     }
 }
