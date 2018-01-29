@@ -138,7 +138,6 @@ export default {
 		console.log(this.form.name);
 	},
 	'form.age': function (val) {
-
 	}
 }
 }
