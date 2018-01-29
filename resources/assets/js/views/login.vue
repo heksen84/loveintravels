@@ -4,7 +4,7 @@
 <br>
 <br>
 <b-form v-if="show">
-	<form v-on:submit.prevent="Auth">
+	<form v-on:submit.prevent="Login">
 	<b-form-group class="text-center">
 		<h1>Вход в <br>Love in travels</h1>
     </b-form-group>
@@ -61,15 +61,16 @@ export default {
 			}
 	},
   methods: {
-		Auth() {
+		Login() {
 			/*cfg.name = "Привет, Илья!";*/
 			post('/api/login', this.form).then((res) => {
 				if(res.data.done) {
 					console.log(res.statusText);
 			//		this.$router.push('/welcome');
 				}
-		}).catch(function (error) {
-    	//this.$router.push('/error');
+		}).catch((err) => {
+			console.log(err.response.data);
+			//this.$router.push('/error');
   	});
 
 		}

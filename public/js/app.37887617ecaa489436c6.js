@@ -20519,14 +20519,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 
 	methods: {
-		Auth: function Auth() {
+		Login: function Login() {
 			/*cfg.name = "Привет, Илья!";*/
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/login', this.form).then(function (res) {
 				if (res.data.done) {
 					console.log(res.statusText);
 					//		this.$router.push('/welcome');
 				}
-			}).catch(function (error) {
+			}).catch(function (err) {
+				console.log(err.response.data);
 				//this.$router.push('/error');
 			});
 		}
@@ -33066,7 +33067,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "submit": function($event) {
         $event.preventDefault();
-        _vm.Auth($event)
+        _vm.Login($event)
       }
     }
   }, [_c('b-form-group', {
