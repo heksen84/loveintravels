@@ -69,7 +69,7 @@
       </b-form-input>
 			<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>
     </b-form-group>
-
+<!--
 		<b-form-group id="passwordConfirmGroup"
 	                  label="Подтверждение пароля"
 	                  label-for="passwordConfirmInput">
@@ -81,6 +81,7 @@
 	      </b-form-input>
 				<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>
 	    </b-form-group>
+-->
 
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Создать новый аккаунт</b-button>
@@ -107,7 +108,7 @@ export default {
 					name:"",
 					email:"",
 					password:"",
-					password_confirmation:""
+					//password_confirmation:""
 					//sex:0,
 					//age:0
 				},

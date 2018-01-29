@@ -20717,6 +20717,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -20729,8 +20730,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			form: {
 				name: "",
 				email: "",
-				password: "",
-				password_confirmation: ""
+				password: ""
+				//password_confirmation:""
 				//sex:0,
 				//age:0
 			},
@@ -33338,28 +33339,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.$set(_vm.form, "password", $$v)
       },
       expression: "form.password"
-    }
-  }), _vm._v(" "), (_vm.error.password) ? _c('small', {
-    staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.password[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
-    attrs: {
-      "id": "passwordConfirmGroup",
-      "label": "Подтверждение пароля",
-      "label-for": "passwordConfirmInput"
-    }
-  }, [_c('b-form-input', {
-    attrs: {
-      "id": "passwordConfirmInput",
-      "type": "password",
-      "required": "",
-      "placeholder": "Повторите пароль"
-    },
-    model: {
-      value: (_vm.form.password_confirmation),
-      callback: function($$v) {
-        _vm.$set(_vm.form, "password_confirmation", $$v)
-      },
-      expression: "form.password_confirmation"
     }
   }), _vm._v(" "), (_vm.error.password) ? _c('small', {
     staticClass: "error_control"

@@ -21,7 +21,7 @@ class AuthController extends Controller
 				$this->validate($request, [
 																		'name' 			=> 'required|max:255',
 																		'email' 		=> 'required|email|unique:users',
-																	 	'password' 	=> 'required|between:6,25|confirmed'
+																	 	'password' 	=> 'required|between:6,25'
 																	]);
 
         $user = new User($request->all());
