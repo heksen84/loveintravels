@@ -25,7 +25,6 @@ class AuthController extends Controller
 																	]);
 
         $user = new User($request->all());
-				//$user = new User($request->input("email", "name", "password"));
         $user->password = bcrypt($request->password);
         $user->save();
 
