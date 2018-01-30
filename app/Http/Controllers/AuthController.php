@@ -56,7 +56,7 @@ class AuthController extends Controller
         }
 
         return response()
-            ->json(['email' => ['Пароль или почта указаны не верно!']], 422);
+            ->json(['email' => ['Почта или пароль указаны не верно']], 422);
     }
 
     public function logout(Request $request) {

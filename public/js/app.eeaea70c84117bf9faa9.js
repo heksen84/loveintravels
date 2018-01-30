@@ -20506,7 +20506,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-//import cfg from '../cfg.js'
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	components: { router: __WEBPACK_IMPORTED_MODULE_0__router__["a" /* default */] },
@@ -20516,6 +20515,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				email: "",
 				password: ""
 			},
+			error: {},
 			show: true
 		};
 	},
@@ -20524,13 +20524,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		Login: function Login() {
 			var _this = this;
 
-			/*cfg.name = "Привет, Илья!";*/
+			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/login', this.form).then(function (res) {
 				if (res.data.authenticated) {
 					_this.$router.push('/welcome');
 				}
 			}).catch(function (err) {
 				console.log(err.response.data);
+				if (err.response.status === 422) {
+					_this.error = err.response.data;
+				}
 			});
 		}
 	}
@@ -33094,7 +33097,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.email"
     }
-  })], 1), _vm._v(" "), _c('b-form-group', {
+  }), _vm._v(" "), (_vm.error.email) ? _c('small', {
+    staticClass: "error_control"
+  }, [_vm._v(_vm._s(_vm.error.email[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "passwordGroup",
       "label": "Пароль",
@@ -33114,9 +33119,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "form.password"
     }
-  }), _vm._v(" "), _c('small', {
+  }), _vm._v(" "), (_vm.error.password) ? _c('small', {
     staticClass: "error_control"
-  }, [_vm._v("123")])], 1), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v(_vm._s(_vm.error.password[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('h5', [_vm._v("Забыли пароль? "), _c('b-link', {
     attrs: {

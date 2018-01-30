@@ -18,7 +18,8 @@
                   required
                   placeholder="Введи email">
       </b-form-input>
-    </b-form-group>
+				<small class="error_control" v-if="error.email">{{ error.email[0] }}</small>
+    	</b-form-group>
 
 	<b-form-group id="passwordGroup"
                   label="Пароль"
@@ -29,8 +30,7 @@
                   required
                   placeholder="Введи пароль">
       </b-form-input>
-			<!--<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>-->
-			<small class="error_control">123</small>
+				<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>
     </b-form-group>
 
 	<b-form-group class="text-center">
@@ -49,7 +49,6 @@
 
 import router from './../router'
 import { post, interceptors } from './../helpers/api'
-//import cfg from '../cfg.js'
 
 export default {
 	components: { router },
@@ -59,18 +58,22 @@ export default {
 					email: "",
 					password: ""
 				},
+				error: {},
 				show: true
 			}
 	},
   methods: {
 		Login() {
-			/*cfg.name = "Привет, Илья!";*/
+			this.error = {}
 			post('/api/login', this.form).then((res) => {
 				if(res.data.authenticated) {
 					this.$router.push('/welcome');
 				}
 		}).catch((err) => {
 			console.log(err.response.data);
+			if(err.response.status === 422) {
+	         this.error = err.response.data
+			}
   	});
 		}
   }
