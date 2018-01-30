@@ -85,7 +85,7 @@ return [
     ],
     'string'               => 'Поле :attribute должно быть строкой.',
     'timezone'             => 'Поле :attribute должно быть действительным часовым поясом.',
-    'unique'               => ':attribute уже существует.',
+    'unique'               => 'Такой :attribute уже существует.',
     'uploaded'             => 'Загрузка поля :attribute не удалась.',
     'url'                  => 'Поле :attribute имеет ошибочный формат.',
 
@@ -129,7 +129,7 @@ return [
     */
 
     'attributes' => [
-       'email' => 'Электронный адрес',
+       'email' => 'электронный адрес',
        'password' => 'пароль'
     ],
 
