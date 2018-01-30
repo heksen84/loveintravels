@@ -39,8 +39,7 @@ class AuthController extends Controller
             'password' => 'required|between:6,25'
         ]);
 
-        $user = User::where('email', $request->email)
-            ->first();
+        $user = User::where('email', $request->email)->first();
 
         if($user && Hash::check($request->password, $user->password)) {
             // generate new api token
