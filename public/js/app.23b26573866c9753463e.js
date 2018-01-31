@@ -20350,6 +20350,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -33299,7 +33312,28 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-form-group', {
     staticClass: "text-center"
-  }, [_c('h1', [_vm._v("Мои данные")])]), _vm._v(" "), _c('b-form-group', {
+  }, [_c('h1', [_vm._v("моя анкета")])]), _vm._v(" "), _c('b-row', [_c('b-col', [_c('b-img', {
+    attrs: {
+      "thumbnail": "",
+      "fluid": "",
+      "src": "https://lorempixel.com/250/250/technics/4/",
+      "alt": "Thumbnail"
+    }
+  })], 1), _vm._v(" "), _c('b-col', [_c('b-img', {
+    attrs: {
+      "thumbnail": "",
+      "fluid": "",
+      "src": "https://lorempixel.com/250/250/technics/8/",
+      "alt": "Thumbnail"
+    }
+  })], 1), _vm._v(" "), _c('b-col', [_c('b-img', {
+    attrs: {
+      "thumbnail": "",
+      "fluid": "",
+      "src": "https://lorempixel.com/250/250/technics/4/",
+      "alt": "Thumbnail"
+    }
+  })], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {

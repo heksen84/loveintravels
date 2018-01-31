@@ -5,8 +5,21 @@
 <b-form v-if="show">
 <form @submit.prevent="Continue">
 	<b-form-group class="text-center">
-		<h1>Мои данные</h1>
+		<h1>моя анкета</h1>
     </b-form-group>
+
+		<b-row>
+	 <b-col>
+		 <b-img thumbnail fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
+	 </b-col>
+	 <b-col>
+		 <b-img thumbnail fluid src="https://lorempixel.com/250/250/technics/8/" alt="Thumbnail" />
+	 </b-col>
+	 <b-col>
+		 <b-img thumbnail fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
+	 </b-col>
+ </b-row>
+	<br>
 
     <b-form-group class="text-center">
       <b-button variant="success" type="submit">Добавить фото</b-button>
@@ -68,7 +81,7 @@ export default {
 			this.error = {}
 			post('/api/signup', this.form).then((res) => {
 				if(res.data.registered) {
-					console.log(res.data);
+						console.log(res.data);
 					this.$router.push('/details');
 				}
 		}).catch((err) => {
