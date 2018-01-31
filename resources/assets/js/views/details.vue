@@ -8,6 +8,10 @@
 		<h1>Мои данные</h1>
     </b-form-group>
 
+    <b-form-group class="text-center">
+      <b-button variant="success" type="submit">Добавить фото</b-button>
+    </b-form-group>
+
 		<b-form-group id="sexGroup"
 	                  label="Ваш пол"
 	                  label-for="sexInput">
@@ -22,7 +26,6 @@
 	                  label="Ваш возраст"
 	                  label-for="userAgeInput"
 										class="text-center">
-
 	      <b-form-input id="userAgeInput"
 	                  type="text"
 	                  v-model="form.age"
@@ -30,13 +33,12 @@
 										style="max-width: 80px; margin:auto"
 										class="text-center">
 	      </b-form-input>
-
 				<small class="error_control" v-if="error.age">{{ error.age[0] }}</small>
 	    </b-form-group>
 
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Сохранить</b-button>
-    </b-form-group>
+  </b-form-group>
 	<br>
 </form>
 </b-form>

@@ -20348,6 +20348,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -33298,6 +33300,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('b-form-group', {
     staticClass: "text-center"
   }, [_c('h1', [_vm._v("Мои данные")])]), _vm._v(" "), _c('b-form-group', {
+    staticClass: "text-center"
+  }, [_c('b-button', {
+    attrs: {
+      "variant": "success",
+      "type": "submit"
+    }
+  }, [_vm._v("Добавить фото")])], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "sexGroup",
       "label": "Ваш пол",
