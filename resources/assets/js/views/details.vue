@@ -1,54 +1,53 @@
 <template>
 <div>
-<b-container style="max-width: 350px;">
+<b-container style="max-width: 300px;">
 <br>
 <b-form v-if="show">
 <form @submit.prevent="Continue">
 	<b-form-group class="text-center">
 		<h1>моя анкета</h1>
+  </b-form-group>
+
+	<b-form-group id="sexGroup"
+									label="Ваш пол"
+									label-for="sexInput">
+	<b-form-select v-model="form.sex">
+				<option value=0>Мужской</option>
+				<option value=1>Женский</option>
+	</b-form-select>
+	<small class="error_control" v-if="error.sex">{{ error.sex[0] }}</small>
+	</b-form-group>
+
+	<b-form-group id="userAgeGroup"
+									label="Ваш возраст"
+									label-for="userAgeInput"
+									class="text-center">
+			<b-form-input id="userAgeInput"
+									type="text"
+									v-model="form.age"
+									required
+									style="max-width: 80px; margin:auto"
+									class="text-center">
+			</b-form-input>
+			<small class="error_control" v-if="error.age">{{ error.age[0] }}</small>
+		</b-form-group>
+
+		<b-form-group class="text-center">
+      <b-button variant="link" type="submit">Добавить фото</b-button>
     </b-form-group>
 
 		<b-row>
 	 <b-col>
-		 <b-img thumbnail fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
+		 <b-img fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
 	 </b-col>
 	 <b-col>
-		 <b-img thumbnail fluid src="https://lorempixel.com/250/250/technics/8/" alt="Thumbnail" />
+		 <b-img fluid src="https://lorempixel.com/250/250/technics/8/" alt="Thumbnail" />
 	 </b-col>
 	 <b-col>
-		 <b-img thumbnail fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
+		 <b-img fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
 	 </b-col>
  </b-row>
 	<br>
-
-    <b-form-group class="text-center">
-      <b-button variant="success" type="submit">Добавить фото</b-button>
-    </b-form-group>
-
-		<b-form-group id="sexGroup"
-	                  label="Ваш пол"
-	                  label-for="sexInput">
-		<b-form-select v-model="form.sex">
-	      	<option value=0>Мужской</option>
-	      	<option value=1>Женский</option>
-	  </b-form-select>
-		<small class="error_control" v-if="error.sex">{{ error.sex[0] }}</small>
-	  </b-form-group>
-
-		<b-form-group id="userAgeGroup"
-	                  label="Ваш возраст"
-	                  label-for="userAgeInput"
-										class="text-center">
-	      <b-form-input id="userAgeInput"
-	                  type="text"
-	                  v-model="form.age"
-	                  required
-										style="max-width: 80px; margin:auto"
-										class="text-center">
-	      </b-form-input>
-				<small class="error_control" v-if="error.age">{{ error.age[0] }}</small>
-	    </b-form-group>
-
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Сохранить</b-button>
   </b-form-group>
