@@ -25,6 +25,10 @@ $my_grey: rgb(80,80,80);
  background: white;
 }
 
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: "Browse1";
+}
+
 @font-face {
   font-family: 'carefree';
   src: url('../fonts/carefree.ttf') format('truetype');

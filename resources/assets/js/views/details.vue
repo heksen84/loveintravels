@@ -32,10 +32,11 @@
 			<small class="error_control" v-if="error.age">{{ error.age[0] }}</small>
 		</b-form-group>
 
-		<b-form-group class="text-center">
-      <b-button variant="link" type="submit">Добавить фото</b-button>
-    </b-form-group>
+    	<!-- Загрузить фото -->
+		 <b-form-file v-model="form.file" accept="image/*" plain multiple></b-form-file>
 
+
+		<!--<b-form-group class="text-center">
 		<b-row>
 	 <b-col>
 		 <b-img fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
@@ -47,6 +48,7 @@
 		 <b-img fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
 	 </b-col>
  </b-row>
+</b-form-group>-->
 	<br>
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Сохранить</b-button>
@@ -68,7 +70,8 @@ export default {
     return 	{
 				form: {
 					sex:0,
-					age:0
+					age:0,
+					file: null
 				},
 				error: {},
 				show: true,

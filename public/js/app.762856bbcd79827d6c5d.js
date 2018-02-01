@@ -20362,6 +20362,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -20373,7 +20375,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		return {
 			form: {
 				sex: 0,
-				age: 0
+				age: 0,
+				file: null
 			},
 			error: {},
 			show: true,
@@ -33362,32 +33365,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), (_vm.error.age) ? _c('small', {
     staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.age[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
-    staticClass: "text-center"
-  }, [_c('b-button', {
+  }, [_vm._v(_vm._s(_vm.error.age[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-file', {
     attrs: {
-      "variant": "link",
-      "type": "submit"
+      "accept": "image/*",
+      "plain": "",
+      "multiple": ""
+    },
+    model: {
+      value: (_vm.form.file),
+      callback: function($$v) {
+        _vm.$set(_vm.form, "file", $$v)
+      },
+      expression: "form.file"
     }
-  }, [_vm._v("Добавить фото")])], 1), _vm._v(" "), _c('b-row', [_c('b-col', [_c('b-img', {
-    attrs: {
-      "fluid": "",
-      "src": "https://lorempixel.com/250/250/technics/4/",
-      "alt": "Thumbnail"
-    }
-  })], 1), _vm._v(" "), _c('b-col', [_c('b-img', {
-    attrs: {
-      "fluid": "",
-      "src": "https://lorempixel.com/250/250/technics/8/",
-      "alt": "Thumbnail"
-    }
-  })], 1), _vm._v(" "), _c('b-col', [_c('b-img', {
-    attrs: {
-      "fluid": "",
-      "src": "https://lorempixel.com/250/250/technics/4/",
-      "alt": "Thumbnail"
-    }
-  })], 1)], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
+  }), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {
