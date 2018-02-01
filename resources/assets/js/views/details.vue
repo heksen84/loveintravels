@@ -19,7 +19,7 @@
 	</b-form-group>
 
 	<b-form-group id="userAgeGroup"
-									label="Ваш возраст"
+									label="Возраст"
 									label-for="userAgeInput"
 									class="text-center">
 			<b-form-input id="userAgeInput"
