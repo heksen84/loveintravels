@@ -23,7 +23,7 @@ const router = new VueRouter({
 		{ path: '/trips', component: Trips },
 		{ path: '/welcome', component: Welcome },
 		{ path: '/error', component: Error },
-		{ path: '/details', component: Details },
+		{ path: '/details/:id', component: Details },
 		{ path: '*', component: NotFound }
 	]
 })

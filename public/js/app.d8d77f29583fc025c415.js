@@ -1383,7 +1383,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 	mode: 'history',
-	routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_2__views_index_vue___default.a }, { path: '/not-found', component: __WEBPACK_IMPORTED_MODULE_3__views_notfound_vue___default.a }, { path: '/login', component: __WEBPACK_IMPORTED_MODULE_5__views_login_vue___default.a }, { path: '/signup', component: __WEBPACK_IMPORTED_MODULE_6__views_signup_vue___default.a }, { path: '/forgot', component: __WEBPACK_IMPORTED_MODULE_7__views_forgot_vue___default.a }, { path: '/trips', component: __WEBPACK_IMPORTED_MODULE_4__views_trips_vue___default.a }, { path: '/welcome', component: __WEBPACK_IMPORTED_MODULE_8__views_welcome_vue___default.a }, { path: '/error', component: __WEBPACK_IMPORTED_MODULE_9__views_error_vue___default.a }, { path: '/details', component: __WEBPACK_IMPORTED_MODULE_10__views_details_vue___default.a }, { path: '*', component: __WEBPACK_IMPORTED_MODULE_3__views_notfound_vue___default.a }]
+	routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_2__views_index_vue___default.a }, { path: '/not-found', component: __WEBPACK_IMPORTED_MODULE_3__views_notfound_vue___default.a }, { path: '/login', component: __WEBPACK_IMPORTED_MODULE_5__views_login_vue___default.a }, { path: '/signup', component: __WEBPACK_IMPORTED_MODULE_6__views_signup_vue___default.a }, { path: '/forgot', component: __WEBPACK_IMPORTED_MODULE_7__views_forgot_vue___default.a }, { path: '/trips', component: __WEBPACK_IMPORTED_MODULE_4__views_trips_vue___default.a }, { path: '/welcome', component: __WEBPACK_IMPORTED_MODULE_8__views_welcome_vue___default.a }, { path: '/error', component: __WEBPACK_IMPORTED_MODULE_9__views_error_vue___default.a }, { path: '/details/:id', component: __WEBPACK_IMPORTED_MODULE_10__views_details_vue___default.a }, { path: '*', component: __WEBPACK_IMPORTED_MODULE_3__views_notfound_vue___default.a }]
 });
 
 /* harmony default export */ __webpack_exports__["a"] = (router);
@@ -20645,7 +20645,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers_api__["a" /* post */])('/api/login', this.form).then(function (res) {
 				if (res.data.authenticated) {
-					_this.$router.push('/details');
+					_this.$router.push('/details/' + res.data.user_id);
 				}
 			}).catch(function (err) {
 				console.log(err.response.data);

@@ -67,7 +67,7 @@ export default {
 			this.error = {}
 			post('/api/login', this.form).then((res) => {
 				if(res.data.authenticated) {
-					this.$router.push('/details');
+					this.$router.push('/details/'+res.data.user_id);
 				}
 		}).catch((err) => {
 			console.log(err.response.data);
