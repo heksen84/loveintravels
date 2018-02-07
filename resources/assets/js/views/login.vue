@@ -70,6 +70,7 @@ export default {
 			this.error = {}
 			post('/api/login', this.form).then((res) => {
 				if(res.data.authenticated) {
+					store.commit('increment');
 					this.$router.push('/details/'+res.data.user_id);
 				}
 		}).catch((err) => {
