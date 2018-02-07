@@ -71,6 +71,7 @@ export default {
 			post('/api/login', this.form).then((res) => {
 				if(res.data.authenticated) {
 					store.commit('increment');
+					store.commit('SetAuth');
 					this.$router.push('/details/'+res.data.user_id);
 				}
 		}).catch((err) => {

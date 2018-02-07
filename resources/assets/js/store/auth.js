@@ -33,6 +33,10 @@ const store = new Vuex.Store({
     count: 0
   },
   mutations: {
+		SetAuth (state) {
+			user.auth=state;
+			alert(user.auth);
+		},
     increment (state) {
       state.count++
 			alert(state.count);
