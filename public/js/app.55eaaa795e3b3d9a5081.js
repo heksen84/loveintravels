@@ -15319,7 +15319,7 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 		count: 0
 	},
 	mutations: {
-		SetAuth: function SetAuth(state) {
+		SetAuth: function SetAuth(user) {
 			user.auth = state;
 			alert(user.auth);
 		},
