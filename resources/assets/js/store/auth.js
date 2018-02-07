@@ -26,6 +26,9 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
+	user: {
+		auth:false
+	},
   state: {
     count: 0
   },
