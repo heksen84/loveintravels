@@ -1,5 +1,6 @@
 ﻿<template>
 <div>
+<NavBar></NavBar>
 <b-container style="max-width: 350px;">
 <br>
 <b-form v-if="show">
@@ -19,33 +20,6 @@
       </b-form-input>
 			<small class="error_control" v-if="error.name">{{ error.name[0] }}</small>
     </b-form-group>
-
-		<!--<b-form-group id="sexGroup"
-	                  label="Ваш пол"
-	                  label-for="sexInput">
-		<b-form-select v-model="form.sex">
-	      	<option value=0>Мужской</option>
-	      	<option value=1>Женский</option>
-	  </b-form-select>
-		<small class="error_control" v-if="error.sex">{{ error.sex[0] }}</small>
-	  </b-form-group>
-
-		<b-form-group id="userAgeGroup"
-	                  label="Ваш возраст"
-	                  label-for="userAgeInput"
-										class="text-center">
-
-	      <b-form-input id="userAgeInput"
-	                  type="number"
-	                  v-model="form.age"
-	                  required
-										style="max-width: 80px; margin:auto"
-										class="text-center">
-	      </b-form-input>
-
-				<small class="error_control" v-if="error.age">{{ error.age[0] }}</small>
-	    </b-form-group>
--->
 	<b-form-group id="emailGroup"
                   label="Электронная почта"
                   label-for="emailInput">
@@ -69,19 +43,6 @@
       </b-form-input>
 			<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>
     </b-form-group>
-<!--
-		<b-form-group id="passwordConfirmGroup"
-	                  label="Подтверждение пароля"
-	                  label-for="passwordConfirmInput">
-	      <b-form-input id="passwordConfirmInput"
-	                  type="password"
-	                  v-model="form.password_confirmation"
-	                  required
-	                  placeholder="Повторите пароль">
-	      </b-form-input>
-				<small class="error_control" v-if="error.password">{{ error.password[0] }}</small>
-	    </b-form-group>
--->
 
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Продолжить</b-button>
@@ -99,18 +60,16 @@
 
 import router from './../router'
 import { post, interceptors } from './../helpers/api'
+import NavBar from './navbar.vue'
 
 export default {
-	components: { router },
+	components: { router, NavBar },
 	data () {
     return 	{
 				form: {
 					name:"",
 					email:"",
-					password:"",
-					//password_confirmation:""
-					//sex:0,
-					//age:0
+					password:""
 				},
 				error: {},
 				show: true,

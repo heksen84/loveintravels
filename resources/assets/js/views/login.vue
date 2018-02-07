@@ -1,5 +1,6 @@
 ﻿<template>
 <div>
+<NavBar></NavBar>
 <b-container style="max-width: 350px;">
 <br>
 <br>
@@ -49,9 +50,11 @@
 
 import router from './../router'
 import { post, interceptors } from './../helpers/api'
+import Vuex from 'vuex'
+import NavBar from './navbar.vue'
 
 export default {
-	components: { router },
+	components: { router, NavBar },
 	data () {
     return 	{
 				form: {

@@ -57,6 +57,9 @@
 	<br>
 </form>
 </b-form>
+
+<!--<upload-image></upload-image>-->
+
 </b-container>
 </div>
 </template>
@@ -65,8 +68,9 @@
 import router from './../router'
 import { post, interceptors } from './../helpers/api'
 import NavBar from './navbar.vue'
+/*import UploadImage from 'vue-upload-image'*/
 
-export default {
+export default {	
 	components: { router, NavBar },
 	data () {
     return 	{
