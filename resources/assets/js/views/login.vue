@@ -49,12 +49,12 @@
 <script type="text/javascript">
 
 import router from './../router'
+import store from './../store/auth.js'
 import { post, interceptors } from './../helpers/api'
-import Vuex from 'vuex'
 import NavBar from './navbar.vue'
 
 export default {
-	components: { router, NavBar },
+	components: { router, store, NavBar },
 	data () {
     return 	{
 				form: {

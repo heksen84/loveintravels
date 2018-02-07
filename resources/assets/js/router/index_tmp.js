@@ -8,6 +8,7 @@ import Signup from '../views/signup.vue'
 import Forgot from '../views/forgot.vue'
 import Welcome from '../views/welcome.vue'
 import Error from '../views/error.vue'
+import Details from '../views/details.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,7 @@ const router = new VueRouter({
 		{ path: '/trips', component: Trips },
 		{ path: '/welcome', component: Welcome },
 		{ path: '/error', component: Error },
+		{ path: '/details/:id', component: Details },
 		{ path: '*', component: NotFound }
 	]
 })
