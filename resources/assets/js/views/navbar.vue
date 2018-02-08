@@ -8,7 +8,7 @@
       <b-nav-form>
 	<b-container>
 	<b-row class="text-center">
-	<b-col cols="12" md="auto" v-if="show_auth_buttons">
+	<b-col cols="12" md="auto" v-if="Auth">
 	    <b-button size="sm" class="my-1 mr-sm-1" href="/login">Вход</b-button>
 	    <b-button size="sm" class="my-1 mr-sm-1" variant="success" href="/signup">Регистрация</b-button>
 	</b-col>
@@ -29,9 +29,10 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import cfg from '..//cfg.js'
 import router from './../router'
+import store from './../store'
 
 export default {
-  components: { router },
+  components: { router, store },
   data () {
     return 	{
         user: {
@@ -45,6 +46,12 @@ export default {
 		GoHome() {
 			this.$router.push('/');
 		}
-  }
+  },
+  computed: {
+    Auth()  {
+      //return this.$store.getters.authenticated
+      return true;
+     }
+}
 }
 </script>
