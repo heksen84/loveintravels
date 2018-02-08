@@ -26,16 +26,14 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-	user: {
-		auth:false
-	},
   state: {
-    count: 0
+    count: 0,
+		auth:false
   },
   mutations: {
-		SetAuth (user) {
-			user.auth=state;
-			alert(user.auth);
+		SetAuth (state, value) {
+			state.auth=value;
+			alert(state.auth);
 		},
     increment (state) {
       state.count++

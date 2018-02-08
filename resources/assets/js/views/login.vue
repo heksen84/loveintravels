@@ -49,7 +49,7 @@
 <script type="text/javascript">
 
 import router from './../router'
-import store from './../store/auth.js'
+import store from './../store'
 import { post, interceptors } from './../helpers/api'
 import NavBar from './navbar.vue'
 
@@ -71,7 +71,8 @@ export default {
 			post('/api/login', this.form).then((res) => {
 				if(res.data.authenticated) {
 					store.commit('increment');
-					store.commit('SetAuth');
+					store.commit('SetAuth', true);
+					store.commit('SetAuth', false);
 					this.$router.push('/details/'+res.data.user_id);
 				}
 		}).catch((err) => {

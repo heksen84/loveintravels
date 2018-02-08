@@ -2,7 +2,8 @@
 	<router-view></router-view>
 </template>
 <script>
-import Auth from './store/auth'
+
+import Auth from './store'
 import Flash from './helpers/flash'
 import { post, interceptors } from './helpers/api'
 
