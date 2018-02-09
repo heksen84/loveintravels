@@ -65,8 +65,8 @@ export default {
 				show: true
 			}
 	},
-	created() {		
-		store.commit('SetAuth', false);
+	created() {
+		store.commit('SetAuth', true);
 	},
   methods: {
 		Login() {

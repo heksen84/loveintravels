@@ -24,8 +24,10 @@
 		<br>
 		<h3>Добро пожаловать в <div style="margin-top:5px;font-size:22px"><b>LOVE IN TRAVELS!</b></div></h3>
 		<br>
-			<b-button href="/login">{{ str_auth }}</b-button>
-			<b-button variant="success" href="/signup">{{ str_reg }}</b-button>
+			<!--<b-button href="/login">{{ str_auth }}</b-button>-->
+      <b-button v-on:click="Auth">{{ str_auth }}</b-button>
+			<!--<b-button variant="success" href="/signup">{{ str_reg }}</b-button>-->
+      <b-button variant="success" v-on:click="Signup">{{ str_reg }}</b-button>
 		<br>
 		<br>
 		<!--Love in travels - люби и путешествуй!-->
@@ -47,6 +49,8 @@
 
 import Vue from 'vue'
 import NavBar from './navbar.vue'
+import router from './../router'
+import store from './../store'
 
 export default {
 	data () {
@@ -60,9 +64,19 @@ export default {
 				str_reg: "Регистрация"
 			}
 	},
-	components: { NavBar },
+	components: { NavBar, router, store },
 	created() {
-		store.commit('SetAuth', true);
-	}
+    store.commit('SetAuth', false);
+	},
+  methods: {
+    Auth: function (event) {
+      store.commit('SetAuth', true);
+      this.$router.push("/login");
+    },
+    Signup: function (event) {
+      store.commit('SetAuth', true);
+      this.$router.push("/signup");
+    }
+}
 }
 </script>

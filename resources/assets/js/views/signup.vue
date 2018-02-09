@@ -77,8 +77,7 @@ export default {
 			}
 	},
 	created() {
-		alert("signup@");
-		store.commit('SetAuth', true);
+		store.commit('SetAuth', false);
 	},
   methods: {
 		Continue () {

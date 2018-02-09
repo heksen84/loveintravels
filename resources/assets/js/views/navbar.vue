@@ -42,9 +42,11 @@ export default {
 	},
 	created() {
 		//store.commit('SetAuth', true);
+    //alert("!");
 	},
   methods: {
 		GoHome() {
+      store.commit('SetAuth', false);
 			this.$router.push('/');
 		}
   },

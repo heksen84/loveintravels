@@ -28,7 +28,7 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     count: 0,
-		auth: true
+		auth: false
   },
   mutations: {
 		SetAuth (state, value) {
