@@ -20556,7 +20556,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		};
 	},
 	created: function created() {
-		alert("i'm constructor!");
+		//alert("i'm constructor!");
+		__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('SetAuth', true);
 	},
 
 	methods: {
@@ -20566,9 +20567,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__helpers_api__["a" /* post */])('/api/login', this.form).then(function (res) {
 				if (res.data.authenticated) {
-					__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('increment');
-					__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('SetAuth', true);
-					__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('SetAuth', false);
+					//store.commit('increment');
+					//store.commit('SetAuth', true);
+					//store.commit('SetAuth', false);
 					_this.$router.push('/details/' + res.data.user_id);
 				}
 			}).catch(function (err) {

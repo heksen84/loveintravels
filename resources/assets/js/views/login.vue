@@ -66,16 +66,17 @@ export default {
 			}
 	},
 	created() {
-		alert("i'm constructor!");
+		//alert("i'm constructor!");
+		store.commit('SetAuth', true);
 	},
   methods: {
 		Login() {
 			this.error = {}
 			post('/api/login', this.form).then((res) => {
 				if(res.data.authenticated) {
-					store.commit('increment');
-					store.commit('SetAuth', true);
-					store.commit('SetAuth', false);
+					//store.commit('increment');
+					//store.commit('SetAuth', true);
+					//store.commit('SetAuth', false);
 					this.$router.push('/details/'+res.data.user_id);
 				}
 		}).catch((err) => {
