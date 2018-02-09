@@ -20555,6 +20555,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			show: true
 		};
 	},
+	created: function created() {
+		alert("i'm constructor!");
+	},
 
 	methods: {
 		Login: function Login() {

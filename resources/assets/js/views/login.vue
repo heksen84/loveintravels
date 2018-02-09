@@ -65,6 +65,9 @@ export default {
 				show: true
 			}
 	},
+	created() {
+		alert("i'm constructor!");
+	},
   methods: {
 		Login() {
 			this.error = {}
