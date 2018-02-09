@@ -8,7 +8,7 @@
       <b-nav-form>
 	<b-container>
 	<b-row class="text-center">
-	<b-col cols="12" md="auto" v-if="Auth">
+	<b-col cols="12" md="auto" v-if="IsAuth">
 	    <b-button size="sm" class="my-1 mr-sm-1" href="/login">Вход</b-button>
 	    <b-button size="sm" class="my-1 mr-sm-1" variant="success" href="/signup">Регистрация</b-button>
 	</b-col>
@@ -37,10 +37,11 @@ export default {
     return 	{
         user: {
           name: cfg.name
-        },
-				show_auth_buttons: true,
-        show_user_info: true
+        }
 			}
+	},
+	created() {
+		//store.commit('SetAuth', true);
 	},
   methods: {
 		GoHome() {
@@ -48,9 +49,8 @@ export default {
 		}
   },
   computed: {
-    Auth()  {
-      //return this.$store.getters.authenticated
-      return true;
+    IsAuth()  {
+      return store.state.auth;
      }
 }
 }

@@ -76,6 +76,10 @@ export default {
 				selected:0
 			}
 	},
+	created() {
+		alert("signup@");
+		store.commit('SetAuth', true);
+	},
   methods: {
 		Continue () {
 			this.error = {}

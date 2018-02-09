@@ -12692,11 +12692,11 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 	mutations: {
 		SetAuth: function SetAuth(state, value) {
 			state.auth = value;
-			alert(state.auth);
+			//alert(state.auth);
 		},
 		increment: function increment(state) {
 			state.count++;
-			alert(state.count);
+			//alert(state.count);
 		}
 	}
 });
@@ -20474,7 +20474,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		};
 	},
 
-	components: { NavBar: __WEBPACK_IMPORTED_MODULE_1__navbar_vue___default.a }
+	components: { NavBar: __WEBPACK_IMPORTED_MODULE_1__navbar_vue___default.a },
+	created: function created() {
+		store.commit('SetAuth', true);
+	}
 });
 
 /***/ }),
@@ -20556,8 +20559,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		};
 	},
 	created: function created() {
-		//alert("i'm constructor!");
-		__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('SetAuth', true);
+		__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('SetAuth', false);
 	},
 
 	methods: {
@@ -20567,9 +20569,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__helpers_api__["a" /* post */])('/api/login', this.form).then(function (res) {
 				if (res.data.authenticated) {
-					//store.commit('increment');
-					//store.commit('SetAuth', true);
-					//store.commit('SetAuth', false);
 					_this.$router.push('/details/' + res.data.user_id);
 				}
 			}).catch(function (err) {
@@ -20634,10 +20633,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       user: {
         name: __WEBPACK_IMPORTED_MODULE_2__cfg_js___default.a.name
-      },
-      show_auth_buttons: true,
-      show_user_info: true
+      }
     };
+  },
+  created: function created() {
+    //store.commit('SetAuth', true);
   },
 
   methods: {
@@ -20646,9 +20646,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
   },
   computed: {
-    Auth: function Auth() {
-      //return this.$store.getters.authenticated
-      return true;
+    IsAuth: function IsAuth() {
+      return __WEBPACK_IMPORTED_MODULE_4__store__["a" /* default */].state.auth;
     }
   }
 });
@@ -20757,6 +20756,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			show: true,
 			selected: 0
 		};
+	},
+	created: function created() {
+		alert("signup@");
+		store.commit('SetAuth', true);
 	},
 
 	methods: {
@@ -33485,7 +33488,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "ml-auto"
   }, [_c('b-nav-form', [_c('b-container', [_c('b-row', {
     staticClass: "text-center"
-  }, [(_vm.Auth) ? _c('b-col', {
+  }, [(_vm.IsAuth) ? _c('b-col', {
     attrs: {
       "cols": "12",
       "md": "auto"

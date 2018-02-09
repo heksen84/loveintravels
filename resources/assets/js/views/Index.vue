@@ -60,6 +60,9 @@ export default {
 				str_reg: "Регистрация"
 			}
 	},
-	components: { NavBar }
+	components: { NavBar },
+	created() {
+		store.commit('SetAuth', true);
+	}
 }
 </script>

@@ -65,18 +65,14 @@ export default {
 				show: true
 			}
 	},
-	created() {
-		//alert("i'm constructor!");
-		store.commit('SetAuth', true);
+	created() {		
+		store.commit('SetAuth', false);
 	},
   methods: {
 		Login() {
 			this.error = {}
 			post('/api/login', this.form).then((res) => {
 				if(res.data.authenticated) {
-					//store.commit('increment');
-					//store.commit('SetAuth', true);
-					//store.commit('SetAuth', false);
 					this.$router.push('/details/'+res.data.user_id);
 				}
 		}).catch((err) => {
