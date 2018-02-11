@@ -41,8 +41,6 @@ export default {
 			}
 	},
 	created() {
-		//store.commit('SetAuth', true);
-    //alert("!");
 	},
   methods: {
 		GoHome() {
@@ -52,7 +50,9 @@ export default {
   },
   computed: {
     IsAuth()  {
-      return store.state.auth;
+      // кнопки авторизации в панели отображаются только через v-if = true,
+      // поэтому переворачиваем значение auth
+      return !store.state.auth_mode;
      }
 }
 }

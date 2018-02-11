@@ -50,8 +50,8 @@
 
 import router from './../router'
 import store from './../store'
-import { post, interceptors } from './../helpers/api'
 import NavBar from './navbar.vue'
+import { post, interceptors } from './../helpers/api'
 
 export default {
 	components: { router, store, NavBar },

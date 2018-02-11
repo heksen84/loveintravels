@@ -24,10 +24,10 @@
 		<br>
 		<h3>Добро пожаловать в <div style="margin-top:5px;font-size:22px"><b>LOVE IN TRAVELS!</b></div></h3>
 		<br>
-			<!--<b-button href="/login">{{ str_auth }}</b-button>-->
-      <b-button v-on:click="Auth">{{ str_auth }}</b-button>
-			<!--<b-button variant="success" href="/signup">{{ str_reg }}</b-button>-->
-      <b-button variant="success" v-on:click="Signup">{{ str_reg }}</b-button>
+			<b-button href="/login">{{ str_auth }}</b-button>
+      <!--<b-button v-on:click="Auth">{{ str_auth }}</b-button>-->
+			<b-button variant="success" href="/signup">{{ str_reg }}</b-button>
+      <!--<b-button variant="success" v-on:click="Signup">{{ str_reg }}</b-button>-->
 		<br>
 		<br>
 		<!--Love in travels - люби и путешествуй!-->
@@ -65,9 +65,6 @@ export default {
 			}
 	},
 	components: { NavBar, router, store },
-	created() {
-    store.commit('SetAuth', false);
-	},
   methods: {
     Auth: function (event) {
       store.commit('SetAuth', true);

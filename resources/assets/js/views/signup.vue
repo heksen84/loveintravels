@@ -59,11 +59,12 @@
 <script type="text/javascript">
 
 import router from './../router'
-import { post, interceptors } from './../helpers/api'
 import NavBar from './navbar.vue'
+import store from './../store'
+import { post, interceptors } from './../helpers/api'
 
 export default {
-	components: { router, NavBar },
+	components: { router, NavBar, store },
 	data () {
     return 	{
 				form: {
@@ -77,7 +78,7 @@ export default {
 			}
 	},
 	created() {
-		store.commit('SetAuth', false);
+		store.commit('SetAuth', true);
 	},
   methods: {
 		Continue () {
