@@ -12,9 +12,9 @@
 	    <b-button size="sm" class="my-1 mr-sm-1" href="/login">Вход</b-button>
 	    <b-button size="sm" class="my-1 mr-sm-1" variant="success" href="/signup">Регистрация</b-button>
 	</b-col>
-  <b-col cols="12" md="auto" v-if="show_user_info">
+  <!--<b-col cols="12" md="auto">
     <h4 style="color:white">{{ user.name }}</h4>
-	</b-col>
+	</b-col>-->
 	</b-row>
 	</b-container>
       </b-nav-form>
