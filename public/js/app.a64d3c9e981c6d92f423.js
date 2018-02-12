@@ -33555,7 +33555,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "opacity": "0"
     },
     attrs: {
-      "type": "file"
+      "type": "file",
+      "accept": ".png, .jpg, .jpeg",
+      "multiple": ""
     }
   })])], 1)], 1)], 1)
 },staticRenderFns: []}
