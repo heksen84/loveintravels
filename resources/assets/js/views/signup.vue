@@ -49,7 +49,7 @@
     </b-form-group>
 	<br>
 	<b-form-group class="text-center">
-		<h5>У вас уже есть аккаунт? <b-link href="/login">Войти</b-link></h5>
+		<h6>У вас уже есть аккаунт? <b-link href="/login">Войти</b-link></h6>
 	</b-form-group>
 </form>
 </b-form>

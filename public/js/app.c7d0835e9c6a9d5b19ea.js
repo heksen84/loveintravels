@@ -33346,7 +33346,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "error_control"
   }, [_vm._v(_vm._s(_vm.error.password[0]))]) : _vm._e()], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
-  }, [_c('h5', [_vm._v("Забыли пароль? "), _c('b-link', {
+  }, [_c('h6', [_vm._v("Забыли пароль? "), _c('b-link', {
     attrs: {
       "href": "/forgot"
     }
@@ -33687,7 +33687,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Продолжить")])], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
-  }, [_c('h5', [_vm._v("У вас уже есть аккаунт? "), _c('b-link', {
+  }, [_c('h6', [_vm._v("У вас уже есть аккаунт? "), _c('b-link', {
     attrs: {
       "href": "/login"
     }
