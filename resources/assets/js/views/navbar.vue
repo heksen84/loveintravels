@@ -12,9 +12,9 @@
 	    <b-button size="sm" class="my-1 mr-sm-1" href="/login">Вход</b-button>
 	    <b-button size="sm" class="my-1 mr-sm-1" variant="success" href="/signup">Регистрация</b-button>
 	</b-col>
-  <!--<b-col cols="12" md="auto">
-    <h4 style="color:white">{{ user.name }}</h4>
-	</b-col>-->
+  <b-col cols="12" md="auto">
+    <h5 style="color:white" class="my-1 mr-sm-1" >{{ user.name }}</h5>
+	</b-col>
 	</b-row>
 	</b-container>
       </b-nav-form>
@@ -27,7 +27,6 @@
 
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
-import cfg from '..//cfg.js'
 import router from './../router'
 import store from './../store'
 
@@ -36,11 +35,9 @@ export default {
   data () {
     return 	{
         user: {
-          name: cfg.name
+          name: "no-name"
         }
 			}
-	},
-	created() {
 	},
   methods: {
 		GoHome() {
@@ -50,9 +47,12 @@ export default {
   },
   computed: {
     IsAuth()  {
-      // кнопки авторизации в панели отображаются только через v-if = true,
-      // поэтому переворачиваем значение auth
+      /* кнопки авторизации в панели отображаются только через v-if = true,
+       поэтому переворачиваем значение auth */
       return !store.state.auth_mode;
+    },
+    GetUserName()  {
+      return store.state.user_name;
      }
 }
 }

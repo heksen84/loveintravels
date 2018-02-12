@@ -14,6 +14,6 @@ const app = new Vue({
 	el: '#root',
 	template: `<app></app>`,
 	components: { App }, router,
-	data: {		
+	data: {
 	}
 })
