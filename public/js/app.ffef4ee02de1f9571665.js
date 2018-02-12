@@ -1324,7 +1324,7 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 	state: {
 		count: 0,
 		auth_mode: false,
-		user_name: "no-name"
+		user_name: ""
 	},
 	mutations: {
 		setAuth: function setAuth(state, value) {
@@ -20719,6 +20719,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__helpers_api__["a" /* post */])('/api/login', this.form).then(function (res) {
 				if (res.data.authenticated) {
+					__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setUserName', res.data.name);
 					_this.$router.push('/details/' + res.data.user_id);
 				}
 			}).catch(function (err) {
@@ -20779,7 +20780,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   data: function data() {
     return {
       user: {
-        name: "no-name"
+        name: __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].state.user_name
       }
     };
   },

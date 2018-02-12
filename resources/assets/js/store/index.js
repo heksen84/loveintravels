@@ -29,7 +29,7 @@ const store = new Vuex.Store({
   state: {
     count: 0,
 		auth_mode: false,
-    user_name: "no-name"
+    user_name: ""
   },
   mutations: {
 		setAuth (state, value) {

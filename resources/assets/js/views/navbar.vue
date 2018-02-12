@@ -35,7 +35,7 @@ export default {
   data () {
     return 	{
         user: {
-          name: "no-name"
+          name: store.state.user_name
         }
 			}
 	},

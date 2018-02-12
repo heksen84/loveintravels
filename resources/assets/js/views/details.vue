@@ -71,7 +71,7 @@ export default {
 			}
 	},
 	created() {
-		store.commit('setAuth', true);
+		store.commit('setAuth', true);		
 	},
 	methods: {
 		next() {
