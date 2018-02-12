@@ -2,8 +2,9 @@
 	<b-container>
     <b-row class="text-center">
         <b-col>
-					<b-button>Загрузить фото</b-button>
+					<b-button>Загрузить фото
 					<input type="file" style="width:100%;position:absolute;top:0;left:0;height:100%;opacity:0">
+					</b-button>
 				</b-col>
     </b-row>
 </b-container>
