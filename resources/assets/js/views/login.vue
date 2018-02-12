@@ -5,7 +5,7 @@
 <br>
 <br>
 <b-form v-if="show">
-	<form v-on:submit.prevent="Login">
+	<form v-on:submit.prevent="login">
 	<b-form-group class="text-center">
 		<h1>Вход в <br>Love in travels</h1>
     </b-form-group>
@@ -66,10 +66,10 @@ export default {
 			}
 	},
 	created() {
-		store.commit('SetAuth', true);
+		store.commit('setAuth', true);
 	},
   methods: {
-		Login() {
+		login() {
 			this.error = {}
 			post('/api/login', this.form).then((res) => {
 				if(res.data.authenticated) {

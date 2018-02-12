@@ -26,7 +26,7 @@ export default {
 		//Auth.initialize()
 		//alert("ready!");
 		//this.$router.push('/login')
-	},
+},
   data () {
     return 	{
 			}

@@ -4,7 +4,7 @@
 <b-container style="max-width: 300px;">
 <br>
 <b-form v-if="show">
-<form @submit.prevent="Continue">
+<form @submit.prevent="next">
 	<b-form-group class="text-center">
 		<h1>моя анкета</h1>
   </b-form-group>
@@ -86,10 +86,10 @@ export default {
 			}
 	},
 	created() {
-		store.commit('SetAuth', true);		
+		store.commit('setAuth', true);
 	},
 	methods: {
-		Continue () {
+		next() {
 			this.error = {}
 			post('/api/signup', this.form).then((res) => {
 				if(res.data.registered) {

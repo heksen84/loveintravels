@@ -1327,10 +1327,10 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 		user_name: "no-name"
 	},
 	mutations: {
-		SetAuth: function SetAuth(state, value) {
+		setAuth: function setAuth(state, value) {
 			state.auth_mode = value;
 		},
-		SetUserName: function SetUserName(state, name) {
+		setUserName: function setUserName(state, name) {
 			state.user_name = name;
 		}
 	}
@@ -20423,11 +20423,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		};
 	},
 	created: function created() {
-		__WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */].commit('SetAuth', true);
+		__WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */].commit('setAuth', true);
 	},
 
 	methods: {
-		Continue: function Continue() {
+		next: function next() {
 			var _this = this;
 
 			this.error = {};
@@ -20588,8 +20588,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 
 
@@ -20598,29 +20596,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      selected: null,
-      str_title: "Love in travels",
-      //str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествия.",
-      str_desc: "это отличный способ найти себе половинку находясь в путешествии или за границей.",
-      str_footer_text: "LOVE IN TRAVELS " + new Date().getFullYear(),
-      str_auth: "Вход",
-      str_reg: "Регистрация"
-    };
-  },
+	data: function data() {
+		return {
+			selected: null,
+			str_title: "Love in travels",
+			//str_desc: "это отличный способ найти партнёра для совместного отдыха и путешествия.",
+			str_desc: "это отличный способ найти себе половинку находясь в путешествии или за границей.",
+			str_footer_text: "LOVE IN TRAVELS " + new Date().getFullYear(),
+			str_auth: "Вход",
+			str_reg: "Регистрация"
+		};
+	},
 
-  components: { NavBar: __WEBPACK_IMPORTED_MODULE_1__navbar_vue___default.a, router: __WEBPACK_IMPORTED_MODULE_2__router__["a" /* default */], store: __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */] },
-  methods: {
-    Auth: function Auth(event) {
-      __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].commit('SetAuth', true);
-      this.$router.push("/login");
-    },
-    Signup: function Signup(event) {
-      __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].commit('SetAuth', true);
-      this.$router.push("/signup");
-    }
-  }
+	components: { NavBar: __WEBPACK_IMPORTED_MODULE_1__navbar_vue___default.a, router: __WEBPACK_IMPORTED_MODULE_2__router__["a" /* default */], store: __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */] },
+	methods: {}
 });
 
 /***/ }),
@@ -20702,11 +20691,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		};
 	},
 	created: function created() {
-		__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('SetAuth', true);
+		__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setAuth', true);
 	},
 
 	methods: {
-		Login: function Login() {
+		login: function login() {
 			var _this = this;
 
 			this.error = {};
@@ -20779,17 +20768,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
   methods: {
     GoHome: function GoHome() {
-      __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].commit('SetAuth', false);
+      __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].commit('setAuth', false);
       this.$router.push('/');
     }
   },
   computed: {
-    IsAuth: function IsAuth() {
+    isAuth: function isAuth() {
       /* кнопки авторизации в панели отображаются только через v-if = true,
        поэтому переворачиваем значение auth */
       return !__WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].state.auth_mode;
     },
-    GetUserName: function GetUserName() {
+    getUserName: function getUserName() {
       return __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].state.user_name;
     }
   }
@@ -20903,11 +20892,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		};
 	},
 	created: function created() {
-		__WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */].commit('SetAuth', true);
+		__WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */].commit('setAuth', true);
 	},
 
 	methods: {
-		Continue: function Continue() {
+		next: function next() {
 			var _this = this;
 
 			this.error = {};
@@ -33256,7 +33245,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "submit": function($event) {
         $event.preventDefault();
-        _vm.Login($event)
+        _vm.login($event)
       }
     }
   }, [_c('b-form-group', {
@@ -33341,7 +33330,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "submit": function($event) {
         $event.preventDefault();
-        _vm.Continue($event)
+        _vm.next($event)
       }
     }
   }, [_c('b-form-group', {
@@ -33564,7 +33553,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "submit": function($event) {
         $event.preventDefault();
-        _vm.Continue($event)
+        _vm.next($event)
       }
     }
   }, [_c('b-form-group', {
@@ -33756,7 +33745,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "ml-auto"
   }, [_c('b-nav-form', [_c('b-container', [_c('b-row', {
     staticClass: "text-center"
-  }, [(_vm.IsAuth) ? _c('b-col', {
+  }, [(_vm.isAuth) ? _c('b-col', {
     attrs: {
       "cols": "12",
       "md": "auto"
