@@ -20342,6 +20342,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -33543,7 +33544,19 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('b-container', [_c('b-row', {
     staticClass: "text-center"
-  }, [_c('b-col', [_c('b-button', [_vm._v("Загрузить фото")])], 1)], 1)], 1)
+  }, [_c('b-col', [_c('b-button', [_vm._v("Загрузить фото")]), _vm._v(" "), _c('input', {
+    staticStyle: {
+      "width": "100%",
+      "position": "absolute",
+      "top": "0",
+      "left": "0",
+      "height": "100%",
+      "opacity": "0"
+    },
+    attrs: {
+      "type": "file"
+    }
+  })], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
