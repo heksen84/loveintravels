@@ -20414,6 +20414,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -33434,7 +33436,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), (_vm.error.age) ? _c('small', {
     staticClass: "error_control"
-  }, [_vm._v(_vm._s(_vm.error.age[0]))]) : _vm._e()], 1), _vm._v(" "), _c('UploadImages'), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
+  }, [_vm._v(_vm._s(_vm.error.age[0]))]) : _vm._e()], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', [_c('UploadImages')], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('hr'), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {

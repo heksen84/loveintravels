@@ -32,13 +32,15 @@
 			</b-form-input>
 			<small class="error_control" v-if="error.age">{{ error.age[0] }}</small>
 		</b-form-group>
-
-		<UploadImages></UploadImages>
-
-	<br>
-	<b-form-group class="text-center">
-		<b-button variant="success" type="submit">Сохранить</b-button>
-  </b-form-group>
+		<br>
+			<b-form-group>
+				<UploadImages></UploadImages>
+			</b-form-group>
+		<br>
+		<hr>
+		<b-form-group class="text-center">
+			<b-button variant="success" type="submit">Сохранить</b-button>
+  	</b-form-group>
 	<br>
 </form>
 </b-form>
