@@ -4,7 +4,7 @@
 			<b-row class="text-center" align-v="center">
 				<b-col>
 					<br>
-					<b-alert show variant="success"><h5>Сорян, но страница не найдена!</h5></b-alert>
+					<b-alert show variant="success"><h4>Страница не найдена</h4></b-alert>
 				</b-col>
 			</b-row>
 		</b-container>

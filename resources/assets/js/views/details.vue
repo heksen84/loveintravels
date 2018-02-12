@@ -66,12 +66,13 @@
 <script type="text/javascript">
 
 import router from './../router'
-import { post, interceptors } from './../helpers/api'
 import NavBar from './navbar.vue'
+import store from './../store'
+import { post, interceptors } from './../helpers/api'
 /*import UploadImage from 'vue-upload-image'*/
 
-export default {	
-	components: { router, NavBar },
+export default {
+	components: { router, store, NavBar },
 	data () {
     return 	{
 				form: {
@@ -84,7 +85,10 @@ export default {
 				selected:0
 			}
 	},
-  methods: {
+	created() {
+		store.commit('SetAuth', true);		
+	},
+	methods: {
 		Continue () {
 			this.error = {}
 			post('/api/signup', this.form).then((res) => {
