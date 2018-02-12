@@ -20767,7 +20767,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   methods: {
-    GoHome: function GoHome() {
+    goHome: function goHome() {
       __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].commit('setAuth', false);
       this.$router.push('/');
     }
@@ -33734,7 +33734,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('span', {
     staticClass: "carefree-font",
     on: {
-      "click": _vm.GoHome
+      "click": _vm.goHome
     }
   }, [_vm._v(" love in travels")])]), _vm._v(" "), _c('b-collapse', {
     attrs: {

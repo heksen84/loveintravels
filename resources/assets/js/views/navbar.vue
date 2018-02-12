@@ -2,7 +2,7 @@
 <div>
 <b-navbar toggleable="md" type="dark" variant="danger">
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-  <b-navbar-brand style="cursor:default"><span class="carefree-font" v-on:click="GoHome">&nbsp;love in travels</span></b-navbar-brand>
+  <b-navbar-brand style="cursor:default"><span class="carefree-font" v-on:click="goHome">&nbsp;love in travels</span></b-navbar-brand>
   <b-collapse is-nav id="nav_collapse">
     <b-navbar-nav class="ml-auto">
       <b-nav-form>
@@ -40,7 +40,7 @@ export default {
 			}
 	},
   methods: {
-		GoHome() {
+		goHome() {
       store.commit('setAuth', false);
 			this.$router.push('/');
 		}
