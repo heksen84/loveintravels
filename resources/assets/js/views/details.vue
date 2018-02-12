@@ -33,23 +33,8 @@
 			<small class="error_control" v-if="error.age">{{ error.age[0] }}</small>
 		</b-form-group>
 
-    	<!-- Загрузить фото -->
-		 <b-form-file v-model="form.file" accept="image/*" plain multiple></b-form-file>
+		<UploadImages></UploadImages>
 
-
-		<!--<b-form-group class="text-center">
-		<b-row>
-	 <b-col>
-		 <b-img fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
-	 </b-col>
-	 <b-col>
-		 <b-img fluid src="https://lorempixel.com/250/250/technics/8/" alt="Thumbnail" />
-	 </b-col>
-	 <b-col>
-		 <b-img fluid src="https://lorempixel.com/250/250/technics/4/" alt="Thumbnail" />
-	 </b-col>
- </b-row>
-</b-form-group>-->
 	<br>
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Сохранить</b-button>
@@ -57,8 +42,6 @@
 	<br>
 </form>
 </b-form>
-
-<!--<upload-image></upload-image>-->
 
 </b-container>
 </div>
@@ -68,11 +51,11 @@
 import router from './../router'
 import NavBar from './navbar.vue'
 import store from './../store'
+import UploadImages from './../components/uploadimages.vue'
 import { post, interceptors } from './../helpers/api'
-/*import UploadImage from 'vue-upload-image'*/
 
 export default {
-	components: { router, store, NavBar },
+	components: { router, store, NavBar, UploadImages },
 	data () {
     return 	{
 				form: {

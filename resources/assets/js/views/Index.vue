@@ -63,7 +63,7 @@ export default {
 			}
 	},
 	components: { NavBar, router, store },
-  methods: {    
+  methods: {
 }
 }
 </script>
