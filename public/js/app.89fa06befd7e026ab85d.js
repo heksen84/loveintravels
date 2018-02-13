@@ -20768,6 +20768,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -33791,13 +33800,13 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('b-navbar', {
     attrs: {
-      "toggleable": "md",
       "type": "dark",
-      "variant": "danger"
+      "variant": "danger",
+      "toggleable": ""
     }
   }, [_c('b-navbar-toggle', {
     attrs: {
-      "target": "nav_collapse"
+      "target": "nav_dropdown_collapse"
     }
   }), _vm._v(" "), _c('b-navbar-brand', {
     staticStyle: {
@@ -33811,7 +33820,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v(" love in travels")])]), _vm._v(" "), _c('b-collapse', {
     attrs: {
       "is-nav": "",
-      "id": "nav_collapse"
+      "id": "nav_dropdown_collapse"
     }
   }, [_c('b-navbar-nav', {
     staticClass: "ml-auto"
@@ -33835,17 +33844,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "success",
       "href": "/signup"
     }
-  }, [_vm._v("Регистрация")])], 1) : _vm._e(), _vm._v(" "), _c('b-col', {
+  }, [_vm._v("Регистрация")])], 1) : _vm._e(), _vm._v(" "), (_vm.user.name) ? _c('b-nav-item-dropdown', {
     attrs: {
-      "cols": "12",
-      "md": "auto"
+      "right": ""
     }
-  }, [_c('h5', {
-    staticClass: "my-1 mr-sm-1",
+  }, [_c('template', {
+    slot: "button-content"
+  }, [_c('el', {
     staticStyle: {
       "color": "white"
     }
-  }, [_vm._v(_vm._s(_vm.user.name))])])], 1)], 1)], 1)], 1)], 1)], 1)], 1)
+  }, [_vm._v(_vm._s(_vm.user.name))])], 1), _vm._v(" "), _c('b-dropdown-item', {
+    attrs: {
+      "href": "/"
+    }
+  }, [_vm._v("Выйти")])], 2) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
