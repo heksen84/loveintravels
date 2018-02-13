@@ -20776,7 +20776,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -33844,7 +33843,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "success",
       "href": "/signup"
     }
-  }, [_vm._v("Регистрация")])], 1) : _vm._e(), _vm._v(" "), (_vm.user.name) ? _c('b-nav-item-dropdown', {
+  }, [_vm._v("Регистрация")])], 1) : _vm._e()], 1), _vm._v(" "), (_vm.user.name) ? _c('b-nav-item-dropdown', {
     attrs: {
       "right": ""
     }
@@ -33858,7 +33857,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "/"
     }
-  }, [_vm._v("Выйти")])], 2) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)], 1)
+  }, [_vm._v("Выйти")])], 2) : _vm._e()], 1)], 1)], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

@@ -15,16 +15,15 @@
 	    <b-button size="sm" class="my-1 mr-sm-1" href="/login">Вход</b-button>
 	    <b-button size="sm" class="my-1 mr-sm-1" variant="success" href="/signup">Регистрация</b-button>
 	</b-col>
+	</b-row>
 
   <b-nav-item-dropdown right v-if="user.name">
-          <!-- Using button-content slot -->
-          <template slot="button-content">
-            <el style="color:white;">{{ user.name }}</el>
-          </template>
-          <b-dropdown-item href="/">Выйти</b-dropdown-item>
+    <template slot="button-content">
+        <el style="color:white;">{{ user.name }}</el>
+      </template>
+    <b-dropdown-item href="/">Выйти</b-dropdown-item>
   </b-nav-item-dropdown>
 
-	</b-row>
 	</b-container>
       </b-nav-form>
     </b-navbar-nav>
