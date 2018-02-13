@@ -1,6 +1,8 @@
 ﻿<template>
 <div>
+<NavBar></NavBar>
 <b-container style="max-width: 350px;">
+<br>
 <br>
 <b-form v-if="show">
 	<b-form-group class="text-center">
@@ -27,7 +29,11 @@
 </div>
 </template>
 <script type="text/javascript">
+import NavBar from './navbar.vue'
+import store from './../store'
+
 export default {
+	components: { NavBar, store },
 	data () {
     return 	{
 				form: {
@@ -37,7 +43,10 @@ export default {
 				show: true
 			}
 	},
-  methods: {		
+	created() {
+		store.commit('setAuth', true);
+	},
+  methods: {
   }
 }
 </script>
