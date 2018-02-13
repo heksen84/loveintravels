@@ -41,7 +41,8 @@ export default {
 	},
   methods: {
 		goHome() {
-      store.commit('setAuth', false);
+      store.commit('setAuth',     false);
+      store.commit('setUserName', "");
 			this.$router.push('/');
 		}
   },

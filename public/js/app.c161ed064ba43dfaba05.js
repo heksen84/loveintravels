@@ -20788,6 +20788,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   methods: {
     goHome: function goHome() {
       __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].commit('setAuth', false);
+      __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].commit('setUserName', "");
       this.$router.push('/');
     }
   },
