@@ -7,27 +7,18 @@
 |        | POST      | api/login                     |                  | App\Http\Controllers\AuthController@login                              | api          |
 |        | POST      | api/logout                    |                  | App\Http\Controllers\AuthController@logout                             | api,auth:api |
 |        | POST      | api/password/email            | password.email   | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  | api,guest    |
-|        | POST      | api/password/reset            |                  | App\Http\Controllers\Auth\ResetPasswordController@reset                | api,guest    |
 |        | GET|HEAD  | api/password/reset            | password.request | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm | api,guest    |
+|        | POST      | api/password/reset            |                  | App\Http\Controllers\Auth\ResetPasswordController@reset                | api,guest    |
 |        | GET|HEAD  | api/password/reset/{token?}   | password.reset   | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        | api,guest    |
 |        | GET|HEAD  | api/recipes                   | recipes.index    | App\Http\Controllers\RecipeController@index                            | api          |
 |        | POST      | api/recipes                   | recipes.store    | App\Http\Controllers\RecipeController@store                            | api,auth:api |
 |        | GET|HEAD  | api/recipes/create            | recipes.create   | App\Http\Controllers\RecipeController@create                           | api,auth:api |
 |        | GET|HEAD  | api/recipes/{recipe}          | recipes.show     | App\Http\Controllers\RecipeController@show                             | api          |
-|        | PUT|PATCH | api/recipes/{recipe}          | recipes.update   | App\Http\Controllers\RecipeController@update                           | api,auth:api |
 |        | DELETE    | api/recipes/{recipe}          | recipes.destroy  | App\Http\Controllers\RecipeController@destroy                          | api,auth:api |
+|        | PUT|PATCH | api/recipes/{recipe}          | recipes.update   | App\Http\Controllers\RecipeController@update                           | api,auth:api |
 |        | GET|HEAD  | api/recipes/{recipe}/edit     | recipes.edit     | App\Http\Controllers\RecipeController@edit                             | api,auth:api |
 |        | POST      | api/signup                    |                  | App\Http\Controllers\AuthController@signup                             | api          |
 |        | POST      | api/test                      |                  | App\Http\Controllers\AuthController@test                               | api          |
 |        | GET|HEAD  | home                          | home             | App\Http\Controllers\HomeController@index                              | web,auth     |
-|        | GET|HEAD  | login                         | login            | App\Http\Controllers\Auth\LoginController@showLoginForm                | web,guest    |
-|        | POST      | login                         |                  | App\Http\Controllers\Auth\LoginController@login                        | web,guest    |
-|        | POST      | logout                        | logout           | App\Http\Controllers\Auth\LoginController@logout                       | web          |
-|        | POST      | password/email                | password.email   | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  | web,guest    |
-|        | GET|HEAD  | password/reset                | password.request | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm | web,guest    |
-|        | POST      | password/reset                |                  | App\Http\Controllers\Auth\ResetPasswordController@reset                | web,guest    |
-|        | GET|HEAD  | password/reset/{token}        | password.reset   | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        | web,guest    |
-|        | GET|HEAD  | register                      | register         | App\Http\Controllers\Auth\RegisterController@showRegistrationForm      | web,guest    |
-|        | POST      | register                      |                  | App\Http\Controllers\Auth\RegisterController@register                  | web,guest    |
 |        | GET|HEAD  | {any}                         |                  | Closure                                                                | web          |
 +--------+-----------+-------------------------------+------------------+------------------------------------------------------------------------+--------------+
