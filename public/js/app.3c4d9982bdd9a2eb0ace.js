@@ -20558,7 +20558,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setAuth', true);
 	},
 
-	methods: {}
+	methods: {
+		passwordReset: function passwordReset() {
+			alert("hi!");
+		}
+	}
 });
 
 /***/ }),
@@ -33763,7 +33767,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "max-width": "350px"
     }
-  }, [_c('br'), _vm._v(" "), _c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', [_c('b-form-group', {
+  }, [_c('br'), _vm._v(" "), _c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.passwordReset($event)
+      }
+    }
+  }, [_c('b-form-group', {
     staticClass: "text-center"
   }, [_c('h1', [_vm._v("Сброс пароля")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
@@ -33789,10 +33800,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {
-      "variant": "success"
-    },
-    on: {
-      "click": function($event) {}
+      "variant": "success",
+      "type": "submit"
     }
   }, [_vm._v("Отправить")])], 1)], 1) : _vm._e()], 1)], 1)
 },staticRenderFns: []}

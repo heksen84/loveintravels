@@ -4,7 +4,7 @@
 <b-container style="max-width: 350px;">
 <br>
 <br>
-<b-form v-if="show">
+<b-form @submit.prevent="passwordReset" v-if="show">
 	<b-form-group class="text-center">
 		<h1>Сброс пароля</h1>
     </b-form-group>
@@ -21,8 +21,8 @@
     </b-form-group>
 
 	<b-form-group class="text-center">
-		<b-button variant="success" @click="">Отправить</b-button>
-    </b-form-group>
+		<b-button variant="success" type="submit">Отправить</b-button>
+  </b-form-group>
 
 </b-form>
 </b-container>
@@ -47,6 +47,9 @@ export default {
 		store.commit('setAuth', true);
 	},
   methods: {
+		passwordReset() {
+			alert("hi!");
+		}
   }
 }
 </script>
