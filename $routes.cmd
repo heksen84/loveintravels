@@ -1,1 +1,1 @@
-php artisan r:l >routes.txt
+php artisan r:l >_routes.txt
