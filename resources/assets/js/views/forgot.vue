@@ -31,6 +31,7 @@
 <script type="text/javascript">
 import NavBar from './navbar.vue'
 import store from './../store'
+import { post, interceptors } from './../helpers/api'
 
 export default {
 	components: { NavBar, store },
