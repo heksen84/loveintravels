@@ -1,12 +1,23 @@
-+--------+----------+-------------------------------+------------------+------------------------------------------------------------------------+------------+
-| Domain | Method   | URI                           | Name             | Action                                                                 | Middleware |
-+--------+----------+-------------------------------+------------------+------------------------------------------------------------------------+------------+
-|        | GET|HEAD | _dusk/login/{userId}/{guard?} |                  | Laravel\Dusk\Http\Controllers\UserController@login                     | web        |
-|        | GET|HEAD | _dusk/logout/{guard?}         |                  | Laravel\Dusk\Http\Controllers\UserController@logout                    | web        |
-|        | GET|HEAD | _dusk/user/{guard?}           |                  | Laravel\Dusk\Http\Controllers\UserController@user                      | web        |
-|        | POST     | password/email                | password.email   | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  | web,guest  |
-|        | GET|HEAD | password/reset                | password.request | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm | web,guest  |
-|        | POST     | password/reset                |                  | App\Http\Controllers\Auth\ResetPasswordController@reset                | web,guest  |
-|        | GET|HEAD | password/reset/{token?}       | password.reset   | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        | web,guest  |
-|        | GET|HEAD | {any}                         |                  | Closure                                                                | web        |
-+--------+----------+-------------------------------+------------------+------------------------------------------------------------------------+------------+
++--------+-----------+-------------------------------+------------------+------------------------------------------------------------------------+--------------+
+| Domain | Method    | URI                           | Name             | Action                                                                 | Middleware   |
++--------+-----------+-------------------------------+------------------+------------------------------------------------------------------------+--------------+
+|        | GET|HEAD  | _dusk/login/{userId}/{guard?} |                  | Laravel\Dusk\Http\Controllers\UserController@login                     | web          |
+|        | GET|HEAD  | _dusk/logout/{guard?}         |                  | Laravel\Dusk\Http\Controllers\UserController@logout                    | web          |
+|        | GET|HEAD  | _dusk/user/{guard?}           |                  | Laravel\Dusk\Http\Controllers\UserController@user                      | web          |
+|        | POST      | api/login                     |                  | App\Http\Controllers\AuthController@login                              | api          |
+|        | POST      | api/logout                    |                  | App\Http\Controllers\AuthController@logout                             | api,auth:api |
+|        | GET|HEAD  | api/recipes                   | recipes.index    | App\Http\Controllers\RecipeController@index                            | api          |
+|        | POST      | api/recipes                   | recipes.store    | App\Http\Controllers\RecipeController@store                            | api,auth:api |
+|        | GET|HEAD  | api/recipes/create            | recipes.create   | App\Http\Controllers\RecipeController@create                           | api,auth:api |
+|        | GET|HEAD  | api/recipes/{recipe}          | recipes.show     | App\Http\Controllers\RecipeController@show                             | api          |
+|        | PUT|PATCH | api/recipes/{recipe}          | recipes.update   | App\Http\Controllers\RecipeController@update                           | api,auth:api |
+|        | DELETE    | api/recipes/{recipe}          | recipes.destroy  | App\Http\Controllers\RecipeController@destroy                          | api,auth:api |
+|        | GET|HEAD  | api/recipes/{recipe}/edit     | recipes.edit     | App\Http\Controllers\RecipeController@edit                             | api,auth:api |
+|        | POST      | api/signup                    |                  | App\Http\Controllers\AuthController@signup                             | api          |
+|        | POST      | api/test                      |                  | App\Http\Controllers\AuthController@test                               | api          |
+|        | POST      | password/email                | password.email   | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  | web,guest    |
+|        | GET|HEAD  | password/reset                | password.request | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm | web,guest    |
+|        | POST      | password/reset                |                  | App\Http\Controllers\Auth\ResetPasswordController@reset                | web,guest    |
+|        | GET|HEAD  | password/reset/{token?}       | password.reset   | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        | web,guest    |
+|        | GET|HEAD  | {any}                         |                  | Closure                                                                | web          |
++--------+-----------+-------------------------------+------------------+------------------------------------------------------------------------+--------------+
