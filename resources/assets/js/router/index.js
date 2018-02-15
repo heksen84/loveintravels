@@ -9,6 +9,7 @@ import Forgot from '../views/forgot.vue'
 import Welcome from '../views/welcome.vue'
 import Details from '../views/details.vue'
 import Error from '../views/error.vue'
+import PasswordReset from '../views/PasswordReset.vue'
 
 Vue.use(VueRouter)
 
@@ -23,7 +24,7 @@ const router = new VueRouter({
 		{ path: '/trips', component: Trips },
 		{ path: '/welcome', component: Welcome },
 		{ path: '/details/:user_id', component: Details },
-		{ path: '/password/reset/:token', component: Welcome },
+		{ path: '/password/reset/:token', component: PasswordReset },
 		{ path: '/error', component: Error },
 		{ path: '*', component: NotFound }
 	]
