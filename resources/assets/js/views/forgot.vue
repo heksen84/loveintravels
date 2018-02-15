@@ -53,12 +53,11 @@ export default {
 				//	store.commit('setUserName', res.data.name );
 				//	this.$router.push('/details/'+res.data.user_id);
 				//}
-		}).catch((err) => {
-			console.log(err)
-			/*console.log(err.response.data);
+		}).catch((err) => {			
+			console.log(err.response.data);
 			if(err.response.status === 422) {
 	         this.error = err.response.data
-			}*/
+			}
   	});
 
 
