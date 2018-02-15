@@ -4,7 +4,7 @@
 <b-container style="max-width: 350px;">
 <br>
 <br>
-<b-form @submit.prevent="passwordReset" v-if="show">
+<b-form @submit.prevent="passwordReset">
 	<b-form-group class="text-center">
 		<h1>Сброс пароля</h1>
     </b-form-group>
@@ -14,9 +14,9 @@
                   label-for="emailInput">
       <b-form-input id="emailInput"
                   type="email"
-                  v-model="form.email"
-                  required
-                  placeholder="Введи email">
+                  v-model="email"
+                  placeholder="Введи email"
+									required>
       </b-form-input>
     </b-form-group>
 
@@ -37,19 +37,33 @@ export default {
 	components: { NavBar, store },
 	data () {
     return 	{
-				form: {
-					email: '',
-					password: ''
-				},
-				show: true
-			}
+			email: "",
+			error: {}
+		}
 	},
 	created() {
 		store.commit('setAuth', true);
 	},
   methods: {
 		passwordReset() {
-			alert("hi!");
+			this.error = {}
+			post('/password/email', {email: this.email}).then((res) => {
+				alert("res");
+				//if(res.data.authenticated) {
+				//	store.commit('setUserName', res.data.name );
+				//	this.$router.push('/details/'+res.data.user_id);
+				//}
+		}).catch((err) => {
+			console.log(err)
+			/*console.log(err.response.data);
+			if(err.response.status === 422) {
+	         this.error = err.response.data
+			}*/
+  	});
+
+
+
+
 		}
   }
 }

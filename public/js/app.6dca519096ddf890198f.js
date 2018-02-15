@@ -20549,11 +20549,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	components: { NavBar: __WEBPACK_IMPORTED_MODULE_0__navbar_vue___default.a, store: __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */] },
 	data: function data() {
 		return {
-			form: {
-				email: '',
-				password: ''
-			},
-			show: true
+			email: "",
+			error: {}
 		};
 	},
 	created: function created() {
@@ -20562,7 +20559,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 	methods: {
 		passwordReset: function passwordReset() {
-			alert("hi!");
+			this.error = {};
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__helpers_api__["a" /* post */])('/password/email', { email: this.email }).then(function (res) {
+				alert("res");
+				//if(res.data.authenticated) {
+				//	store.commit('setUserName', res.data.name );
+				//	this.$router.push('/details/'+res.data.user_id);
+				//}
+			}).catch(function (err) {
+				console.log(err);
+				/*console.log(err.response.data);
+    if(err.response.status === 422) {
+           this.error = err.response.data
+    }*/
+			});
 		}
 	}
 });
@@ -33769,7 +33779,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "max-width": "350px"
     }
-  }, [_c('br'), _vm._v(" "), _c('br'), _vm._v(" "), (_vm.show) ? _c('b-form', {
+  }, [_c('br'), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form', {
     on: {
       "submit": function($event) {
         $event.preventDefault();
@@ -33788,15 +33798,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "emailInput",
       "type": "email",
-      "required": "",
-      "placeholder": "Введи email"
+      "placeholder": "Введи email",
+      "required": ""
     },
     model: {
-      value: (_vm.form.email),
+      value: (_vm.email),
       callback: function($$v) {
-        _vm.$set(_vm.form, "email", $$v)
+        _vm.email = $$v
       },
-      expression: "form.email"
+      expression: "email"
     }
   })], 1), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
@@ -33805,7 +33815,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "variant": "success",
       "type": "submit"
     }
-  }, [_vm._v("Отправить")])], 1)], 1) : _vm._e()], 1)], 1)
+  }, [_vm._v("Отправить")])], 1)], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
