@@ -33625,7 +33625,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "password_confirm"
     }
-  })], 1), _vm._v(" "), _c('b-form-group', {
+  })], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {

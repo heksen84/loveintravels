@@ -41,7 +41,7 @@
 									required>
       </b-form-input>
     </b-form-group>
-
+	<br>
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Отправить</b-button>
   </b-form-group>
