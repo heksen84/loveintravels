@@ -1,12 +1,12 @@
 import axios from 'axios'
-import Auth from '../store'
+import store from '../store'
 
 export function get(url) {
     return axios({
     	method: 'GET',
     	url: url,
     	headers: {
-    		'Authorization': `Bearer ${Auth.state.api_token}`
+    		'Authorization': `Bearer ${store.state.user.api_token}`
     	}
     })
 }
@@ -17,7 +17,7 @@ export function post(url, payload) {
     	url: url,
     	data: payload,
     	headers: {
-    		'Authorization': `Bearer ${Auth.state.api_token}`
+    		'Authorization': `Bearer ${store.state.user.api_token}`
     	}
     })
 }
@@ -27,7 +27,7 @@ export function del(url) {
         method: 'DELETE',
         url: url,
         headers: {
-            'Authorization': `Bearer ${Auth.state.api_token}`
+            'Authorization': `Bearer ${store.state.user.api_token}`
         }
     })
 }

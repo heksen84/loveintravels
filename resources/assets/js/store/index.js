@@ -7,7 +7,8 @@ const store = new Vuex.Store({
   state: {
     user: {
       name: "",
-      auth: false
+      auth: false,
+      api_token: ""
     }
   },
   mutations: {
@@ -16,6 +17,9 @@ const store = new Vuex.Store({
 		},
     setUserName (state, name) {
       state.user.name=name
+		},
+    setToken (state, token) {
+      state.user.api_token=token;
 		}
   }
 })
