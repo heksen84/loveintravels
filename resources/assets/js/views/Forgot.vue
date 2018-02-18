@@ -2,7 +2,7 @@
 <div>
 <NavBar></NavBar>
 
-<b-modal size="sm" v-model="modalShow" title="ПРОВЕРЬТЕ ПОЧТУ" hide-footer>
+<b-modal size="sm" v-model="modalShow" title="проверьте почту" hide-footer>
 <div class="d-block text-center">
 Инструкция для сброса пароля отправлена на указанный email
 </div>

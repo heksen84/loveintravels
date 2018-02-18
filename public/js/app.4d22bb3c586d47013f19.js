@@ -34027,7 +34027,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', [_c('NavBar'), _vm._v(" "), _c('b-modal', {
     attrs: {
       "size": "sm",
-      "title": "ПРОВЕРЬТЕ ПОЧТУ",
+      "title": "проверьте почту",
       "hide-footer": ""
     },
     model: {
