@@ -33618,7 +33618,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-form-group', {
     staticClass: "text-center"
-  }, [_c('h1', [_vm._v("Вход в "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
+  }, [_c('h1', [_vm._v("вход в "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
       "label": "Электронная почта",
@@ -33703,7 +33703,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-form-group', {
     staticClass: "text-center"
-  }, [_c('h1', [_vm._v("Сброс пароля")])]), _vm._v(" "), _c('b-form-group', {
+  }, [_c('h1', [_vm._v("сброс пароля")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
       "label": "Электронная почта",
@@ -34039,7 +34039,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-form-group', {
     staticClass: "text-center"
-  }, [_c('h1', [_vm._v("Создать аккаунт "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
+  }, [_c('h1', [_vm._v("создать аккаунт "), _c('br'), _vm._v("Love in travels")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "nameGroup",
       "label": "Имя",
@@ -34186,7 +34186,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-form-group', {
     staticClass: "text-center"
-  }, [_c('h1', [_vm._v("Сброс пароля")])]), _vm._v(" "), _c('b-form-group', {
+  }, [_c('h1', [_vm._v("сброс пароля")])]), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
       "label": "Электронная почта",

@@ -7,7 +7,7 @@
 <b-form v-if="show">
 	<form v-on:submit.prevent="login">
 	<b-form-group class="text-center">
-		<h1>Вход в <br>Love in travels</h1>
+		<h1>вход в <br>Love in travels</h1>
     </b-form-group>
 
     <b-form-group id="emailGroup"

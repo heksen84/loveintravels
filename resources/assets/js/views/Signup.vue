@@ -6,7 +6,7 @@
 <b-form v-if="show">
 <form @submit.prevent="next">
 	<b-form-group class="text-center">
-		<h1>Создать аккаунт <br>Love in travels</h1>
+		<h1>создать аккаунт <br>Love in travels</h1>
     </b-form-group>
 
     <b-form-group id="nameGroup"

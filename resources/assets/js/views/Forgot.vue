@@ -14,7 +14,7 @@
 <br>
 <b-form @submit.prevent="passwordReset">
 	<b-form-group class="text-center">
-		<h1>Сброс пароля</h1>
+		<h1>сброс пароля</h1>
     </b-form-group>
 
     <b-form-group id="emailGroup"
