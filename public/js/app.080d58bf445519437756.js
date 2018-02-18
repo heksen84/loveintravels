@@ -20915,8 +20915,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
-/*import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'*/
 
 
 
@@ -34151,7 +34149,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', [_c('NavBar'), _vm._v(" "), _c('b-modal', {
     attrs: {
       "size": "sm",
-      "title": "проверьте почту",
+      "title": "ПРОВЕРЬТЕ ПОЧТУ",
       "hide-footer": ""
     },
     model: {
@@ -34167,7 +34165,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "mt-3",
     attrs: {
       "type": "dark",
-      "variant": "danger",
+      "variant": "success",
       "block": ""
     },
     on: {
