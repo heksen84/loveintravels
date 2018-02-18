@@ -73,10 +73,6 @@ export default {
 	         this.error = err.response.data
 			}
   	});
-
-
-
-
 		}
   }
 }

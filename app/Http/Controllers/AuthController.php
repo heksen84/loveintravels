@@ -66,13 +66,15 @@ class AuthController extends Controller
 
 				//Auth::guard("web")->logout();
 
+				//Auth::logout();
+
         return response()->json(['done' => true]);
     }
 
 		public function test(Request $request) {
-				$user = $request->user();
-				$user->api_token = null;
-				$user->save();
+				//$user = $request->user();
+				//$user->api_token = null;
+				//$user->save();
         return response()->json(['done' => true]);
     }
 }

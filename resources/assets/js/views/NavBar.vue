@@ -33,11 +33,12 @@
 </template>
 <script type="text/javascript">
 
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
+/*import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'*/
 import router from './../router'
 import store from './../store'
 import { post, interceptors } from './../helpers/api'
+
 
 export default {
   components: { router, store },
@@ -50,10 +51,12 @@ export default {
 	},
   methods: {
     logout() {
-      post('/api/test', "").then((res) => {
-        store.commit('setAuth', false);
-        store.commit('setUserName', "");
-        this.$router.push('/');
+      post('/api/logout').then((res) => {
+        if(res.data.done) {
+          store.commit('setAuth', false);
+          store.commit('setUserName', "");
+          this.$router.push('/');
+        }
 		}).catch((err) => {
 			console.log(err.response.data);
   	});
