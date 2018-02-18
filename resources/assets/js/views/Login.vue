@@ -71,14 +71,11 @@ export default {
 	},
   methods: {
 		login() {
-
-			//this.$router.push('/test');
 			this.error = {}
 			post('/api/login', this.form).then((res) => {
 				if(res.data.authenticated) {
 					store.commit('setUserName', res.data.name);
-					this.$router.push('/details/'+res.data.user_id);
-					//this.$router.push('/test');
+					this.$router.push('/details/'+res.data.user_id);					
 				}
 		}).catch((err) => {
 			console.log(err.response.data);

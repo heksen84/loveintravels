@@ -1050,48 +1050,26 @@ module.exports = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(279);
-/*export default {
-	state: {
-		api_token: null,
-		user_id: null
-	},
-	initialize() {
-		this.state.api_token = localStorage.getItem('api_token')
-		this.state.user_id = parseInt(localStorage.getItem('user_id'))
-	},
-	set(api_token, user_id) {
-		localStorage.setItem('api_token', api_token)
-		localStorage.setItem('user_id', user_id)
-		this.initialize()
-	},
-	remove() {
-		localStorage.removeItem('api_token')
-		localStorage.removeItem('user_id')
-		this.initialize()
-	}
-}
-*/
-
 
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 
 var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
-	state: {
-		user: {
-			name: "",
-			auth: false
-		}
-	},
-	mutations: {
-		setAuth: function setAuth(state, value) {
-			state.user.auth = value;
-		},
-		setUserName: function setUserName(state, name) {
-			state.user.name = name;
-		}
-	}
+  state: {
+    user: {
+      name: "",
+      auth: false
+    }
+  },
+  mutations: {
+    setAuth: function setAuth(state, value) {
+      state.user.auth = value;
+    },
+    setUserName: function setUserName(state, name) {
+      state.user.name = name;
+    }
+  }
 });
 
 /* harmony default export */ __webpack_exports__["a"] = (store);
@@ -20872,13 +20850,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		login: function login() {
 			var _this = this;
 
-			//this.$router.push('/test');
 			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__helpers_api__["b" /* post */])('/api/login', this.form).then(function (res) {
 				if (res.data.authenticated) {
 					__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setUserName', res.data.name);
 					_this.$router.push('/details/' + res.data.user_id);
-					//this.$router.push('/test');
 				}
 			}).catch(function (err) {
 				console.log(err.response.data);
