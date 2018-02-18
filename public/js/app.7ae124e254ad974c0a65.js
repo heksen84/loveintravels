@@ -34042,7 +34042,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("\r\nИнструкция для сброса пароля отправлена на указанный email\r\n")]), _vm._v(" "), _c('b-btn', {
     staticClass: "mt-3",
     attrs: {
-      "variant": "success",
+      "type": "dark",
+      "variant": "danger",
       "block": ""
     },
     on: {

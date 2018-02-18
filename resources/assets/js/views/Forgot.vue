@@ -6,7 +6,7 @@
 <div class="d-block text-center">
 Инструкция для сброса пароля отправлена на указанный email
 </div>
-<b-btn class="mt-3" variant="success" block @click="hideModal">Перейти на главную страницу</b-btn>
+<b-btn class="mt-3" type="dark" variant="danger" block @click="hideModal">Перейти на главную страницу</b-btn>
 </b-modal>
 
 <b-container style="max-width: 350px;">
