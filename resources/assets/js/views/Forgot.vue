@@ -4,9 +4,9 @@
 
 <b-modal size="sm" v-model="modalShow" title="ПРОВЕРЬТЕ ПОЧТУ" hide-footer>
 <div class="d-block text-center">
-Инструкция для сброса пароля отправлена на указанный email
+Инструкция по сбросу пароля отправлена на указанный email
 </div>
-<b-btn class="mt-3" type="dark" variant="success" block @click="hideModal">Перейти на главную страницу</b-btn>
+<b-btn class="mt-3" type="dark" variant="primary" block @click="hideModal">Перейти на главную страницу</b-btn>
 </b-modal>
 
 <b-container style="max-width: 350px;">
