@@ -56,6 +56,8 @@ export default {
         }
 		}).catch((err) => {
 			console.log(err.response.data);
+      store.commit('setAuth', false);
+      this.$router.push('/');
   	});
 		},
 		goHome() {

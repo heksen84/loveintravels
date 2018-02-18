@@ -20941,6 +20941,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
       }).catch(function (err) {
         console.log(err.response.data);
+        __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setAuth', false);
+        _this.$router.push('/');
       });
     },
     goHome: function goHome() {
