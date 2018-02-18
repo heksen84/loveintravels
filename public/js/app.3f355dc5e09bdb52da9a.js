@@ -33602,14 +33602,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "passwordGroup",
-      "label": "Пароль",
+      "label": "Новый пароль",
       "label-for": "passwordInput"
     }
   }, [_c('b-form-input', {
     attrs: {
       "id": "passwordInput",
       "type": "password",
-      "placeholder": "Введи пароль",
+      "placeholder": "Введи новый пароль",
       "required": ""
     },
     model: {
@@ -33622,14 +33622,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })], 1), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "passwordConfirmGroup",
-      "label": "Повтори пароль",
+      "label": "Подтверждение пароля",
       "label-for": "passwordConfirmInput"
     }
   }, [_c('b-form-input', {
     attrs: {
       "id": "passwordConfirmInput",
       "type": "password",
-      "placeholder": "Повтори пароль",
+      "placeholder": "Повтори новый пароль",
       "required": ""
     },
     model: {

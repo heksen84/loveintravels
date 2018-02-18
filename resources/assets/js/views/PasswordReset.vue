@@ -21,23 +21,23 @@
     </b-form-group>
 
 		<b-form-group id="passwordGroup"
-                  label="Пароль"
+                  label="Новый пароль"
                   label-for="passwordInput">
       <b-form-input id="passwordInput"
                   type="password"
                   v-model="password"
-                  placeholder="Введи пароль"
+                  placeholder="Введи новый пароль"
 									required>
       </b-form-input>
     </b-form-group>
 
 		<b-form-group id="passwordConfirmGroup"
-                  label="Повтори пароль"
+                  label="Подтверждение пароля"
                   label-for="passwordConfirmInput">
       <b-form-input id="passwordConfirmInput"
                   type="password"
                   v-model="password_confirm"
-                  placeholder="Повтори пароль"
+                  placeholder="Повтори новый пароль"
 									required>
       </b-form-input>
     </b-form-group>
