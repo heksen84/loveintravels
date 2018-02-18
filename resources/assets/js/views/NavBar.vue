@@ -50,7 +50,7 @@ export default {
 	},
   methods: {
     logout() {
-      post('/api/logout', null).then((res) => {
+      post('/api/test', "").then((res) => {
         store.commit('setAuth', false);
         store.commit('setUserName', "");
         this.$router.push('/');

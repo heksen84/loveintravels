@@ -20947,7 +20947,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     logout: function logout() {
       var _this = this;
 
-      __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__helpers_api__["a" /* post */])('/api/logout', null).then(function (res) {
+      __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__helpers_api__["a" /* post */])('/api/test', "").then(function (res) {
         __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].commit('setAuth', false);
         __WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].commit('setUserName', "");
         _this.$router.push('/');
