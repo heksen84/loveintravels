@@ -1,6 +1,14 @@
 ﻿<template>
 <div>
 <NavBar></NavBar>
+
+<b-modal size="sm" v-model="modalShow" title="ПРОВЕРЬТЕ ПОЧТУ" hide-footer>
+<div class="d-block text-center">
+Инструкция для сброса пароля отправлена на указанный email
+</div>
+<b-btn class="mt-3" variant="success" block @click="hideModal">Перейти на главную страницу</b-btn>
+</b-modal>
+
 <b-container style="max-width: 350px;">
 <br>
 <br>
@@ -20,6 +28,10 @@
       </b-form-input>
     </b-form-group>
 
+	</b-form-input>
+		<small class="error_control" v-if="error.email">{{ error.email[0] }}</small>
+	</b-form-group>
+
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Отправить</b-button>
   </b-form-group>
@@ -38,6 +50,7 @@ export default {
 	data () {
     return 	{
 			email: "",
+			modalShow: false,
 			error: {}
 		}
 	},
@@ -45,15 +58,16 @@ export default {
 		store.commit('setAuth', true);
 	},
   methods: {
+		hideModal() {
+			store.commit('setAuth', false);
+			this.$router.push("/");
+		},
 		passwordReset() {
 			this.error = {}
 			post('/password/email', {email: this.email}).then((res) => {
-				alert("res");
-				//if(res.data.authenticated) {
-				//	store.commit('setUserName', res.data.name );
-				//	this.$router.push('/details/'+res.data.user_id);
-				//}
-		}).catch((err) => {			
+				this.modalShow=true;
+				//this.$router.push('/details/'+res.data.user_id);
+		}).catch((err) => {
 			console.log(err.response.data);
 			if(err.response.status === 422) {
 	         this.error = err.response.data

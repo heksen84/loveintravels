@@ -20645,6 +20645,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -20655,6 +20667,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	data: function data() {
 		return {
 			email: "",
+			modalShow: false,
 			error: {}
 		};
 	},
@@ -20663,16 +20676,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 
 	methods: {
+		hideModal: function hideModal() {
+			__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setAuth', false);
+			this.$router.push("/");
+		},
 		passwordReset: function passwordReset() {
 			var _this = this;
 
 			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__helpers_api__["a" /* post */])('/password/email', { email: this.email }).then(function (res) {
-				alert("res");
-				//if(res.data.authenticated) {
-				//	store.commit('setUserName', res.data.name );
-				//	this.$router.push('/details/'+res.data.user_id);
-				//}
+				_this.modalShow = true;
+				//this.$router.push('/details/'+res.data.user_id);
 			}).catch(function (err) {
 				console.log(err.response.data);
 				if (err.response.status === 422) {
@@ -34010,7 +34024,31 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('NavBar'), _vm._v(" "), _c('b-container', {
+  return _c('div', [_c('NavBar'), _vm._v(" "), _c('b-modal', {
+    attrs: {
+      "size": "sm",
+      "title": "ПРОВЕРЬТЕ ПОЧТУ",
+      "hide-footer": ""
+    },
+    model: {
+      value: (_vm.modalShow),
+      callback: function($$v) {
+        _vm.modalShow = $$v
+      },
+      expression: "modalShow"
+    }
+  }, [_c('div', {
+    staticClass: "d-block text-center"
+  }, [_vm._v("\r\nИнструкция для сброса пароля отправлена на указанный email\r\n")]), _vm._v(" "), _c('b-btn', {
+    staticClass: "mt-3",
+    attrs: {
+      "variant": "success",
+      "block": ""
+    },
+    on: {
+      "click": _vm.hideModal
+    }
+  }, [_vm._v("Перейти на главную страницу")])], 1), _vm._v(" "), _c('b-container', {
     staticStyle: {
       "max-width": "350px"
     }
@@ -34043,7 +34081,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "email"
     }
-  })], 1), _vm._v(" "), _c('b-form-group', {
+  })], 1), _vm._v(" "), (_vm.error.email) ? _c('small', {
+    staticClass: "error_control"
+  }, [_vm._v(_vm._s(_vm.error.email[0]))]) : _vm._e(), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"
   }, [_c('b-button', {
     attrs: {
