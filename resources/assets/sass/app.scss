@@ -2,20 +2,21 @@
 $my_grey: rgb(80,80,80);
 // ---------------------------
 ::-webkit-scrollbar{
- width: 8px;
+ width: 7px;
  background: white;
 }
 ::-webkit-scrollbar:horizontal{
- height: 8px;
+ height: 7px;
  background: white;
 }
 ::-webkit-scrollbar-thumb{
- width: 8px;
+ width: 7px;
  background: white;
  border: 1px solid black;
+ border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:horizontal{
- height: 8px;
+ height: 7px;
  background: white;
 }
 ::-webkit-scrollbar-thumb:hover{
