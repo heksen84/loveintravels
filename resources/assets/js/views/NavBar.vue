@@ -33,12 +33,9 @@
 </template>
 <script type="text/javascript">
 
-/*import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'*/
 import router from './../router'
 import store from './../store'
 import { post, interceptors } from './../helpers/api'
-
 
 export default {
   components: { router, store },
@@ -62,9 +59,7 @@ export default {
   	});
 		},
 		goHome() {
-      store.commit('setAuth', false);
-      store.commit('setUserName', "");
-			this.$router.push('/');
+      this.logout();
 		}
   },
   computed: {
@@ -72,10 +67,7 @@ export default {
       /* кнопки авторизации в панели отображаются только через v-if = true,
        поэтому переворачиваем значение auth */
       return !store.state.user.auth;
-    },
-    getUserName()  {
-      return "store.state.user.name";
-     }
+    }
 }
 }
 </script>

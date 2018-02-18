@@ -20946,9 +20946,7 @@ import BootstrapVue from 'bootstrap-vue'*/
       });
     },
     goHome: function goHome() {
-      __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setAuth', false);
-      __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setUserName', "");
-      this.$router.push('/');
+      this.logout();
     }
   },
   computed: {
@@ -20956,9 +20954,6 @@ import BootstrapVue from 'bootstrap-vue'*/
       /* кнопки авторизации в панели отображаются только через v-if = true,
        поэтому переворачиваем значение auth */
       return !__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].state.user.auth;
-    },
-    getUserName: function getUserName() {
-      return "store.state.user.name";
     }
   }
 });
