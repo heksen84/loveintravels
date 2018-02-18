@@ -21,7 +21,7 @@
     <template slot="button-content">
         <el style="color:white;">{{ user.name }}</el>
       </template>
-    <b-dropdown-item href="/">Выйти</b-dropdown-item>
+    <b-dropdown-item v-on:click="logout">Выйти</b-dropdown-item>
   </b-nav-item-dropdown>
 
 	</b-container>
@@ -37,6 +37,7 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import router from './../router'
 import store from './../store'
+import { post, interceptors } from './../helpers/api'
 
 export default {
   components: { router, store },
@@ -48,8 +49,17 @@ export default {
 			}
 	},
   methods: {
+    logout() {
+      post('/api/logout', null).then((res) => {
+        store.commit('setAuth', false);
+        store.commit('setUserName', "");
+        this.$router.push('/');
+		}).catch((err) => {
+			console.log(err.response.data);
+  	});
+		},
 		goHome() {
-      store.commit('setAuth',     false);
+      store.commit('setAuth', false);
       store.commit('setUserName', "");
 			this.$router.push('/');
 		}

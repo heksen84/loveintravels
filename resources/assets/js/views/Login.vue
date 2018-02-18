@@ -35,7 +35,7 @@
     </b-form-group>
 
 	<b-form-group class="text-center">
-		<h6>Забыли пароль? <b-link href="/forgot">Сбросить</b-link></h6>
+		<h6>Забыли пароль? <b-link href="/forgot">сбросить</b-link></h6>
 	</b-form-group>
 
 	<b-form-group class="text-center">
