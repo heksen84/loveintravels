@@ -27,15 +27,14 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    count: 0,
-		auth_mode: false,
     user: {
-      name: ""
+      name: "",
+      auth: false
     }
   },
   mutations: {
 		setAuth (state, value) {
-			state.auth_mode=value;
+			state.user.auth=value;
 		},
     setUserName (state, name) {
       state.user.name=name

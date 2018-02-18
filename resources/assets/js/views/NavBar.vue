@@ -45,7 +45,7 @@ export default {
   data () {
     return 	{
         user: {
-          name: store.state.user.name          
+          name: store.state.user.name
         }
 			}
 	},
@@ -71,7 +71,7 @@ export default {
     isAuth()  {
       /* кнопки авторизации в панели отображаются только через v-if = true,
        поэтому переворачиваем значение auth */
-      return !store.state.auth_mode;
+      return !store.state.user.auth;
     },
     getUserName()  {
       return "store.state.user.name";

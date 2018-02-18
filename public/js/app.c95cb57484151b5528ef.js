@@ -1079,15 +1079,14 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
 
 var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 	state: {
-		count: 0,
-		auth_mode: false,
 		user: {
-			name: ""
+			name: "",
+			auth: false
 		}
 	},
 	mutations: {
 		setAuth: function setAuth(state, value) {
-			state.auth_mode = value;
+			state.user.auth = value;
 		},
 		setUserName: function setUserName(state, name) {
 			state.user.name = name;
@@ -20975,7 +20974,7 @@ import BootstrapVue from 'bootstrap-vue'*/
     isAuth: function isAuth() {
       /* кнопки авторизации в панели отображаются только через v-if = true,
        поэтому переворачиваем значение auth */
-      return !__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].state.auth_mode;
+      return !__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].state.user.auth;
     },
     getUserName: function getUserName() {
       return "store.state.user.name";
