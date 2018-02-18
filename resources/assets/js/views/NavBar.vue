@@ -17,12 +17,12 @@
 	</b-col>
 	</b-row>
 
-  <b-nav-item-dropdown right v-if="user.name">
-    <template slot="button-content">
-        <el style="color:white;">{{ user.name }}</el>
-      </template>
-    <b-dropdown-item v-on:click="logout">Выйти</b-dropdown-item>
-  </b-nav-item-dropdown>
+<b-nav-item-dropdown right v-if="user.name">
+  <template slot="button-content">
+      <span style="color:white;">{{ user.name }}</span>
+    </template>
+  <b-dropdown-item v-on:click="logout">Выйти</b-dropdown-item>
+</b-nav-item-dropdown>
 
 	</b-container>
       </b-nav-form>
@@ -45,7 +45,7 @@ export default {
   data () {
     return 	{
         user: {
-          name: store.state.user_name
+          name: store.state.user.name          
         }
 			}
 	},
@@ -74,7 +74,7 @@ export default {
       return !store.state.auth_mode;
     },
     getUserName()  {
-      return store.state.user_name;
+      return "store.state.user.name";
      }
 }
 }

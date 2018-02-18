@@ -1081,14 +1081,16 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 	state: {
 		count: 0,
 		auth_mode: false,
-		user_name: ""
+		user: {
+			name: ""
+		}
 	},
 	mutations: {
 		setAuth: function setAuth(state, value) {
 			state.auth_mode = value;
 		},
 		setUserName: function setUserName(state, name) {
-			state.user_name = name;
+			state.user.name = name;
 		}
 	}
 });
@@ -20843,6 +20845,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -20870,12 +20873,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		login: function login() {
 			var _this = this;
 
+			//this.$router.push('/test');
 			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__helpers_api__["b" /* post */])('/api/login', this.form).then(function (res) {
 				if (res.data.authenticated) {
 					__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setUserName', res.data.name);
-					//this.$router.push('/details/'+res.data.user_id);
-					_this.$router.push('/test');
+					_this.$router.push('/details/' + res.data.user_id);
+					//this.$router.push('/test');
 				}
 			}).catch(function (err) {
 				console.log(err.response.data);
@@ -20942,7 +20946,7 @@ import BootstrapVue from 'bootstrap-vue'*/
   data: function data() {
     return {
       user: {
-        name: __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].state.user_name
+        name: __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].state.user.name
       }
     };
   },
@@ -20974,7 +20978,7 @@ import BootstrapVue from 'bootstrap-vue'*/
       return !__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].state.auth_mode;
     },
     getUserName: function getUserName() {
-      return __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].state.user_name;
+      return "store.state.user.name";
     }
   }
 });
@@ -34303,11 +34307,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('template', {
     slot: "button-content"
-  }, [_c('el', {
+  }, [_c('span', {
     staticStyle: {
       "color": "white"
     }
-  }, [_vm._v(_vm._s(_vm.user.name))])], 1), _vm._v(" "), _c('b-dropdown-item', {
+  }, [_vm._v(_vm._s(_vm.user.name))])]), _vm._v(" "), _c('b-dropdown-item', {
     on: {
       "click": _vm.logout
     }
