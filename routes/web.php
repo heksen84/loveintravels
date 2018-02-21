@@ -14,7 +14,7 @@ Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 
 // редиректю на vue вьюху
 Route::get('password/reset/{token?}', function ($token) {
-    return redirect('password/resetpass/'.$token)->with(compact('token', 'email'));
+    return redirect('password/resetpass/'.$token);
 })->name('password.reset');
 
 Route::get('/{any}', function () {
