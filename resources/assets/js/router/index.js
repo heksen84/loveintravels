@@ -26,7 +26,7 @@ const router = new VueRouter({
 		{ path: '/welcome', component: Welcome },
 		{ path: '/test', component: Test },
 		{ path: '/details/:user_id', component: Details },
-		{ path: '/password/reset/:token', component: PasswordReset },
+		{ path: '/password/resetpass/:token', component: PasswordReset },
 		{ path: '/error', component: Error },
 		{ path: '*', component: NotFound }
 	]

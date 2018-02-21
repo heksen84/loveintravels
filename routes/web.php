@@ -1,9 +1,21 @@
 <?php
 
-Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+/*Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
 Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 Route::get('password/reset/{token?}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
-Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset');*/
+
+
+//Route::post('password/email', 'Auth\ResetPasswordController@postEmail');
+//Route::post('password/reset', 'Auth\ResetPassController@postReset');
+
+Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+
+// редиректю на vue вьюху
+Route::get('password/reset/{token?}', function ($token) {
+    return redirect('password/resetpass/'.$token)->with(compact('token', 'email'));
+})->name('password.reset');
 
 Route::get('/{any}', function () {
     return view('welcome');

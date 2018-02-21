@@ -18,5 +18,6 @@
 |        | POST      | password/email                | password.email   | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  | web,guest    |
 |        | GET|HEAD  | password/reset                | password.request | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm | web,guest    |
 |        | POST      | password/reset                |                  | App\Http\Controllers\Auth\ResetPasswordController@reset                | web,guest    |
+|        | GET|HEAD  | password/reset/{token?}       | password.reset   | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        | web,guest    |
 |        | GET|HEAD  | {any}                         |                  | Closure                                                                | web          |
 +--------+-----------+-------------------------------+------------------+------------------------------------------------------------------------+--------------+
