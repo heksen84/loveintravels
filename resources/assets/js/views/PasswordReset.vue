@@ -6,6 +6,7 @@
 <br>
 <b-form @submit.prevent="passwordReset">
 	<b-form-group class="text-center">
+
 		<h1>сброс пароля</h1>
     </b-form-group>
 
@@ -67,6 +68,7 @@ export default {
 	},
 	created() {
 		store.commit('setAuth', true);
+		alert(window.location.href);	
 	},
   methods: {
 		passwordReset() {

@@ -20409,6 +20409,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -20426,6 +20427,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 	created: function created() {
 		__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setAuth', true);
+		alert(window.location.href);
 	},
 
 	methods: {
