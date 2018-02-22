@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
     <head>
-        <title>Сайт знакомств Love In Travels</title>
+        <title>Сеть знакомств - Love In Travels</title>
         <meta name="keywords" content="сайт знакомств, знакомства, познакомиться, знакомство, встреча, роман, любовный роман, флирт, любовь, поиск партнера, свидание, вторая половина, отношения, путешествия, путешествие, поездка, вояж" />
         <meta name="description" content="Love in travels - это отличный способ найти себе половинку находясь в путешествии или за границей.">
         <meta charset="utf-8">
