@@ -20427,7 +20427,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 	created: function created() {
 		__WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('setAuth', true);
-		alert(window.location.href);
+
+		var url = window.location.href;
+		var tag = "pass/";
+		//alert(url);
+
+		if (url.indexOf(tag) == -1) {
+			alert("Плохая ссылка для сброса пароля!");
+		} else {
+			var tagpos = url.indexOf(tag) + tag.length;
+			var key = url.substr(tagpos, url.length - tagpos).split(' ').join('');
+			alert(key);
+		}
 	},
 
 	methods: {

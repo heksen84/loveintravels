@@ -67,8 +67,18 @@ export default {
 		}
 	},
 	created() {
-		store.commit('setAuth', true);
-		alert(window.location.href);	
+	store.commit('setAuth', true);
+
+	var url=window.location.href;
+	var tag="pass/";
+	
+	if (url.indexOf(tag) == -1) {
+    alert("Плохая ссылка для сброса пароля!");
+	} else {
+    	var tagpos=url.indexOf(tag)+tag.length;
+    	var key=url.substr(tagpos, url.length-tagpos).split(' ').join('');
+    	alert(key);
+		}
 	},
   methods: {
 		passwordReset() {
