@@ -6,9 +6,15 @@
 <br>
 <b-form @submit.prevent="passwordReset">
 	<b-form-group class="text-center">
-
 		<h1>сброс пароля</h1>
     </b-form-group>
+
+		<b-form-input id="tokenInput"
+								type="text"
+								v-model="token"
+								required
+								v-show="false">
+		</b-form-input>
 
     <b-form-group id="emailGroup"
                   label="Электронная почта"
@@ -60,6 +66,7 @@ export default {
 	components: { NavBar, store },
 	data () {
     return 	{
+			token:  "",
 			email: "",
 			password: "",
 			password_confirm: "",
@@ -71,17 +78,18 @@ export default {
 
 	var url=window.location.href;
 	var tag="pass/";
-	
+
 	if (url.indexOf(tag) == -1) {
     alert("Плохая ссылка для сброса пароля!");
 	} else {
     	var tagpos=url.indexOf(tag)+tag.length;
-    	var key=url.substr(tagpos, url.length-tagpos).split(' ').join('');
-    	alert(key);
+    	var token=url.substr(tagpos, url.length-tagpos).split(' ').join('');
+			this.token=token;
 		}
 	},
   methods: {
 		passwordReset() {
+			alert(this.token);
 			this.error = {}
 			post('/password/email', {email: this.email}).then((res) => {
 				alert("res");
@@ -95,10 +103,6 @@ export default {
 	         this.error = err.response.data
 			}
   	});
-
-
-
-
 		}
   }
 }

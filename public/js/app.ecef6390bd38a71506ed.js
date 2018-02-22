@@ -20410,6 +20410,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -20419,6 +20425,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	components: { NavBar: __WEBPACK_IMPORTED_MODULE_0__navbar_vue___default.a, store: __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */] },
 	data: function data() {
 		return {
+			token: "",
 			email: "",
 			password: "",
 			password_confirm: "",
@@ -20430,14 +20437,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 		var url = window.location.href;
 		var tag = "pass/";
-		//alert(url);
 
 		if (url.indexOf(tag) == -1) {
 			alert("Плохая ссылка для сброса пароля!");
 		} else {
 			var tagpos = url.indexOf(tag) + tag.length;
-			var key = url.substr(tagpos, url.length - tagpos).split(' ').join('');
-			alert(key);
+			var token = url.substr(tagpos, url.length - tagpos).split(' ').join('');
+			this.token = token;
 		}
 	},
 
@@ -20445,6 +20451,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		passwordReset: function passwordReset() {
 			var _this = this;
 
+			alert(this.token);
 			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__helpers_api__["b" /* post */])('/password/email', { email: this.email }).then(function (res) {
 				alert("res");
@@ -33716,7 +33723,26 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('b-form-group', {
     staticClass: "text-center"
-  }, [_c('h1', [_vm._v("сброс пароля")])]), _vm._v(" "), _c('b-form-group', {
+  }, [_c('h1', [_vm._v("сброс пароля")])]), _vm._v(" "), _c('b-form-input', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (false),
+      expression: "false"
+    }],
+    attrs: {
+      "id": "tokenInput",
+      "type": "text",
+      "required": ""
+    },
+    model: {
+      value: (_vm.token),
+      callback: function($$v) {
+        _vm.token = $$v
+      },
+      expression: "token"
+    }
+  }), _vm._v(" "), _c('b-form-group', {
     attrs: {
       "id": "emailGroup",
       "label": "Электронная почта",
