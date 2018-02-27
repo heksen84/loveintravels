@@ -20457,13 +20457,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 				password: this.password,
 				password_confirmation: this.password_confirmation
 			}).then(function (res) {
-				alert("res");
-				//if(res.data.authenticated) {
-				//	store.commit('setUserName', res.data.name );
-				//	this.$router.push('/details/'+res.data.user_id);
-				//}
+				alert("Пароль сброшен");
 			}).catch(function (err) {
-				console.log(err.response.data);
+				alert(err.response.data);
 				if (err.response.status === 422) {
 					_this.error = err.response.data;
 				}

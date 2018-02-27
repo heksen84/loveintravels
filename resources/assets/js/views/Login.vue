@@ -40,7 +40,6 @@
 
 	<b-form-group class="text-center">
 		<b-button variant="success" type="submit">Войти</b-button>
-		<!--<b-button variant="success" href="/test">Войти</b-button>-->
     </b-form-group>
 </form>
 </b-form>

@@ -96,13 +96,9 @@ export default {
 				password: this.password,
 				password_confirmation: this.password_confirmation
 			}).then((res) => {
-				alert("res");
-				//if(res.data.authenticated) {
-				//	store.commit('setUserName', res.data.name );
-				//	this.$router.push('/details/'+res.data.user_id);
-				//}
+				alert("Пароль сброшен");
 		}).catch((err) => {
-			console.log(err.response.data);
+			alert(err.response.data);
 			if(err.response.status === 422) {
 	         this.error = err.response.data
 			}
