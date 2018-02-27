@@ -7,8 +7,9 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset');*/
 //Route::post('password/email', 'Auth\ResetPasswordController@postEmail');
 //Route::post('password/reset', 'Auth\ResetPassController@postReset');
 
-Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+Route::get('password/reset',  'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
 Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 // редиректю в начале на родной контроллер, а потом на vue roter на vue вьюху
 // (это hack, как сделать редирект сходу?)

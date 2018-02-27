@@ -43,7 +43,7 @@
                   label-for="passwordConfirmInput">
       <b-form-input id="passwordConfirmInput"
                   type="password"
-                  v-model="password_confirm"
+                  v-model="password_confirmation"
                   placeholder="Повтори новый пароль"
 									required>
       </b-form-input>
@@ -69,7 +69,7 @@ export default {
 			token:  "",
 			email: "",
 			password: "",
-			password_confirm: "",
+			password_confirmation: "",
 			error: {}
 		}
 	},
@@ -79,9 +79,8 @@ export default {
 	var url=window.location.href;
 	var tag="pass/";
 
-	if (url.indexOf(tag) == -1) {
-    alert("Плохая ссылка для сброса пароля!");
-	} else {
+	if (url.indexOf(tag) == -1) alert("Плохая ссылка для сброса пароля!");
+	else {
     	var tagpos=url.indexOf(tag)+tag.length;
     	var token=url.substr(tagpos, url.length-tagpos).split(' ').join('');
 			this.token=token;
@@ -91,7 +90,12 @@ export default {
 		passwordReset() {
 			alert(this.token);
 			this.error = {}
-			post('/password/email', {email: this.email}).then((res) => {
+			post('/password/reset', {
+				token: this.token,
+				email: this.email,
+				password: this.password,
+				password_confirmation: this.password_confirmation
+			}).then((res) => {
 				alert("res");
 				//if(res.data.authenticated) {
 				//	store.commit('setUserName', res.data.name );

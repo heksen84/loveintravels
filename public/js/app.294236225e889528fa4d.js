@@ -20428,7 +20428,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			token: "",
 			email: "",
 			password: "",
-			password_confirm: "",
+			password_confirmation: "",
 			error: {}
 		};
 	},
@@ -20438,9 +20438,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		var url = window.location.href;
 		var tag = "pass/";
 
-		if (url.indexOf(tag) == -1) {
-			alert("Плохая ссылка для сброса пароля!");
-		} else {
+		if (url.indexOf(tag) == -1) alert("Плохая ссылка для сброса пароля!");else {
 			var tagpos = url.indexOf(tag) + tag.length;
 			var token = url.substr(tagpos, url.length - tagpos).split(' ').join('');
 			this.token = token;
@@ -20453,7 +20451,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 			alert(this.token);
 			this.error = {};
-			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__helpers_api__["b" /* post */])('/password/email', { email: this.email }).then(function (res) {
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__helpers_api__["b" /* post */])('/password/reset', {
+				token: this.token,
+				email: this.email,
+				password: this.password,
+				password_confirmation: this.password_confirmation
+			}).then(function (res) {
 				alert("res");
 				//if(res.data.authenticated) {
 				//	store.commit('setUserName', res.data.name );
@@ -20695,7 +20698,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			this.error = {};
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__helpers_api__["b" /* post */])('/password/email', { email: this.email }).then(function (res) {
 				_this.modalShow = true;
-				//this.$router.push('/details/'+res.data.user_id);
 			}).catch(function (err) {
 				console.log(err.response.data);
 				if (err.response.status === 422) {
@@ -33796,11 +33798,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "required": ""
     },
     model: {
-      value: (_vm.password_confirm),
+      value: (_vm.password_confirmation),
       callback: function($$v) {
-        _vm.password_confirm = $$v
+        _vm.password_confirmation = $$v
       },
-      expression: "password_confirm"
+      expression: "password_confirmation"
     }
   })], 1), _vm._v(" "), _c('br'), _vm._v(" "), _c('b-form-group', {
     staticClass: "text-center"

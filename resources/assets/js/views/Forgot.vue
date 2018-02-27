@@ -66,7 +66,6 @@ export default {
 			this.error = {}
 			post('/password/email', {email: this.email}).then((res) => {
 				this.modalShow=true;
-				//this.$router.push('/details/'+res.data.user_id);
 		}).catch((err) => {
 			console.log(err.response.data);
 			if(err.response.status === 422) {
